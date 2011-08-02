@@ -1,6 +1,6 @@
 "pathogen (plugin management)
-call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
+source ~/.vim/bundle/pathogen/autoload/pathogen.vim
+call pathogen#infect()
 
 "turn off gui
 set guioptions=a
@@ -84,11 +84,9 @@ set history=9999
 "********** plugins **********
 
 "csapprox
-set runtimepath+=~/.vim/plugins/csapprox
 set t_Co=256 " makes csapprox work properly in gnome's terminal
 
 "nerdtree
-set runtimepath+=~/.vim/plugins/nerdtree
 "autoload nerdtree
 "autocmd VimEnter * if argc() == 0 | NERDTreeToggle | endif
 "autocmd VimEnter * if argc() == 0 | wincmd p | endif
@@ -97,4 +95,3 @@ let NERDTreeIgnore=['\.vim$', '\.pyc$', 'manage.py']
 noremap <Leader>n :NERDTreeToggle<cr>
 
 "nerdcommenter
-set runtimepath+=~/.vim/plugins/nerdcommenter
