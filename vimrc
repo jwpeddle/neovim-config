@@ -1,6 +1,7 @@
 "pathogen (plugin management)
 source ~/.vim/bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
+call pathogen#helptags()
 
 "turn off gui
 set guioptions=a
@@ -23,20 +24,11 @@ set nowrap
 set expandtab
 
 "use 4 spaces to represent a tab
-set tabstop=8
+set tabstop=4
 set softtabstop=4
 
 "number of space to use for auto indent
 set shiftwidth=4
-
-"tabs only for indenting
-"set smarttab
-
-"copy indent from current line when starting a new line.
-set autoindent
-
-autocmd FileType javascript setlocal sts=2 sw=2
-autocmd FileType python setlocal sts=4 sw=4
 
 "makes backspace key more powerful.
 set backspace=indent,eol,start
@@ -71,10 +63,6 @@ set background=dark
 set gfn=Monaco\ 11
 colorscheme jellybeans
 
-"` is totally more useful (go to mark)
-nnoremap ' `
-nnoremap ` '
-
 "\ is impossible to press
 let mapleader=','
 
@@ -87,11 +75,5 @@ set history=9999
 set t_Co=256 " makes csapprox work properly in gnome's terminal
 
 "nerdtree
-"autoload nerdtree
-"autocmd VimEnter * if argc() == 0 | NERDTreeToggle | endif
-"autocmd VimEnter * if argc() == 0 | wincmd p | endif
-
 let NERDTreeIgnore=['\.vim$', '\.pyc$', 'manage.py']
 noremap <Leader>n :NERDTreeToggle<cr>
-
-"nerdcommenter
