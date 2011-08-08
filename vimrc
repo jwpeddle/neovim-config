@@ -69,6 +69,9 @@ let mapleader=','
 "longer history
 set history=9999
 
+"autohide buffers
+set hidden
+
 "********** plugins **********
 
 "csapprox

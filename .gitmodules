@@ -10,6 +10,3 @@
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = git://github.com/tpope/vim-fugitive.git
-[submodule "bundle/tabbar"]
-	path = bundle/tabbar
-	url = https://github.com/vim-scripts/TabBar
