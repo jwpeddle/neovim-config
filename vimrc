@@ -72,6 +72,9 @@ set history=9999
 "autohide buffers
 set hidden
 
+map <Left> :bp<cr>
+map <Right> :bn<cr>
+
 "********** plugins **********
 
 "csapprox
