@@ -50,6 +50,9 @@ set gdefault
 set wildmenu
 set wildmode=list:longest,full
 
+"ignore files (ie, for command-t)
+set wildignore=.git,migrations,tiny_mce,*.pyc,*.jpg,*.jpeg,*.png,*.bmp,*.doc,*.xls,*.txt,*.swf,*.pdf,*.psd,*.ai,*.mov,*.gz,*.jfif,*.tiff,*.docx,*.xml,*.wmv,*.otf,*.ttf,*.min.js
+
 "set filetype on
 filetype on
 filetype indent on
@@ -72,6 +75,7 @@ set history=9999
 "autohide buffers
 set hidden
 
+"arrow buffer changing
 map <Left> :bp<cr>
 map <Right> :bn<cr>
 
