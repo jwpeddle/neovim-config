@@ -79,6 +79,16 @@ set hidden
 map <Left> :bp<cr>
 map <Right> :bn<cr>
 
+"easier window switching
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
+"split on the right/below
+set splitbelow
+set splitright
+
 "********** plugins **********
 
 "csapprox
@@ -86,4 +96,7 @@ set t_Co=256 " makes csapprox work properly in gnome's terminal
 
 "nerdtree
 let NERDTreeIgnore=['\.vim$', '\.pyc$', 'manage.py']
-noremap <Leader>n :NERDTreeToggle<cr>
+map <Leader>n :NERDTreeToggle<cr>
+
+"minibufexplorer
+map <Leader>m :MiniBufExplorer<cr>
