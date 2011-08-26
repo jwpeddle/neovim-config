@@ -10,9 +10,18 @@
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = git://github.com/tpope/vim-fugitive.git
-[submodule "bundle/minibufexplorer"]
-	path = bundle/minibufexplorer
-	url = https://github.com/fholgado/minibufexpl.vim.git
 [submodule "bundle/command-t"]
 	path = bundle/command-t
 	url = git://git.wincent.com/command-t.git
+[submodule "bundle/delimitmate"]
+	path = bundle/delimitmate
+	url = git://github.com/Raimondi/delimitMate.git
+[submodule "bundle/pyflakes"]
+	path = bundle/pyflakes
+	url = git://github.com/kevinw/pyflakes-vim.git
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = git://github.com/ervandew/supertab.git
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = git://github.com/majutsushi/tagbar.git

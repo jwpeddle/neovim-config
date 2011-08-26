@@ -1,5 +1,9 @@
+"vi mode sucks
+set nocompatible
+
 "pathogen (plugin management)
 source ~/.vim/bundle/pathogen/autoload/pathogen.vim
+let g:pathogen_disabled = ['minibufexplorer']
 call pathogen#infect()
 call pathogen#helptags()
 
@@ -51,7 +55,8 @@ set wildmenu
 set wildmode=list:longest,full
 
 "ignore files (ie, for command-t)
-set wildignore=.git,migrations,tiny_mce,*.pyc,*.jpg,*.jpeg,*.png,*.bmp,*.doc,*.xls,*.txt,*.swf,*.pdf,*.psd,*.ai,*.mov,*.gz,*.jfif,*.tiff,*.docx,*.xml,*.wmv,*.otf,*.ttf,*.min.js
+set wildignore=.git,*.pyc,*.jpg,*.jpeg,*.png,*.bmp,*.doc,*.xls,*.txt,*.swf,*.pdf,*.psd,*.ai,*.mov,*.gz,*.jfif,*.tiff,*.docx,*.xml,*.wmv,*.otf,*.ttf,*.min.js
+set wildignore+=migrations,tiny_mce
 
 "set filetype on
 filetype on
@@ -65,6 +70,9 @@ imap jj <esc>
 set background=dark
 set gfn=Monaco\ 11
 colorscheme jellybeans
+
+"hilight current line
+set cursorline
 
 "\ is impossible to press
 let mapleader=','
@@ -85,9 +93,15 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-"split on the right/below
-set splitbelow
-set splitright
+"custom status line
+if has('statusline')
+    set laststatus=2
+    set statusline=%{fugitive#statusline()} "git repo
+    set statusline+=\ %{getcwd()}/%f        "current dir/file
+endif
+
+"forget to sudo?
+cmap w!! w !sudo tee % >/dev/null
 
 "********** plugins **********
 
@@ -100,3 +114,9 @@ map <Leader>n :NERDTreeToggle<cr>
 
 "minibufexplorer
 map <Leader>m :MiniBufExplorer<cr>
+
+"command-t
+let g:CommandTMatchWindowAtTop=1
+
+"tagbar
+map <Leader>s :TagbarToggle<CR>
