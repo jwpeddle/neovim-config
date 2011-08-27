@@ -103,6 +103,9 @@ endif
 "forget to sudo?
 cmap w!! w !sudo tee % >/dev/null
 
+"use system clipboard
+set clipboard^=unnamed
+
 "********** plugins **********
 
 "csapprox
