@@ -63,9 +63,6 @@ filetype on
 filetype indent on
 filetype plugin on
 
-"easier escape
-imap jj <esc>
-
 "theme/font
 set background=dark
 set gfn=Monaco\ 11
@@ -106,6 +103,9 @@ cmap w!! w !sudo tee % >/dev/null
 "use system clipboard
 set clipboard^=unnamed
 
+"always reload changed file
+set autoread
+
 "********** plugins **********
 
 "csapprox
@@ -123,3 +123,14 @@ let g:CommandTMatchWindowAtTop=1
 
 "tagbar
 map <Leader>s :TagbarToggle<CR>
+
+"ultisnips
+let g:UltiSnipsExpandTrigger='<tab>'
+let g:UltiSnipsJumpForwardTrigger='<tab>'
+let g:UltiSnipsJumpBackwardTrigger='<s-tab>'
+let g:UltiSnipsSnippetDirectories=['snippets']
+
+"coffeescript
+let g:coffee_make_options=''
+map <Leader>r :CoffeeRun<CR>
+map <Leader>m :CoffeeMake<CR>

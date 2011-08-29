@@ -1,0 +1,30 @@
+extends javascript
+
+snippet skel
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>${1:untitled}</title>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/1.6.2/jquery.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.1.7/underscore-min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/underscore.string/1.1.4/underscore.string.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.5.3/backbone-min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js'></script>
+  </head>
+  <body>
+    ${0}
+  </body>
+</html>
+endsnippet
+
+snippet scriptsrc
+<script src='${1:`!v @*`}'></script>${0}
+endsnippet
+
+snippet script
+<script>
+  ${1:$(function() {
+    ${2}
+  })};
+</script>
+endsnippet
