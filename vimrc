@@ -3,7 +3,7 @@ set nocompatible
 
 "pathogen (plugin management)
 source ~/.vim/bundle/pathogen/autoload/pathogen.vim
-"let g:pathogen_disabled = []
+let g:pathogen_disabled = []
 call pathogen#infect()
 call pathogen#helptags()
 
