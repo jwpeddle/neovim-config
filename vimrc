@@ -74,6 +74,9 @@ set cursorline
 "\ is impossible to press
 let mapleader=','
 
+"easier escape
+imap jj <Esc>
+
 "longer history
 set history=9999
 
