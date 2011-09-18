@@ -13,9 +13,6 @@
 [submodule "bundle/command-t"]
 	path = bundle/command-t
 	url = git://git.wincent.com/command-t.git
-[submodule "bundle/delimitmate"]
-	path = bundle/delimitmate
-	url = git://github.com/Raimondi/delimitMate.git
 [submodule "bundle/pyflakes"]
 	path = bundle/pyflakes
 	url = git://github.com/kevinw/pyflakes-vim.git
@@ -25,9 +22,6 @@
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = git://github.com/majutsushi/tagbar.git
-[submodule "bundle/matchit"]
-	path = bundle/matchit
-	url = git://github.com/vim-scripts/matchit.zip.git
 [submodule "bundle/ultisnips"]
 	path = bundle/ultisnips
 	url = git://github.com/rygwdn/ultisnips.git

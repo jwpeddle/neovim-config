@@ -3,7 +3,7 @@ set nocompatible
 
 "pathogen (plugin management)
 source ~/.vim/bundle/pathogen/autoload/pathogen.vim
-let g:pathogen_disabled = ['minibufexplorer']
+"let g:pathogen_disabled = []
 call pathogen#infect()
 call pathogen#helptags()
 
@@ -65,8 +65,8 @@ filetype plugin on
 
 "theme/font
 set background=dark
-set gfn=Monaco\ 11
 colorscheme jellybeans
+set gfn=Monaco\ 11
 
 "hilight current line
 set cursorline
@@ -112,16 +112,11 @@ set autoread
 set t_Co=256 " makes csapprox work properly in gnome's terminal
 
 "nerdtree
-let NERDTreeIgnore=['\.vim$', '\.pyc$', 'manage.py']
 map <Leader>n :NERDTreeToggle<cr>
-
-"minibufexplorer
-map <Leader>m :MiniBufExplorer<cr>
 
 "command-t
 let g:CommandTMatchWindowAtTop=1
 
-"tagbar
 map <Leader>s :TagbarToggle<CR>
 
 "ultisnips
