@@ -28,11 +28,11 @@ set nowrap
 set expandtab
 
 "use 4 spaces to represent a tab
-set tabstop=4
-set softtabstop=4
+set tabstop=2
+set softtabstop=2
 
 "number of space to use for auto indent
-set shiftwidth=4
+set shiftwidth=2
 
 "makes backspace key more powerful.
 set backspace=indent,eol,start
