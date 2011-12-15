@@ -30,13 +30,13 @@
 	url = git://github.com/othree/html5.vim.git
 [submodule "bundle/jslint"]
 	path = bundle/jslint
-	url = https://github.com/hallettj/jslint.vim.git
+	url = git://github.com/hallettj/jslint.vim.git
 [submodule "bundle/ultisnips"]
 	path = bundle/ultisnips
-	url = https://github.com/rygwdn/ultisnips
+	url = git://github.com/rygwdn/ultisnips
 [submodule "bundle/less"]
 	path = bundle/less
 	url = git://github.com/groenewege/vim-less.git
 [submodule "bundle/web-indent"]
 	path = bundle/web-indent
-	url = https://github.com/garbas/vim-web-indent.git
+	url = git://github.com/garbas/vim-web-indent.git
