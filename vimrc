@@ -10,6 +10,9 @@ call pathogen#helptags()
 "turn off gui
 set guioptions=a
 
+"enable mouse
+set mouse=a
+
 "no backups, I hate .swp files
 set nobackup
 set nowritebackup
@@ -28,7 +31,6 @@ set nowrap
 set expandtab
 
 "use 4 spaces to represent a tab
-set tabstop=2
 set softtabstop=2
 
 "number of space to use for auto indent
@@ -54,9 +56,9 @@ set gdefault
 set wildmenu
 set wildmode=list:longest,full
 
-"ignore files (ie, for command-t)
-set wildignore=.git,*.pyc,*.jpg,*.jpeg,*.png,*.bmp,*.doc,*.xls,*.txt,*.swf,*.pdf,*.psd,*.ai,*.mov,*.gz,*.jfif,*.tiff,*.docx,*.xml,*.wmv,*.otf,*.ttf,*.min.js
-set wildignore+=migrations,tiny_mce
+"ignore files
+set wildignore=.git,*.pyc,*.jpg,*.jpeg,*.png,*.bmp,*.doc,*.xls,*.swf,*.pdf,*.psd,*.ai,*.mov,*.gz,*.jfif,*.tiff,*.docx,*.xml,*.wmv,*.otf,*.ttf,*.min.js,*.sassc
+set wildignore+=migrations,tiny_mce,static,media
 
 "set filetype on
 filetype on
@@ -66,7 +68,7 @@ filetype plugin on
 "theme/font
 set background=dark
 colorscheme jellybeans
-set gfn=Monaco\ 11
+set gfn=Monaco\ 10
 
 "hilight current line
 set cursorline
@@ -84,8 +86,10 @@ set history=9999
 set hidden
 
 "arrow buffer changing
-map <Left> :bp<cr>
-map <Right> :bn<cr>
+"map <Left> :bp<cr>
+"map <Right> :bn<cr>
+map <Left> :tabp<cr>
+map <Right> :tabn<cr>
 
 "easier window switching
 map <C-h> <C-w>h
@@ -117,18 +121,10 @@ set t_Co=256 " makes csapprox work properly in gnome's terminal
 "nerdtree
 map <Leader>n :NERDTreeToggle<cr>
 
-"command-t
-let g:CommandTMatchWindowAtTop=1
-
-map <Leader>s :TagbarToggle<CR>
-
-"ultisnips
-let g:UltiSnipsExpandTrigger='<tab>'
-let g:UltiSnipsJumpForwardTrigger='<tab>'
-let g:UltiSnipsJumpBackwardTrigger='<s-tab>'
-let g:UltiSnipsSnippetDirectories=['snippets']
-
-"coffeescript
-let g:coffee_make_options=''
-map <Leader>r :CoffeeRun<CR>
-map <Leader>m :CoffeeMake<CR>
+"ctrlp
+map <Leader>p :CtrlP<cr>
+map <Leader>b :CtrlPBuffer<cr>
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<c-t>', '<MiddleMouse>'],
+    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+    \ }
