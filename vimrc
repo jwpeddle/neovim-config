@@ -58,7 +58,7 @@ set wildmode=list:longest,full
 
 "ignore files
 set wildignore=.git,*.pyc,*.jpg,*.jpeg,*.png,*.bmp,*.doc,*.xls,*.swf,*.pdf,*.psd,*.ai,*.mov,*.gz,*.jfif,*.tiff,*.docx,*.xml,*.wmv,*.otf,*.ttf,*.min.js,*.sassc
-set wildignore+=migrations,tiny_mce,static,media
+set wildignore+=tiny_mce,media,.sass-cache
 
 "set filetype on
 filetype on
@@ -108,7 +108,7 @@ endif
 cmap w!! w !sudo tee % >/dev/null
 
 "use system clipboard
-set clipboard^=unnamed
+set clipboard^=unnamedplus
 
 "always reload changed file
 set autoread
@@ -128,3 +128,7 @@ let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': ['<c-t>', '<MiddleMouse>'],
     \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
     \ }
+
+"syntastic
+let g:syntastic_python_checker = 'flake8'
+let g:syntastic_python_checker_args = '--ignore=E124,E128,E501,E701,E702'
