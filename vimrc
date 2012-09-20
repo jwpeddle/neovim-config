@@ -132,3 +132,7 @@ let g:ctrlp_prompt_mappings = {
 "syntastic
 let g:syntastic_python_checker = 'flake8'
 let g:syntastic_python_checker_args = '--ignore=E124,E128,E501,E701,E702'
+
+"indentguides
+hi IndentGuidesOdd ctermbg=233 guibg=#121212
+hi IndentGuidesEven ctermbg=234 guibg=#1c1c1c
