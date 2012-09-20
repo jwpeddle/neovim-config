@@ -25,3 +25,9 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
+[submodule "bundle/easymotion"]
+	path = bundle/easymotion
+	url = git://github.com/Lokaltog/vim-easymotion.git
+[submodule "bundle/indentguides"]
+	path = bundle/indentguides
+	url = git://github.com/nathanaelkane/vim-indent-guides.git
