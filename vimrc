@@ -1,11 +1,21 @@
 "vi mode sucks
 set nocompatible
 
-"pathogen (plugin management)
-source ~/.vim/bundle/pathogen/autoload/pathogen.vim
-let g:pathogen_disabled = []
-call pathogen#infect()
-call pathogen#helptags()
+"vundle (plugin management)
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+Bundle 'groenewege/vim-less'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'kien/ctrlp'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'othree/html5'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/syntastic'
+Bundle 'tpope/vim-fugitive'
+Bundle 'vim-scripts/python'
 
 "use local .vimrc files
 set exrc
