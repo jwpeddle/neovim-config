@@ -31,3 +31,6 @@
 [submodule "bundle/indentguides"]
 	path = bundle/indentguides
 	url = git://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "bundle/python"]
+	path = bundle/python
+	url = https://github.com/vim-scripts/python.vim--Vasiliev

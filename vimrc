@@ -7,11 +7,14 @@ let g:pathogen_disabled = []
 call pathogen#infect()
 call pathogen#helptags()
 
+"use local .vimrc files
+set exrc
+
 "turn off gui
 set guioptions=a
 
 "enable mouse
-set mouse=a
+set mouse-=a
 
 "no backups, I hate .swp files
 set nobackup
@@ -72,6 +75,7 @@ set gfn=Monaco\ 10
 
 "hilight current line
 set cursorline
+hi CursorLine ctermbg=233
 
 "\ is impossible to press
 let mapleader=','
@@ -131,8 +135,12 @@ let g:ctrlp_prompt_mappings = {
 
 "syntastic
 let g:syntastic_python_checker = 'flake8'
-let g:syntastic_python_checker_args = '--ignore=E124,E128,E501,E701,E702'
+let g:syntastic_python_checker_args = '--ignore=E501'
+" highlight the 80th column instead of E501
+set colorcolumn=80
+hi ColorColumn ctermbg=233
 
 "indentguides
-hi IndentGuidesOdd ctermbg=233 guibg=#121212
-hi IndentGuidesEven ctermbg=234 guibg=#1c1c1c
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=233
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=234
