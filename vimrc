@@ -76,6 +76,9 @@ filetype on
 filetype indent on
 filetype plugin on
 
+"indent python parens with one tab (vs default two?)
+let g:pyindent_open_paren=4
+
 "theme/font
 set background=dark
 colorscheme jellybeans
