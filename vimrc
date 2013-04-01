@@ -4,18 +4,16 @@ set nocompatible
 "vundle (plugin management)
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-Bundle 'gmarik/vundle'
-Bundle 'groenewege/vim-less'
+"Bundle 'gmarik/vundle'
 Bundle 'kchmck/vim-coffee-script'
-Bundle 'kien/ctrlp'
-Bundle 'Lokaltog/vim-easymotion'
+Bundle 'kien/ctrlp.vim'
 Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'othree/html5'
+Bundle 'othree/html5.vim'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
-Bundle 'vim-scripts/python'
+"Bundle 'vim-scripts/python.vim--Vasiliev'
 
 "use local .vimrc files
 set exrc
@@ -43,10 +41,10 @@ set nowrap
 "enter spaces when tab is pressed:
 set expandtab
 
-"use 4 spaces to represent a tab
+"use 2 spaces to represent a tab
 set softtabstop=2
 
-"number of space to use for auto indent
+"number of spaces to use for auto indent
 set shiftwidth=2
 
 "makes backspace key more powerful.
@@ -134,6 +132,7 @@ set t_Co=256 " makes csapprox work properly in gnome's terminal
 
 "nerdtree
 map <Leader>n :NERDTreeToggle<cr>
+let NERDTreeIgnore = ['\.pyc$']
 
 "ctrlp
 map <Leader>p :CtrlP<cr>
@@ -145,7 +144,7 @@ let g:ctrlp_prompt_mappings = {
 
 "syntastic
 let g:syntastic_python_checker = 'flake8'
-let g:syntastic_python_checker_args = '--ignore=E501'
+let g:syntastic_python_checker_args = '--ignore=E501,E126'
 " highlight the 80th column instead of E501
 set colorcolumn=80
 hi ColorColumn ctermbg=233
