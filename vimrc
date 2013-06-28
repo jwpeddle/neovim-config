@@ -13,7 +13,6 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
-"Bundle 'vim-scripts/python.vim--Vasiliev'
 
 "use local .vimrc files
 set exrc
@@ -21,7 +20,7 @@ set exrc
 "turn off gui
 set guioptions=a
 
-"enable mouse
+"disable mouse, iterferes with clipboard
 set mouse-=a
 
 "no backups, I hate .swp files
@@ -47,7 +46,7 @@ set softtabstop=2
 "number of spaces to use for auto indent
 set shiftwidth=2
 
-"makes backspace key more powerful.
+"make backspace key intelligently delete indents
 set backspace=indent,eol,start
 
 "highlight search
@@ -60,9 +59,6 @@ set incsearch
 set ignorecase
 set smartcase
 
-"don't need /g after :s or :g
-set gdefault
-
 "show autocomplete options in status bar
 set wildmenu
 set wildmode=list:longest,full
@@ -70,6 +66,12 @@ set wildmode=list:longest,full
 "ignore files
 set wildignore=.git,*.pyc,*.jpg,*.jpeg,*.png,*.bmp,*.doc,*.xls,*.swf,*.pdf,*.psd,*.ai,*.mov,*.gz,*.jfif,*.tiff,*.docx,*.xml,*.wmv,*.otf,*.ttf,*.min.js,*.sassc
 set wildignore+=tiny_mce,media,.sass-cache
+
+"briefly jump to matching brace on closing
+set showmatch
+
+"round shifted text to multiple of shiftwidth
+set shiftround
 
 "set filetype on
 filetype on
@@ -125,6 +127,12 @@ cmap w!! w !sudo tee % >/dev/null
 "use system clipboard
 set clipboard^=unnamedplus
 
+"don't delete to normal clipboard buffer
+nnoremap d "_d
+vnoremap d "_d
+nnoremap c "_c
+vnoremap c "_c
+
 "always reload changed file
 set autoread
 
@@ -147,7 +155,7 @@ let g:ctrlp_prompt_mappings = {
 
 "syntastic
 let g:syntastic_python_checker = 'flake8'
-let g:syntastic_python_checker_args = '--ignore=E501,E126'
+let g:syntastic_python_flake8_args = '--ignore=E501'
 " highlight the 80th column instead of E501
 set colorcolumn=80
 hi ColorColumn ctermbg=233
