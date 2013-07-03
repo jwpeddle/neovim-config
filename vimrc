@@ -4,7 +4,7 @@ set nocompatible
 "vundle (plugin management)
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-"Bundle 'gmarik/vundle'
+Bundle 'gmarik/vundle'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'kien/ctrlp.vim'
 Bundle 'nathanaelkane/vim-indent-guides'
@@ -126,12 +126,6 @@ cmap w!! w !sudo tee % >/dev/null
 
 "use system clipboard
 set clipboard^=unnamedplus
-
-"don't delete to normal clipboard buffer
-nnoremap d "_d
-vnoremap d "_d
-nnoremap c "_c
-vnoremap c "_c
 
 "always reload changed file
 set autoread
