@@ -13,6 +13,8 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
+Bundle 'bkad/CamelCaseMotion'
+Bundle 'Valloric/YouCompleteMe'
 
 "use local .vimrc files
 set exrc
@@ -146,9 +148,10 @@ let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': ['<c-t>', '<MiddleMouse>'],
     \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
     \ }
+let g:ctrlp_follow_symlinks = 1
 
 "syntastic
-let g:syntastic_python_checker = 'flake8'
+let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_python_flake8_args = '--ignore=E501'
 " highlight the 80th column instead of E501
 set colorcolumn=80
