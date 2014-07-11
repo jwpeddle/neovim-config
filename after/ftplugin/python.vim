@@ -4,5 +4,5 @@ setlocal shiftwidth=4
 " Destroy EOL whitespace in python files
 autocmd BufWrite *.py :silent! %s/\s\+$//
 
-" Expand 'ppdb' to a pdb set trace
+" Expand 'pdb' to a pdb set trace
 autocmd BufEnter *.py :iabbr pdb import pdb;pdb.set_trace()
