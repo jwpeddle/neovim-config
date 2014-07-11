@@ -15,6 +15,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
 Bundle 'bkad/CamelCaseMotion'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'vim-scripts/py-coverage'
 
 "use local .vimrc files
 set exrc
@@ -118,9 +119,8 @@ map <C-l> <C-w>l
 
 "custom status line
 if has('statusline')
-    set laststatus=2
-    set statusline=%{fugitive#statusline()} "git repo
-    set statusline+=\ %{getcwd()}/%f        "current dir/file
+   set laststatus=2
+   set statusline+=\ %{getcwd()}/%f        "current dir/file
 endif
 
 "forget to sudo?
@@ -154,8 +154,7 @@ let g:ctrlp_follow_symlinks = 1
 let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_python_flake8_args = '--ignore=E501'
 " highlight the 80th column instead of E501
-set colorcolumn=80
-hi ColorColumn ctermbg=233
+let &colorcolumn=join(range(81,999),",")
 
 "indentguides
 let g:indent_guides_auto_colors = 0
