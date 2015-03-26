@@ -5,4 +5,4 @@ setlocal shiftwidth=4
 autocmd BufWrite *.py :silent! %s/\s\+$//
 
 " Expand 'pdb' to a pdb set trace
-autocmd BufEnter *.py :iabbr pdb import pdb;pdb.set_trace()
+" autocmd BufEnter *.py :iabbr pdb import pdb;pdb.set_trace()

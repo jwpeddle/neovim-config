@@ -4,17 +4,19 @@ set nocompatible
 "vundle (plugin management)
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'bkad/CamelCaseMotion'
 Bundle 'gmarik/vundle'
+Bundle 'groenewege/vim-less'
 Bundle 'kchmck/vim-coffee-script'
-Bundle 'othree/html5.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'othree/html5.vim'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
-Bundle 'bkad/CamelCaseMotion'
-Bundle 'Valloric/YouCompleteMe'
+Bundle 'tpope/vim-unimpaired'
 Bundle 'vim-scripts/py-coverage'
 
 "use local .vimrc files
@@ -67,9 +69,40 @@ set wildmenu
 set wildmode=list:longest,full
 
 "ignore files
-set wildignore=.git,*.pyc,*.jpg,*.jpeg,*.png,*.bmp,*.doc,*.xls,*.swf,*.pdf,*.psd,*.ai,*.mov,*.gz,*.jfif,*.tiff,*.docx,*.xml,*.wmv,*.otf,*.ttf,*.min.js,*.sassc
-set wildignore+=tiny_mce,media,.sass-cache
-
+set wildignore=
+    \*.ai,
+    \*.bmp,
+    \*.doc,
+    \*.docx,
+    \*.gz,
+    \*.jfif,
+    \*.jpeg,
+    \*.jpg,
+    \*.log,
+    \*.min.js,
+    \*.mov,
+    \*.otf,
+    \*.pdf,
+    \*.png,
+    \*.psd,
+    \*.pyc,
+    \*.sassc,
+    \*.swf,
+    \*.tar,
+    \*.tiff,
+    \*.ttf,
+    \*.wmv,
+    \*.xls,
+    \*.xml,
+    \*.zip,
+    \.git,
+    \.sass-cache,
+    \__pycache__,
+    \CACHE,
+    \node_modules,
+    \media,
+    \tiny_mce
+    
 "briefly jump to matching brace on closing
 set showmatch
 
