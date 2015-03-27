@@ -2,8 +2,9 @@
 set nocompatible
 
 "vundle (plugin management)
+filetype off
 set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+call vundle#begin()
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'bkad/CamelCaseMotion'
 Bundle 'gmarik/vundle'
@@ -18,6 +19,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'vim-scripts/py-coverage'
+call vundle#end()
 
 "use local .vimrc files
 set exrc
