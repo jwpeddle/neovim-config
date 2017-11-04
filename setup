@@ -1,1 +1,2 @@
-rm -rf ~/.vimrc && ln -s ~/.vim/vimrc ~/.vimrc
+rm -rf ~/.config/nvim/init.vim && ln -s "$(pwd)/init.vim" ~/.config/nvim/init.vim
+rm -rf ~/.config/nvim/after/ftplugin/python.vim && ln -s "$(pwd)/after/ftplugin/python.vim" ~/.config/nvim/after/ftplugin/python.vim
