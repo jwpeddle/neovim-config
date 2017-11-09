@@ -5,7 +5,7 @@ Plug 'nanotech/jellybeans.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
-Plug 'valloric/youcompleteme'
+Plug 'valloric/youcompleteme', {'do': './install.py'}
 call plug#end()
 
 "no backups, I hate .swp files
@@ -100,7 +100,7 @@ let g:pyindent_open_paren=4
 "theme
 set background=dark
 set termguicolors
-colorscheme base16-seti-ui
+colorscheme base16-seti
 
 "hilight current line
 set cursorline
