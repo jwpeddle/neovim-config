@@ -1,7 +1,6 @@
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'chriskempson/base16-vim'
 Plug 'kien/ctrlp.vim'
-Plug 'nanotech/jellybeans.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
@@ -77,11 +76,14 @@ set wildignore=
     \*.zip,
     \.git,
     \.sass-cache,
-    \__pycache__,
     \CACHE,
-    \node_modules,
+    \_CACHE,
+    \__pycache__,
+    \cache,
     \media,
-    \tiny_mce
+    \media-server,
+    \node_modules,
+    \tiny_mce,
     
 "briefly jump to matching brace on closing
 set showmatch
@@ -108,9 +110,6 @@ hi CursorLine ctermbg=233
 
 "\ is impossible to press
 let mapleader=','
-
-"easier escape
-imap jj <Esc>
 
 "longer history
 set history=9999
@@ -142,6 +141,9 @@ set clipboard^=unnamedplus
 
 "always reload changed file
 set autoread
+
+"disable folding
+set nofoldenable
 
 "********** plugins **********
 
