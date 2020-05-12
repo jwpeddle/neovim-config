@@ -77,7 +77,9 @@ cmap w!! w !sudo tee % >/dev/null
 "coc
 set shortmess+=c
 set signcolumn=yes
+set updatetime=300
+source $XDG_CONFIG_HOME/nvim/coc.vim
 
 "fzf
-nnoremap <Leader>f :FZF<CR>
+nnoremap <Leader>p :FZF<CR>
 let $FZF_DEFAULT_COMMAND = 'fd --type file --follow --hidden --exclude .git'
