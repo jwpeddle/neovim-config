@@ -80,4 +80,4 @@ set signcolumn=yes
 
 "fzf
 nnoremap <Leader>f :FZF<CR>
-let $FZF_DEFAULT_COMMAND = 'fdfind --type file --follow --hidden --exclude .git'
+let $FZF_DEFAULT_COMMAND = 'fd --type file --follow --hidden --exclude .git'
