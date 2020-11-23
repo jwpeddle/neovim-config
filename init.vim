@@ -1,11 +1,16 @@
 " load plugins
 call plug#begin()
   Plug 'dracula/vim'
-  Plug 'neoclide/coc.nvim'
-  Plug 'justinmk/vim-dirvish'
+  Plug 'francoiscabrol/ranger.vim'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
+  Plug 'neoclide/coc.nvim'
+  Plug 'rbgrouleff/bclose.vim'
 call plug#end()
+
+" python versions
+let g:python_host_prog = $HOME . '/.pyenv/versions/neovim2/bin/python'
+let g:python3_host_prog = $HOME . '/.pyenv/versions/neovim3/bin/python'
 
 "theme
 set termguicolors
