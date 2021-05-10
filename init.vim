@@ -1,16 +1,17 @@
 " load plugins
-call plug#begin()
-  Plug 'dracula/vim'
-  Plug 'francoiscabrol/ranger.vim'
+call plug#begin('~/.nvim/plugged')
+  Plug 'dracula/vim', { 'as': 'dracula' }
+  Plug 'antoinemadec/coc-fzf'
+  Plug 'itchyny/lightline.vim'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
   Plug 'neoclide/coc.nvim'
+  Plug 'preservim/nerdtree'
+  Plug 'puremourning/vimspector'
   Plug 'rbgrouleff/bclose.vim'
+  Plug 'sheerun/vim-polyglot'
+  Plug 'tpope/vim-fugitive'
 call plug#end()
-
-" python versions
-let g:python_host_prog = $HOME . '/.pyenv/versions/neovim2/bin/python'
-let g:python3_host_prog = $HOME . '/.pyenv/versions/neovim3/bin/python'
 
 "theme
 set termguicolors
@@ -79,12 +80,64 @@ cmap w!! w !sudo tee % >/dev/null
 
 "******************** plugins ********************
 
+"airline
+"let g:airline_section_a = airline#section#create(['mode', 'crypt', 'paste', 'spell', 'iminsert'])
+"let g:airline_section_b = airline#section#create(['hunks', 'branch'])
+"let g:airline_section_c = airline#section#create(['bufferline or filename', 'readonly'])
+"let g:airline_section_gutter = airline#section#create(['csv'])
+"let g:airline_section_x = airline#section#create(['tagbar', 'filetype', 'virtualenv'])
+"let g:airline_section_y = airline#section#create(['fileencoding', 'fileformat', 'bom', 'eol'])
+"let g:airline_section_z = airline#section#create([])
+"let g:airline_section_error = airline#section#create(['languageclient_error_count'])
+"let g:airline_section_warning = airline#section#create(['languageclient_warning_count', 'whitespace'])
+
+" [*] This section needs at least the fugitive extension or else
+"     it will remain empty
+"
+" here is an example of how you could replace the branch indicator with
+" the current working directory (limited to 10 characters),
+" followed by the filename.
+let g:airline_section_b = '%-0.10{getcwd()}'
+let g:airline_section_c = '%t'
+
 "coc
 set shortmess+=c
 set signcolumn=yes
 set updatetime=300
-source $XDG_CONFIG_HOME/nvim/coc.vim
+source ~/.config/nvim/coc.vim
 
 "fzf
-nnoremap <Leader>p :FZF<CR>
 let $FZF_DEFAULT_COMMAND = 'fd --type file --follow --hidden --exclude .git'
+let g:fzf_command_prefix = 'Fzf'
+let g:coc_fzf_preview = ''
+let g:coc_fzf_opts = []
+nnoremap <Leader>fo :FzfFiles<CR>
+nnoremap <Leader>f/ :FzfRg<CR>
+nnoremap <Leader>ff :FzfBLines<CR>
+nnoremap <Leader>fh :FzfHistory/<CR>
+
+"lightline
+set noshowmode
+let g:lightline = {
+  \   'colorscheme': 'dracula',
+  \   'active': {
+  \     'left': [
+  \       ['mode'],
+  \       ['readonly', 'modified', 'relativepath'],
+  \     ],
+  \     'right': [
+  \       ['filetype'],
+  \       ['gitbranch'],
+  \       [],
+  \     ],
+  \   },
+  \   'component_function': {
+  \     'gitbranch': 'FugitiveHead'
+  \   },
+  \ }
+
+"nerdtree
+nnoremap <Leader>n :NERDTreeToggle<CR>
+
+"vimspector
+let g:vimspector_enable_mappings = 'HUMAN'
