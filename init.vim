@@ -7,11 +7,12 @@ endif
 
 " load plugins
 call plug#begin('~/.nvim/plugged')
-  Plug 'dracula/vim', { 'as': 'dracula' }
   Plug 'antoinemadec/coc-fzf'
+  Plug 'dracula/vim', { 'as': 'dracula' }
   Plug 'itchyny/lightline.vim'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
+  Plug 'lervag/vimtex'
   Plug 'neoclide/coc.nvim'
   Plug 'preservim/nerdtree'
   Plug 'puremourning/vimspector'
