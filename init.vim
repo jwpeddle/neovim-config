@@ -32,6 +32,9 @@ set number
 "don't wrap lines
 set nowrap
 
+"make autocomplete only use what I've typed
+set wildmode=longest:full,full
+
 "extra room in cmd section
 set cmdheight=2
 
@@ -67,7 +70,7 @@ set clipboard^=unnamedplus
 set nofoldenable
 
 "don't continue comments automatically
-set formatoptions-=cro
+set formatoptions-=r formatoptions-=c formatoptions-=o
 
 "******************** mappings ********************
 "\ too hard to press
