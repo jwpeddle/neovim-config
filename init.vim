@@ -23,8 +23,8 @@ call plug#begin('~/.nvim/plugged')
   Plug 'tpope/vim-fugitive'
 call plug#end()
 
-let g:python_host_prog = '/home/jason/.pyenv/versions/neovim2/bin/python'
-let g:python3_host_prog = '/home/jason/.pyenv/versions/neovim3/bin/python'
+let g:python_host_prog = '$HOME/.pyenv/versions/neovim2/bin/python'
+let g:python3_host_prog = '$HOME/.pyenv/versions/neovim3/bin/python'
 
 "theme
 set termguicolors
