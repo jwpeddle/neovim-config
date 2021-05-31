@@ -19,6 +19,7 @@ call plug#begin('~/.nvim/plugged')
   Plug 'neoclide/coc.nvim'
   Plug 'preservim/nerdtree'
   Plug 'sheerun/vim-polyglot'
+  Plug 'svermeulen/vim-yoink'
   Plug 'tpope/vim-commentary'
   Plug 'tpope/vim-fugitive'
 call plug#end()
