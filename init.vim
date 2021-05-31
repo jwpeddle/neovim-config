@@ -173,6 +173,6 @@ nnoremap <Leader>n :NERDTreeToggle<CR>
 let g:vimtex_view_method = 'zathura'
 
 "yoink
-let g:yoinkChangeTickThreshold = 1
+let g:yoinkChangeTickThreshold = 2
 nmap <c-n> <plug>(YoinkPostPasteSwapBack)
 nmap <c-p> <plug>(YoinkPostPasteSwapForward)
