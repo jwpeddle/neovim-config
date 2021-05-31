@@ -175,7 +175,7 @@ let g:vimtex_view_method = 'zathura'
 
 "vista
 let g:vista_default_executive = 'coc'
-nmap <Leader>m :Vista<CR>
+nmap <Leader>m :Vista!!<CR>
 
 "yoink
 nmap <c-n> <plug>(YoinkPostPasteSwapBack)
