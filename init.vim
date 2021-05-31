@@ -10,6 +10,7 @@ call plug#begin('~/.nvim/plugged')
   Plug 'antoinemadec/coc-fzf'
   Plug 'ap/vim-buftabline'
   Plug 'dracula/vim', { 'as': 'dracula' }
+  Plug 'easymotion/vim-easymotion'
   Plug 'idbrii/vim-endoscope'
   Plug 'itchyny/lightline.vim'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -21,7 +22,6 @@ call plug#begin('~/.nvim/plugged')
   Plug 'sheerun/vim-polyglot'
   Plug 'tpope/vim-commentary'
   Plug 'tpope/vim-fugitive'
-  Plug 'easymotion/vim-easymotion'
 call plug#end()
 
 let g:python_host_prog = '$HOME/.pyenv/versions/neovim2/bin/python'
