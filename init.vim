@@ -133,7 +133,6 @@ set updatetime=300
 source ~/.config/nvim/coc.vim
 
 "fzf
-let $FZF_DEFAULT_COMMAND = 'fd --type file --follow --hidden --exclude .git'
 let g:fzf_command_prefix = 'Fzf'
 let g:coc_fzf_preview = ''
 let g:coc_fzf_opts = []
