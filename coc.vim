@@ -3,6 +3,8 @@ let g:coc_global_extensions = [
   \'coc-snippets'
 \]
 
+let g:coc_snippet_next = '<tab>'
+
 " Use tab for trigger completion with characters ahead and navigate.
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
