@@ -5,6 +5,7 @@ let g:coc_global_extensions = [
 
 " coc-snippets
 imap ;; <Plug>(coc-snippets-expand)
+vmap <C-j> <Plug>(coc-snippets-select)
 
 " Use tab for trigger completion with characters ahead and navigate.
 inoremap <silent><expr> <TAB>
