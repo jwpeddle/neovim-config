@@ -1,4 +1,4 @@
-let g:coc_global_extensions = ['coc-pyright', 'coc-git']
+let g:coc_global_extensions = ['coc-pyright']
 
 " Use tab for trigger completion with characters ahead and navigate.
 inoremap <silent><expr> <TAB>
