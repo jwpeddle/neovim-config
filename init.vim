@@ -176,3 +176,5 @@ let g:vimtex_view_method = 'zathura'
 let g:yoinkChangeTickThreshold = 100
 nmap <c-n> <plug>(YoinkPostPasteSwapBack)
 nmap <c-p> <plug>(YoinkPostPasteSwapForward)
+nmap p <plug>(YoinkPaste_p)
+nmap P <plug>(YoinkPaste_P)
