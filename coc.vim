@@ -1,6 +1,6 @@
 let g:coc_global_extensions = [
-  'coc-pyright',
-  'coc-snippets'
+  \'coc-pyright',
+  \'coc-snippets'
 ]
 
 " Use tab for trigger completion with characters ahead and navigate.
