@@ -111,6 +111,9 @@ map <Leader>p "0p
 "reload init.nvim
 map <Leader><C-v><F5> :source ~/.config/nvim/init.vim<CR>
 
+"clear search
+nmap <silent> <C-L> :nohlsearch
+
 "******************** plugins ********************
 
 "buftabline
