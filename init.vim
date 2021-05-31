@@ -10,7 +10,6 @@ call plug#begin('~/.nvim/plugged')
   Plug 'antoinemadec/coc-fzf'
   Plug 'ap/vim-buftabline'
   Plug 'dracula/vim', { 'as': 'dracula' }
-  Plug 'easymotion/vim-easymotion'
   Plug 'idbrii/vim-endoscope'
   Plug 'itchyny/lightline.vim'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
