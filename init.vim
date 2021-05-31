@@ -175,6 +175,7 @@ let g:vimtex_view_method = 'zathura'
 
 "vista
 let g:vista_default_executive = 'coc'
+let g:vista_fzf_preview = ['right:50%']
 nmap <Leader>m :Vista!!<CR>
 
 "yoink
