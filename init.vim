@@ -173,6 +173,9 @@ nnoremap <Leader>n :NERDTreeToggle<CR>
 "vimtex
 let g:vimtex_view_method = 'zathura'
 
+"vista
+let g:vista_default_executive = 'coc'
+
 "yoink
 nmap <c-n> <plug>(YoinkPostPasteSwapBack)
 nmap <c-p> <plug>(YoinkPostPasteSwapForward)
