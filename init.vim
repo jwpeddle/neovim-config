@@ -15,6 +15,7 @@ call plug#begin('~/.nvim/plugged')
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
   Plug 'lervag/vimtex'
+  Plug 'ludovicchabant/vim-gutentags'
   Plug 'liuchengxu/vista.vim'
   Plug 'machakann/vim-sandwich'
   Plug 'neoclide/coc.nvim'
