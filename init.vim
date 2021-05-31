@@ -7,6 +7,7 @@ endif
 
 " load plugins
 call plug#begin('~/.nvim/plugged')
+  Plug 'AndrewRadev/splitjoin.vim'
   Plug 'antoinemadec/coc-fzf'
   Plug 'ap/vim-buftabline'
   Plug 'dracula/vim', { 'as': 'dracula' }
