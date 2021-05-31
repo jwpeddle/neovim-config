@@ -21,7 +21,6 @@ call plug#begin('~/.nvim/plugged')
   Plug 'sheerun/vim-polyglot'
   Plug 'tpope/vim-commentary'
   Plug 'tpope/vim-fugitive'
-  Plug 'tpope/vim-fugitive'
 call plug#end()
 
 let g:python_host_prog = '$HOME/.pyenv/versions/neovim2/bin/python'
