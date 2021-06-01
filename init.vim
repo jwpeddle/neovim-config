@@ -114,7 +114,8 @@ map <Leader>p "0p
 map <Leader><F5> :source ~/.config/nvim/init.vim<CR>
 
 "clear search
-nmap <silent> <C-L> :nohlsearch<CR>
+"TODO pick another shortcut
+"nmap <silent> <C-L> :nohlsearch<CR>
 
 "******************** plugins ********************
 
