@@ -14,6 +14,7 @@ call plug#begin('~/.nvim/plugged')
   Plug 'itchyny/lightline.vim'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
+  Plug 'kassio/neoterm' 
   Plug 'lervag/vimtex'
   Plug 'liuchengxu/vista.vim'
   Plug 'machakann/vim-sandwich'
