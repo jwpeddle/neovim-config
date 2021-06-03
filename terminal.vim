@@ -8,4 +8,4 @@
 
 :startinsert
 "line numbering
-set number
+"set number
