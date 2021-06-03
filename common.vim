@@ -95,22 +95,3 @@ map <Leader><F5> :source ~/.config/nvim/init.vim<CR>
 
 "nerdtree
 nnoremap <Leader>n :NERDTreeToggle<CR>
-
-let g:terminal_color_fg = '#f8f8f2'
-let g:terminal_color_bg = '#282a36'
-let g:terminal_color_0  = '#21222c'
-let g:terminal_color_1  = '#ff5555'
-let g:terminal_color_10 = '#69ff94'
-let g:terminal_color_11 = '#ffffa5'
-let g:terminal_color_12 = '#d6acff'
-let g:terminal_color_13 = '#ff92df'
-let g:terminal_color_14 = '#a4ffff'
-let g:terminal_color_15 = '#ffffff'
-let g:terminal_color_2  = '#50fa7b'
-let g:terminal_color_3  = '#f1fa8c'
-let g:terminal_color_4  = '#bd93f9'
-let g:terminal_color_5  = '#ff79c6'
-let g:terminal_color_6  = '#8be9fd'
-let g:terminal_color_7  = '#f8f8f2'
-let g:terminal_color_8  = '#6272a4'
-let g:terminal_color_9  = '#ff6e6e'
