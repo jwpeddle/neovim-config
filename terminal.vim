@@ -6,4 +6,6 @@ call plug#end()
 
 source ~/.config/nvim/common.vim
 
+set nonumber
+
 :startinsert
