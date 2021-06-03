@@ -30,8 +30,6 @@ call plug#end()
 set termguicolors
 colorscheme dracula
 
-set number
-
 source ~/.config/nvim/common.vim
 
 "******************** plugins ********************
