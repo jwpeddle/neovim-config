@@ -8,7 +8,7 @@ highlight Normal guibg=none guifg=none
 
 "******************** options ********************
 "line numbering
-set number
+"set number
 
 "don't wrap lines
 set nowrap
