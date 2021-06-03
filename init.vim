@@ -32,7 +32,6 @@ let g:python3_host_prog = '$HOME/.pyenv/versions/neovim3/bin/python'
 "theme
 set termguicolors
 colorscheme dracula
-hi Quote ctermbg=109 guifg=#83a598
 
 "******************** options ********************
 "line numbering
