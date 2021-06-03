@@ -13,12 +13,6 @@ colorscheme dracula
 "******************** options ********************
 :startinsert
 
-"make autocomplete only use what I've typed
-set wildmode=longest:full,full
-
-"extra room in cmd section
-set cmdheight=2
-
 "disable backups & swap
 set nobackup
 set nowritebackup
