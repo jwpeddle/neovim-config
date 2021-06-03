@@ -2,7 +2,7 @@ let g:python_host_prog = '$HOME/.pyenv/versions/neovim2/bin/python'
 let g:python3_host_prog = '$HOME/.pyenv/versions/neovim3/bin/python'
 
 "theme
-set termguicolors t_Co=16
+set termguicolors t_Co=256
 colorscheme dracula
 :hi Normal guibg=NONE ctermbg=NONE
 
