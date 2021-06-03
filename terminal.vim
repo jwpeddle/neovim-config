@@ -9,6 +9,3 @@
 :startinsert
 "line numbering
 set number
-
-"don't wrap lines
-set nowrap
