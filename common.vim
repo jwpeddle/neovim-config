@@ -89,3 +89,9 @@ map <Leader><F5> :source ~/.config/nvim/init.vim<CR>
 "clear search
 "TODO pick another shortcut
 "nmap <silent> <C-L> :nohlsearch<CR>
+
+"******************** plugins ********************
+
+"nerdtree
+nnoremap <Leader>n :NERDTreeToggle<CR>
+
