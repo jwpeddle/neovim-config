@@ -24,6 +24,7 @@ call plug#begin('~/.nvim/plugged')
   Plug 'tpope/vim-commentary'
   Plug 'tpope/vim-fugitive'
   Plug 'voldikss/vim-floaterm'
+  Plug '~/.nvim/plugged/draculapro'
 call plug#end()
 
 source ~/.config/nvim/common.vim
