@@ -29,6 +29,7 @@ call plug#end()
 "theme
 set termguicolors
 colorscheme dracula
+syntax enable
 
 source ~/.config/nvim/common.vim
 
