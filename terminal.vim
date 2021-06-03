@@ -8,6 +8,6 @@ source ~/.config/nvim/common.vim
 
 set nonumber
 
-autocmd InsertEnter * set laststatus = 1
+autocmd InsertEnter * set laststatus=1
 
 :startinsert
