@@ -27,8 +27,8 @@ call plug#begin('~/.nvim/plugged')
 call plug#end()
 
 "theme
-colorscheme dracula
 set termguicolors
+colorscheme dracula
 
 source ~/.config/nvim/common.vim
 
