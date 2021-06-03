@@ -26,11 +26,11 @@ call plug#begin('~/.nvim/plugged')
   Plug 'voldikss/vim-floaterm'
 call plug#end()
 
-source ~/.config/nvim/common.vim
-
 "theme
 set termguicolors
 colorscheme dracula
+
+source ~/.config/nvim/common.vim
 
 "******************** plugins ********************
 
