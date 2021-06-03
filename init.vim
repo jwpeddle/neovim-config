@@ -119,7 +119,7 @@ map <Leader><F5> :source ~/.config/nvim/init.vim<CR>
 "nmap <silent> <C-L> :nohlsearch<CR>
 
 "terminal
-let g:floaterm_keymap_toggle = '<Leader>t'
+nnoremap <silent> <Leader>t :FloatermToggle<CR>
 
 "******************** plugins ********************
 
