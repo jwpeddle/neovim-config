@@ -11,7 +11,6 @@ set termguicolors
 colorscheme dracula
 
 "******************** options ********************
-:startinsert
 
 "disable backups & swap
 set nobackup
@@ -68,4 +67,4 @@ imap <Leader>s <Esc>:w<CR>
 "paste last yank
 map <Leader>p "0p
 
-"******************** plugins ********************
+:startinsert
