@@ -37,26 +37,3 @@ set softtabstop=2
 set shiftwidth=2
 "round shifted text to multiple of shiftwidth
 set shiftround
-
-"case insensitive search (unless caps provided)
-set ignorecase
-set smartcase
-
-"briefly jump to matching brace on closing
-set showmatch
-
-"autohide buffers
-set hidden
-
-"use system clipboard
-set clipboard^=unnamedplus
-
-"disable folding
-set nofoldenable
-
-"open splits on right side
-set splitright
-
-"don't continue comments when using o
-autocmd FileType * set formatoptions-=o
-
