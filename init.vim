@@ -118,6 +118,9 @@ map <Leader><F5> :source ~/.config/nvim/init.vim<CR>
 "TODO pick another shortcut
 "nmap <silent> <C-L> :nohlsearch<CR>
 
+"terminal
+let g:floaterm_keymap_toggle = <Leader>t
+
 "******************** plugins ********************
 
 "buftabline
