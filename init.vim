@@ -119,8 +119,8 @@ map <Leader><F5> :source ~/.config/nvim/init.vim<CR>
 "nmap <silent> <C-L> :nohlsearch<CR>
 
 "terminal
-nnoremap <silent> <Leader>t :FloatermToggle<CR>
-"tnoremap <Esc> <C-\><C-n>
+nnoremap <silent> <C-Space> :FloatermToggle<CR>
+tnoremap <silent> <C-Space> :FloatermToggle<CR>
 
 "******************** plugins ********************
 
