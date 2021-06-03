@@ -118,11 +118,6 @@ map <Leader><F5> :source ~/.config/nvim/init.vim<CR>
 "TODO pick another shortcut
 "nmap <silent> <C-L> :nohlsearch<CR>
 
-"terminal
-nnoremap <silent> <C-Space> :FloatermToggle<CR>
-tnoremap <silent> <C-Space> <C-\><C-N>:FloatermToggle<CR>
-tnoremap <silent> <C-d> <C-\><C-N>:FloatermToggle<CR>
-
 "******************** plugins ********************
 
 "buftabline
@@ -143,6 +138,12 @@ set shortmess+=c
 set signcolumn=yes
 set updatetime=300
 source ~/.config/nvim/coc.vim
+
+"floaterm
+nnoremap <silent> <C-Space> :FloatermToggle<CR>
+tnoremap <silent> <C-Space> <C-\><C-N>:FloatermToggle<CR>
+tnoremap <silent> <C-d> <C-\><C-N>:FloatermToggle<CR>
+
 
 "fzf
 let g:fzf_command_prefix = 'Fzf'
