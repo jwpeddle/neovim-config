@@ -120,6 +120,7 @@ map <Leader><F5> :source ~/.config/nvim/init.vim<CR>
 
 "terminal
 nnoremap <silent> <Leader>t :FloatermToggle<CR>
+tnoremap <Esc> <C-\><C-n>
 
 "******************** plugins ********************
 
