@@ -11,6 +11,7 @@ set termguicolors
 colorscheme dracula
 
 "******************** options ********************
+:setinsert
 "line numbering
 set nonumber
 
