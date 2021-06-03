@@ -18,16 +18,6 @@ set nobackup
 set nowritebackup
 set noswapfile
 
-"indenting
-"enter spaces when tab is pressed:
-set expandtab
-"use 2 spaces to represent a tab
-set softtabstop=2
-"number of spaces to use for auto indent
-set shiftwidth=2
-"round shifted text to multiple of shiftwidth
-set shiftround
-
 "case insensitive search (unless caps provided)
 set ignorecase
 set smartcase
@@ -77,12 +67,5 @@ imap <Leader>s <Esc>:w<CR>
 
 "paste last yank
 map <Leader>p "0p
-
-"reload init.nvim
-map <Leader><F5> :source ~/.config/nvim/init.vim<CR>
-
-"clear search
-"TODO pick another shortcut
-"nmap <silent> <C-L> :nohlsearch<CR>
 
 "******************** plugins ********************
