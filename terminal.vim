@@ -12,11 +12,6 @@ colorscheme dracula
 
 "******************** options ********************
 :startinsert
-"line numbering
-set nonumber
-
-"don't wrap lines
-set nowrap
 
 "make autocomplete only use what I've typed
 set wildmode=longest:full,full
