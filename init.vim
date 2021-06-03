@@ -86,9 +86,6 @@ let g:lightline = {
   \   },
   \ }
 
-"nerdtree
-nnoremap <Leader>n :NERDTreeToggle<CR>
-
 "vimtex
 let g:vimtex_view_method = 'zathura'
 
