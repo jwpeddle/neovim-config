@@ -94,4 +94,3 @@ map <Leader><F5> :source ~/.config/nvim/init.vim<CR>
 
 "nerdtree
 nnoremap <Leader>n :NERDTreeToggle<CR>
-
