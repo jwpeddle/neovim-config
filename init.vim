@@ -14,7 +14,6 @@ call plug#begin('~/.nvim/plugged')
   Plug 'itchyny/lightline.vim'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
-  Plug 'kassio/neoterm' 
   Plug 'lervag/vimtex'
   Plug 'liuchengxu/vista.vim'
   Plug 'machakann/vim-sandwich'
@@ -24,6 +23,7 @@ call plug#begin('~/.nvim/plugged')
   Plug 'svermeulen/vim-yoink'
   Plug 'tpope/vim-commentary'
   Plug 'tpope/vim-fugitive'
+  Plug 'voldikss/vim-floaterm'
 call plug#end()
 
 let g:python_host_prog = '$HOME/.pyenv/versions/neovim2/bin/python'
