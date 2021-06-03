@@ -6,7 +6,6 @@ call plug#end()
 
 source ~/.config/nvim/common.vim
 
-set termguicolors t_Co=16
 set nonumber
 
 :startinsert
