@@ -7,6 +7,8 @@
 "source ~/.config/nvim/common.vim
 
 :startinsert
-let g:python_host_prog = '$HOME/.pyenv/versions/neovim2/bin/python'
-let g:python3_host_prog = '$HOME/.pyenv/versions/neovim3/bin/python'
+"line numbering
+set number
 
+"don't wrap lines
+set nowrap
