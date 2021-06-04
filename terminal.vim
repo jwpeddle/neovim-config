@@ -10,7 +10,7 @@ set nonumber
 " set noshowmode  " to get rid of thing like --INSERT--
 " set noshowcmd  " to get rid of display of last command
 " set shortmess+=F  " to get rid of the file name displayed in the command line bar
-set laststatus=1
+set laststatus=2
 
 noremap <C-d> :q<CR> " make vim behave a bit more like a terminal
 autocmd TermClose * bd!|q " quit when a terminal closes instead of showing exit code and waiting
