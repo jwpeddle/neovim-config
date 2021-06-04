@@ -14,5 +14,3 @@ tnoremap <Esc> <C-\><C-n> " handy binding to get into normal mode from a termina
 " enter and leave terminal mode (insert mode) when switching between buffers
 autocmd BufWinEnter,WinEnter term://* startinsert
 autocmd BufLeave term://* stopinsert
-
-:startinsert
