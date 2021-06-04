@@ -7,6 +7,9 @@ colorscheme dracula
 ":hi Normal guibg=NONE ctermbg=NONE
 
 "******************** options ********************
+
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 1
+
 "line numbering
 set number
 
