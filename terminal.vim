@@ -9,6 +9,7 @@ source ~/.config/nvim/common.vim
 set nonumber
 set noshowmode  
 set noshowcmd  
+set noruler  
 set shortmess+=F  
 set laststatus=1
 
