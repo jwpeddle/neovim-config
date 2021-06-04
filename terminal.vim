@@ -10,7 +10,7 @@ set nonumber
 set noshowmode  
 set noshowcmd  
 set shortmess+=F  
-set laststatus=0
+set laststatus=1
 
 noremap <C-d> :q<CR> " make vim behave a bit more like a terminal
 autocmd TermClose * bd!|q " quit when a terminal closes instead of showing exit code and waiting
