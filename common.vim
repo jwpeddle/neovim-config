@@ -8,7 +8,7 @@ colorscheme dracula
 
 "******************** options ********************
 
-let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 1
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
 "line numbering
 set number
