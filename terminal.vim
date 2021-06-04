@@ -8,7 +8,7 @@ source ~/.config/nvim/common.vim
 
 set nonumber
 
-autocmd TermEnter * echo foo
+autocmd TermEnter * echo 'foo'
 autocmd InsertEnter * set laststatus=1
 
 :startinsert
