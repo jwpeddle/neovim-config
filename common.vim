@@ -61,7 +61,7 @@ autocmd FileType * set formatoptions-=o
 
 "******************** mappings ********************
 "\ too hard to press
-let mapleader='Space'
+let mapleader=';'
 
 "use arrows to change buffer
 map <Left> :bprevious<cr>
