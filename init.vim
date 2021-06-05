@@ -122,11 +122,6 @@ nnoremap <silent> <Esc><Esc> :nohlsearch<CR><Esc>
 
 "******************** plugins ********************
 
-"nerdtree
-nnoremap <Leader>n :NERDTreeToggle<CR>
-
-"******************** plugins ********************
-
 "buftabline
 let g:buftabline_numbers = 2
 let g:buftabline_show = 1
@@ -183,6 +178,9 @@ let g:lightline = {
   \     'gitbranch': 'FugitiveHead'
   \   },
   \ }
+
+"nerdtree
+nnoremap <Leader>n :NERDTreeToggle<CR>
 
 "vimtex
 let g:vimtex_view_method = 'zathura'
