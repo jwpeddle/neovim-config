@@ -118,7 +118,7 @@ map <Leader>p "0p
 map <Leader><F5> :source ~/.config/nvim/init.vim<CR>
 
 "clear search
-nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
+nnoremap <silent> <Esc><Esc> :nohlsearch<CR><Esc>
 
 "******************** plugins ********************
 
