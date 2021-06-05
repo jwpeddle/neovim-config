@@ -21,6 +21,7 @@ call plug#begin('~/.nvim/plugged')
   Plug 'preservim/nerdtree'
   Plug 'sheerun/vim-polyglot'
   Plug 'svermeulen/vim-yoink'
+  Plug 'syngan/vim-semicolon'
   Plug 'tpope/vim-commentary'
   Plug 'tpope/vim-fugitive'
   Plug 'voldikss/vim-floaterm'
