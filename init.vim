@@ -88,6 +88,8 @@ let g:lightline = {
   \   },
   \ }
 
+"semicolon
+
 "vimtex
 let g:vimtex_view_method = 'zathura'
 
