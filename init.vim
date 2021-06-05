@@ -33,6 +33,7 @@ source ~/.config/nvim/common.vim
 
 "buftabline
 let g:buftabline_numbers = 2
+g:buftabline_show = 1
 nmap <a-1> <Plug>BufTabLine.Go(1)
 nmap <a-2> <Plug>BufTabLine.Go(2)
 nmap <a-3> <Plug>BufTabLine.Go(3)
