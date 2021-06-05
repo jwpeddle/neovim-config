@@ -13,8 +13,12 @@ set noruler
 set cmdheight=1
 set laststatus=1
 
-autocmd TermClose * bd!|q " quit when a terminal closes instead of showing exit code and waiting
-tnoremap <Leader><Esc> <C-\><C-n> " handy binding to get into normal mode from a terminal
-" enter and leave terminal mode (insert mode) when switching between buffers
+"quit when a terminal closes instead of showing exit code and waiting
+autocmd TermClose * bd!|q
+
+"get into normal mode from a terminal
+tnoremap <Leader><Esc> <C-\><C-n>
+
+"enter and leave terminal mode (insert mode) when switching between buffers
 autocmd BufWinEnter,WinEnter term://* startinsert
 autocmd BufLeave term://* stopinsert
