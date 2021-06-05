@@ -89,6 +89,7 @@ let g:lightline = {
   \ }
 
 "semicolon
+nmap ,   <Plug>(semicolon-forward)
 
 "vimtex
 let g:vimtex_view_method = 'zathura'
