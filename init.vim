@@ -10,7 +10,6 @@ call plug#begin('~/.nvim/plugged')
   Plug 'antoinemadec/coc-fzf'
   Plug 'ap/vim-buftabline'
   Plug 'dracula/vim', { 'as': 'dracula' }
-  Plug 'haya14busa/incsearch.vim'
   Plug 'idbrii/vim-endoscope'
   Plug 'itchyny/lightline.vim'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -68,11 +67,6 @@ nnoremap <Leader>ff :FzfBLines<CR>
 nnoremap <Leader>fh :FzfHistory/<CR>
 nnoremap <Leader>fc :FzfCommands<CR>
 nnoremap <Leader>fo :CocFzfList outline<CR>
-
-"incsearch
-"map /  <Plug>(incsearch-forward)
-"map ?  <Plug>(incsearch-backward)
-"map g/ <Plug>(incsearch-stay)
 
 "lightline
 set noshowmode
