@@ -30,11 +30,11 @@ call plug#end()
 let g:python_host_prog = '$HOME/.pyenv/versions/neovim2/bin/python'
 let g:python3_host_prog = '$HOME/.pyenv/versions/neovim3/bin/python'
 
+"******************** options ********************
+
 "theme
 set termguicolors
 colorscheme dracula
-
-"******************** options ********************
 
 "line numbering
 set number
@@ -118,8 +118,7 @@ map <Leader>p "0p
 map <Leader><F5> :source ~/.config/nvim/init.vim<CR>
 
 "clear search
-"TODO pick another shortcut
-"nmap <silent> <C-L> :nohlsearch<CR>
+nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
 
 "******************** plugins ********************
 
