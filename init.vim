@@ -69,6 +69,11 @@ nnoremap <Leader>fh :FzfHistory/<CR>
 nnoremap <Leader>fc :FzfCommands<CR>
 nnoremap <Leader>fo :CocFzfList outline<CR>
 
+"incsearch
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
+
 "lightline
 set noshowmode
 let g:lightline = {
