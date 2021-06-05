@@ -10,7 +10,6 @@ set nonumber
 set noshowmode  
 set noshowcmd  
 set noruler  
-set shortmess+=F  
 set laststatus=1
 
 noremap <C-d> :q<CR> " make vim behave a bit more like a terminal
