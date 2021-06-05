@@ -6,12 +6,12 @@ call plug#end()
 
 source ~/.config/nvim/common.vim
 
-set nonumber
-set noshowmode  
-set noshowcmd  
-set noruler  
-set shortmess+=F  
-set laststatus=1
+"set nonumber
+"set noshowmode  
+"set noshowcmd  
+"set noruler  
+"set shortmess+=F  
+"set laststatus=1
 
 noremap <C-d> :q<CR> " make vim behave a bit more like a terminal
 autocmd TermClose * bd!|q " quit when a terminal closes instead of showing exit code and waiting
