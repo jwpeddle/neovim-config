@@ -62,6 +62,7 @@ autocmd FileType * set formatoptions-=o
 "******************** mappings ********************
 "\ too hard to press
 let mapleader=';'
+nmap , ;
 
 "use arrows to change buffer
 map <Left> :bprevious<cr>
