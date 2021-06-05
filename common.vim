@@ -20,7 +20,7 @@ set nowrap
 set wildmode=longest:full,full
 
 "extra room in cmd section
-set cmdheight=2
+"set cmdheight=2
 
 "disable backups & swap
 set nobackup
