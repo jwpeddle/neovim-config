@@ -146,7 +146,7 @@ source ~/.config/nvim/coc.vim
 nnoremap <silent> <C-Space> :FloatermToggle<CR>
 tnoremap <silent> <C-Space> <C-\><C-N>:FloatermToggle<CR>
 tnoremap <silent> <C-d> <C-\><C-N>:FloatermToggle<CR>
-tnoremap <silent> <Esc> <C-\><C-N>
+tnoremap <silent> <Leader><Esc> <C-\><C-N>
 
 "fzf
 let g:fzf_command_prefix = 'Fzf'
