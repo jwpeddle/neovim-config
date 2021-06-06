@@ -145,7 +145,7 @@ source ~/.config/nvim/coc.vim
 "floaterm
 nnoremap <silent> <C-Space> :FloatermToggle<CR>
 tnoremap <silent> <C-Space> <C-\><C-N>:FloatermToggle<CR>
-tnoremap <silent> <C-d> <C-\><C-N>:FloatermToggle<CR>
+"tnoremap <silent> <C-d> <C-\><C-N>:FloatermToggle<CR>
 tnoremap <silent> <Leader><Esc> <C-\><C-N>
 
 "fzf
