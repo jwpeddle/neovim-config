@@ -143,8 +143,8 @@ set updatetime=300
 source ~/.config/nvim/coc.vim
 
 "floaterm
-nnoremap <silent> <C-Space> :FloatermToggle<CR>
-tnoremap <silent> <C-Space> <C-\><C-N>:FloatermToggle<CR>
+nnoremap <silent> <C-CR> :FloatermToggle<CR>
+tnoremap <silent> <C-CR> <C-\><C-N>:FloatermToggle<CR>
 "tnoremap <silent> <C-d> <C-\><C-N>:FloatermToggle<CR>
 tnoremap <silent> <Leader><Esc> <C-\><C-N>
 
