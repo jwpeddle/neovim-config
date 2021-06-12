@@ -11,3 +11,6 @@ call plug#end()
 
 "use system clipboard
 set clipboard^=unnamedplus
+
+"redo with U
+noremap U <C-R>
