@@ -7,6 +7,7 @@ endif
 
 " load plugins
 call plug#begin('~/.nvim/plugged')
+  Plug 'voldikss/vim-floaterm'
 call plug#end()
 
 "use system clipboard
