@@ -8,3 +8,6 @@ endif
 " load plugins
 call plug#begin('~/.nvim/plugged')
 call plug#end()
+
+"use system clipboard
+set clipboard^=unnamedplus
