@@ -17,6 +17,3 @@ noremap U <C-R>
 
 "escape from jupyter
 nmap <Esc><Esc> <Cmd>call VSCodeNotify('notebook.cell.quitEdit')<CR>
-
-
-map <C-w> <Cmd>call VSCodeNotify('workbench.action.closeGroup')<CR>
