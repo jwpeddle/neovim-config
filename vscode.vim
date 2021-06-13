@@ -14,5 +14,9 @@ set clipboard^=unnamedplus
 
 "redo with U
 noremap U <C-R>
+
+"escape from jupyter
 nmap <Esc><Esc> <Cmd>call VSCodeNotify('notebook.cell.quitEdit')<CR>
-map <C-W> <Cmd>call VSCodeNotify('workbench.action.closeGroup')<CR>
+
+
+map <C-w> <Cmd>call VSCodeNotify('workbench.action.closeGroup')<CR>
