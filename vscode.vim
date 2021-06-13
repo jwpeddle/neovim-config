@@ -15,4 +15,4 @@ set clipboard^=unnamedplus
 "redo with U
 noremap U <C-R>
 
-map <Esc><Esc> <Cmd>call VSCodeNotify('notebook.cell.quitEdit')<CR>
+nmap <Esc> <Cmd>call VSCodeNotify('notebook.cell.quitEdit')<CR>
