@@ -15,4 +15,4 @@ set clipboard^=unnamedplus
 "redo with U
 noremap U <C-R>
 
-nmap <Esc><Esc>
+nmap <Esc><Esc> <Cmd>call VSCodeNotify('editor.action.revealDefinitionAside')<CR>
