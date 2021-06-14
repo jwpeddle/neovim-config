@@ -22,3 +22,6 @@ noremap U <C-R>
 
 "escape from jupyter
 nmap <Esc><Esc> <Cmd>call VSCodeNotify('notebook.cell.quitEdit')<CR>
+
+"nerdtree
+nnoremap <Leader>n :NERDTreeToggle<CR>
