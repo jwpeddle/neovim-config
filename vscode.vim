@@ -7,10 +7,15 @@ endif
 
 " load plugins
 call plug#begin('~/.nvim/plugged')
+  Plug 'preservim/nerdtree'
 call plug#end()
 
 "use system clipboard
 set clipboard^=unnamedplus
+
+"\ too hard to press
+let mapleader=';'
+nmap , ;
 
 "redo with U
 noremap U <C-R>
