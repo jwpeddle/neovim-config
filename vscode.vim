@@ -7,6 +7,7 @@ endif
 
 " load plugins
 call plug#begin('~/.nvim/plugged')
+  Plug 'ggandor/lightspeed.nvim'
 call plug#end()
 
 "use system clipboard
