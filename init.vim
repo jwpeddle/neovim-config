@@ -21,7 +21,6 @@ call plug#begin('~/.nvim/plugged')
   Plug 'neoclide/coc.nvim'
   Plug 'preservim/nerdtree'
   Plug 'sheerun/vim-polyglot'
-  Plug 'svermeulen/vim-yoink'
   Plug 'tpope/vim-commentary'
   Plug 'tpope/vim-fugitive'
   Plug 'voldikss/vim-floaterm'
@@ -189,9 +188,3 @@ let g:vimtex_view_method = 'zathura'
 "vista
 let g:vista_default_executive = 'coc'
 nmap <Leader>m :Vista!!<CR>
-
-"yoink
-nmap <c-n> <plug>(YoinkPostPasteSwapBack)
-nmap <c-p> <plug>(YoinkPostPasteSwapForward)
-nmap p <plug>(YoinkPaste_p)
-nmap P <plug>(YoinkPaste_P)
