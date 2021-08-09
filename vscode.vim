@@ -20,5 +20,9 @@ nmap , ;
 "redo with U
 noremap U <C-R>
 
+"case insensitive search (unless caps provided)
+set ignorecase
+set smartcase
+
 "escape from jupyter
 nmap <Esc><Esc> <Cmd>call VSCodeNotify('notebook.cell.quitEdit')<CR>
