@@ -120,6 +120,8 @@ map <Leader><F5> :source ~/.config/nvim/init.vim<CR>
 "clear search
 nnoremap <silent> <Esc><Esc> :nohlsearch<CR><Esc>
 
+set colorcolumn=120
+
 "******************** plugins ********************
 
 "buftabline
