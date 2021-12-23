@@ -19,6 +19,7 @@ call plug#begin('~/.nvim/plugged')
   Plug 'machakann/vim-sandwich'
   Plug 'neovim/nvim-lspconfig'
   Plug 'preservim/nerdtree'
+  Plug 'python-rope/ropevim'
   Plug 'sheerun/vim-polyglot'
   Plug 'tpope/vim-commentary'
   Plug 'tpope/vim-fugitive'
