@@ -152,7 +152,6 @@ nnoremap <Leader>f/ :FzfRg<CR>
 nnoremap <Leader>ff :FzfBLines<CR>
 nnoremap <Leader>fh :FzfHistory/<CR>
 nnoremap <Leader>fc :FzfCommands<CR>
-#nnoremap <Leader>fo :CocFzfList outline<CR>
 
 "lightline
 set noshowmode
