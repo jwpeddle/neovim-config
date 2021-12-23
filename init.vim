@@ -176,7 +176,14 @@ let g:lightline = {
 
 "lspconfig
 lua << EOF
-require'lspconfig'.pyright.setup{}
+require'lspconfig'.pyright.setup{
+  settings = {
+    pyright = {
+      typeCheckingMode = "off",
+      disableOrganizeImports  = true,
+    }
+  }
+}
 EOF
 
 "nerdtree
