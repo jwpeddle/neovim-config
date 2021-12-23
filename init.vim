@@ -7,7 +7,7 @@ endif
 
 " load plugins
 call plug#begin('~/.nvim/plugged')
-  #Plug 'antoinemadec/coc-fzf'
+  "Plug 'antoinemadec/coc-fzf'
   Plug 'ap/vim-buftabline'
   Plug 'dracula/vim', { 'as': 'dracula' }
   Plug 'ggandor/lightspeed.nvim'
@@ -18,7 +18,7 @@ call plug#begin('~/.nvim/plugged')
   Plug 'lervag/vimtex'
   Plug 'liuchengxu/vista.vim'
   Plug 'machakann/vim-sandwich'
-  #Plug 'neoclide/coc.nvim'
+  "Plug 'neoclide/coc.nvim'
   Plug 'neovim/nvim-lspconfig'
   Plug 'preservim/nerdtree'
   Plug 'sheerun/vim-polyglot'
