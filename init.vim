@@ -7,7 +7,6 @@ endif
 
 " load plugins
 call plug#begin('~/.nvim/plugged')
-  "Plug 'antoinemadec/coc-fzf'
   Plug 'ap/vim-buftabline'
   Plug 'dracula/vim', { 'as': 'dracula' }
   Plug 'ggandor/lightspeed.nvim'
@@ -18,7 +17,6 @@ call plug#begin('~/.nvim/plugged')
   Plug 'lervag/vimtex'
   Plug 'liuchengxu/vista.vim'
   Plug 'machakann/vim-sandwich'
-  "Plug 'neoclide/coc.nvim'
   Plug 'neovim/nvim-lspconfig'
   Plug 'preservim/nerdtree'
   Plug 'sheerun/vim-polyglot'
@@ -138,12 +136,6 @@ nmap <a-7> <Plug>BufTabLine.Go(7)
 nmap <a-8> <Plug>BufTabLine.Go(8)
 nmap <a-9> <Plug>BufTabLine.Go(9)
 nmap <a-0> <Plug>BufTabLine.Go(10)
-
-"coc
-set shortmess+=c
-set signcolumn=yes
-set updatetime=300
-source ~/.config/nvim/coc.vim
 
 "floaterm
 nnoremap <silent> <C-Space> :FloatermToggle<CR>
