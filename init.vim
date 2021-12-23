@@ -173,6 +173,11 @@ let g:lightline = {
   \   },
   \ }
 
+"lspconfig
+lua << EOF
+require'lspconfig'.pyright.setup{}
+EOF
+
 "nerdtree
 nnoremap <Leader>n :NERDTreeToggle<CR>
 
