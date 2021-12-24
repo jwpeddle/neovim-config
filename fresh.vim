@@ -27,5 +27,8 @@ colorscheme dracula
 "line numbering
 set number
 
+"don't wrap lines
+set nowrap
+
 "use system clipboard
 set clipboard^=unnamedplus
