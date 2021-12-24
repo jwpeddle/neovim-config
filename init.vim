@@ -72,12 +72,6 @@ autocmd FileType * set formatoptions-=o
 "\ too hard to press
 let mapleader = " " 
 
-"edit init.vim
-"nnoremap <silent> <leader><leader>e :e $MYVIMRC<cr>
-
-"reload init.vim
-"nnoremap <silent> <leader><leader>r :source $MYVIMRC<cr>
-
 "******************** plugins ********************
 
 lua <<EOF
