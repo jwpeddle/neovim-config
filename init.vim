@@ -74,6 +74,14 @@ let mapleader=' '
 
 "******************** plugins ********************
 
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+  highlight = {
+    enable = true,
+  },
+}
+EOF
+
 lua << EOF
   require("which-key").setup {
     -- your configuration comes here
