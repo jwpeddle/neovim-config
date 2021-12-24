@@ -89,9 +89,9 @@ wk.setup()
 wk.register({
   ["<leader><leader>"] = {
     name = "+prefix",
-    e = { "<cmd>edit $MYVIMRC<cr>", "Edit config" },
-    r = { "<cmd>source $MYVIMRC<cr>", "Reload config" },
-    h = { "<cmd>checkhealth<cr>", "Check health" },
+    e = { "<cmd>edit $MYVIMRC<cr>", "[e]dit config" },
+    r = { "<cmd>source $MYVIMRC<cr>", "[r]eload config" },
+    h = { "<cmd>checkhealth<cr>", "check [h]ealth" },
   },
 })
 EOF
