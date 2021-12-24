@@ -14,6 +14,8 @@ autocmd VimEnter *
 call plug#begin('~/.nvim/plugged')
   Plug 'dracula/vim', { 'as': 'dracula' }
   Plug 'folke/which-key.nvim'
+  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+  Plug 'junegunn/fzf.vim'
   Plug 'romgrk/barbar.nvim'
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 call plug#end()
