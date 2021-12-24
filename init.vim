@@ -86,7 +86,7 @@ lua <<EOF
 vim.g.bufferline = {
   animation = false,
   closable = false,
-  icons = 'numbers',
+  icons = "numbers",
 }
 EOF
 
