@@ -95,7 +95,8 @@ wk.setup()
 wk.register({
   ["<leader><leader>"] = {
     name = "+file",
-    e = { ":e $MYVIMRC", "Edit config" },
+    e = { ":edit $MYVIMRC", "Edit config" },
+    r = { ":source $MYVIMRC", "Reload config" },
   },
 })
 EOF
