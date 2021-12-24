@@ -92,14 +92,6 @@ EOF
 
 "fzf
 vim.g.fzf_command_prefix = "Fzf"
-let g:fzf_command_prefix = 'Fzf'
-let g:coc_fzf_preview = ''
-let g:coc_fzf_opts = []
-nnoremap <Leader>o :FzfFiles<CR>
-nnoremap <Leader>f/ :FzfRg<CR>
-nnoremap <Leader>ff :FzfBLines<CR>
-nnoremap <Leader>fh :FzfHistory/<CR>
-nnoremap <Leader>fc :FzfCommands<CR>
 
 "treesitter
 lua <<EOF
