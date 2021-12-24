@@ -86,6 +86,7 @@ vim.g.bufferline = {
   closable = false,
   icons = false,
 }
+
 "treesitter
 lua <<EOF
 require'nvim-treesitter.configs'.setup {
