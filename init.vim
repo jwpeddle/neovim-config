@@ -96,8 +96,6 @@ wk.register({
   ["<leader><leader>"] = {
     name = "+file",
     e = { ":e $MYVIMRC", "Edit config" },
-    r = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" },
-    n = { "<cmd>enew<cr>", "New File" },
   },
 })
 EOF
