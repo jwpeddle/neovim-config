@@ -76,6 +76,7 @@ autocmd FileType * set formatoptions-=o
 let mapleader=';'
 nmap , ;
 
+"******************** plugins ********************
 
 lua << EOF
   require("which-key").setup {
