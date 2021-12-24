@@ -73,6 +73,9 @@ autocmd FileType * set formatoptions-=o
 nnoremap <SPACE> <Nop>
 let mapleader=' '
 
+"reload vimrc
+nnoremap <silent> <Leader><Leader> :source $MYVIMRC<cr>
+
 "******************** plugins ********************
 
 lua <<EOF
