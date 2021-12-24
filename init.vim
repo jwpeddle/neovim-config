@@ -91,7 +91,9 @@ vim.g.bufferline = {
 EOF
 
 "fzf
+lua <<EOF
 vim.g.fzf_command_prefix = "Fzf"
+EOF
 
 "treesitter
 lua <<EOF
