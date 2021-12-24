@@ -20,6 +20,9 @@ let g:python3_host_prog = '$HOME/.pyenv/versions/neovim3/bin/python'
 
 "******************** options ********************
 
+"use system clipboard
+set clipboard^=unnamedplus
+
 "theme
 set termguicolors
 colorscheme dracula
@@ -32,6 +35,3 @@ set nowrap
 
 "make autocomplete only use what I've typed
 set wildmode=longest:full,full
-
-"use system clipboard
-set clipboard^=unnamedplus
