@@ -73,7 +73,10 @@ autocmd FileType * set formatoptions-=o
 nnoremap <SPACE> <Nop>
 let mapleader=' '
 
-"reload vimrc
+"edit init.vim
+nnoremap <silent> <Leader>v :e $MYVIMRC<cr>
+
+"reload init.vim
 nnoremap <silent> <Leader><Leader>e :source $MYVIMRC<cr>
 
 "******************** plugins ********************
