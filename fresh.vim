@@ -74,6 +74,11 @@ set splitright
 "don't continue comments when using o
 autocmd FileType * set formatoptions-=o
 
+"******************** mappings ********************
+"\ too hard to press
+let mapleader=';'
+nmap , ;
+
 
 lua << EOF
   require("which-key").setup {
