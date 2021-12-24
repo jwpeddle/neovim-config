@@ -7,6 +7,7 @@ endif
 
 "load plugins
 call plug#begin('~/.nvim/plugged')
+  Plug 'bluz71/vim-nightfly-guicolors'
   Plug 'dracula/vim', { 'as': 'dracula' }
   Plug 'folke/which-key.nvim'
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
