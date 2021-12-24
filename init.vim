@@ -123,7 +123,7 @@ wk.register({
     r = { "<cmd>source $MYVIMRC<cr>", "Reload config" },
     h = { "<cmd>checkhealth<cr>", "Check health" },
   },
-  ["<left>"] = { "<cmd>BufferLineCyclePrevious<cr>", "Previous buffer" },
+  ["<left>"] = { "<cmd>BufferLineCyclePrev<cr>", "Previous buffer" },
   ["<right>"] = {"<cmd>BufferLineCycleNext<cr>", "Next buffer" },
 })
 EOF
