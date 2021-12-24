@@ -105,6 +105,10 @@ local wk = require("which-key")
 wk.setup()
 
 wk.register({
+  ["<leader>"] = {
+    name = "+prefix",
+    e = { "<cmd>FzfFiles<cr>", "Edit config" },
+  },
   ["<leader><leader>"] = {
     name = "+prefix",
     e = { "<cmd>edit $MYVIMRC<cr>", "Edit config" },
