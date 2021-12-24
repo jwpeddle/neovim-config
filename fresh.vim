@@ -30,5 +30,8 @@ set number
 "don't wrap lines
 set nowrap
 
+"make autocomplete only use what I've typed
+set wildmode=longest:full,full
+
 "use system clipboard
 set clipboard^=unnamedplus
