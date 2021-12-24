@@ -74,10 +74,10 @@ nnoremap <SPACE> <Nop>
 let mapleader=' '
 
 "edit init.vim
-nnoremap <silent> <Leader>v :e $MYVIMRC<cr>
+nnoremap <silent> <Leader><Leader>e :e $MYVIMRC<cr>
 
 "reload init.vim
-nnoremap <silent> <Leader><Leader>e :source $MYVIMRC<cr>
+nnoremap <silent> <Leader><Leader>r :source $MYVIMRC<cr>
 
 "******************** plugins ********************
 
