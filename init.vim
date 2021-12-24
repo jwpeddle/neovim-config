@@ -73,10 +73,10 @@ autocmd FileType * set formatoptions-=o
 let mapleader = " " 
 
 "edit init.vim
-nnoremap <silent> <Leader><Leader>e :e $MYVIMRC<cr>
+nnoremap <silent> <leader><leader>e :e $MYVIMRC<cr>
 
 "reload init.vim
-nnoremap <silent> <Leader><Leader>r :source $MYVIMRC<cr>
+nnoremap <silent> <leader><leader>r :source $MYVIMRC<cr>
 
 "******************** plugins ********************
 
@@ -92,18 +92,7 @@ lua << EOF
 local wk = require("which-key")
 
 wk.setup {
-  -- your configuration comes here
-  -- or leave it empty to use the default settings
-  -- refer to the configuration section below
 }
--- As an example, we will create the following mappings:
---  * <leader>ff find files
---  * <leader>fr show recent files
---  * <leader>fb Foobar
--- we'll document:
---  * <leader>fn new file
---  * <leader>fe edit file
--- and hide <leader>1
 
 wk.register({
   f = {
