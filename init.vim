@@ -70,7 +70,6 @@ autocmd FileType * set formatoptions-=o
 
 "******************** mappings ********************
 "\ too hard to press
-nnoremap <SPACE> <Nop>
 let mapleader=' '
 
 "edit init.vim
