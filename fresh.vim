@@ -74,7 +74,7 @@ autocmd FileType * set formatoptions-=o
 "******************** mappings ********************
 "\ too hard to press
 nnoremap <SPACE> <Nop>
-let mapleader=" "
+let mapleader=' '
 
 "close buffers/vim, save
 map <Leader>w :bd<CR>
