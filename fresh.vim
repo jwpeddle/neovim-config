@@ -76,6 +76,14 @@ autocmd FileType * set formatoptions-=o
 let mapleader=';'
 nmap , ;
 
+"close buffers/vim, save
+map <Leader>w :bd<CR>
+map <Leader>W :bd!<CR>
+map <Leader>q :q<CR>
+map <Leader>Q :qall!<CR>
+map <Leader>s :w<CR>
+imap <Leader>s <Esc>:w<CR>
+
 "******************** plugins ********************
 
 lua << EOF
