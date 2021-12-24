@@ -9,8 +9,8 @@ endif
 call plug#begin('~/.nvim/plugged')
   Plug 'dracula/vim', { 'as': 'dracula' }
   Plug 'folke/which-key.nvim'
+  Plug 'romgrk/barbar.nvim'
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-  Plug 'nvim-treesitter/nvim-treesitter-textobjects'
 call plug#end()
 
 let g:python_host_prog = '$HOME/.pyenv/versions/neovim2/bin/python'
