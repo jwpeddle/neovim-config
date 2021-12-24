@@ -73,8 +73,7 @@ autocmd FileType * set formatoptions-=o
 
 "******************** mappings ********************
 "\ too hard to press
-let mapleader=';'
-nmap , ;
+let mapleader=','
 
 "close buffers/vim, save
 map <Leader>w :bd<CR>
