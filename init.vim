@@ -70,7 +70,7 @@ autocmd FileType * set formatoptions-=o
 
 "******************** mappings ********************
 "\ too hard to press
-nmap <space> <leader>
+let mapleader = " " 
 
 "edit init.vim
 nnoremap <silent> <Leader><Leader>e :e $MYVIMRC<cr>
