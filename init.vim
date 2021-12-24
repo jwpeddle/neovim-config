@@ -118,7 +118,7 @@ wk.register({
     e = { "<cmd>FzfFiles<cr>", "Open file" },
     b = { "<cmd>FzfBuffers<cr>", "Open buffer" },
     w = { "<cmd>bwipeout<cr>", "Close buffer" },
-    q = { "<cmd>%bwipeout<cr>", "Close all buffers" },
+    W = { "<cmd>%bwipeout<cr>", "Close all buffers" },
   },
   ["<leader><leader>"] = {
     name = "+prefix",
