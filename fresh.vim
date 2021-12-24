@@ -24,5 +24,8 @@ let g:python3_host_prog = '$HOME/.pyenv/versions/neovim3/bin/python'
 set termguicolors
 colorscheme dracula
 
+"line numbering
+set number
+
 "use system clipboard
 set clipboard^=unnamedplus
