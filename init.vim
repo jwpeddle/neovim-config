@@ -87,11 +87,6 @@ local wk = require("which-key")
 wk.setup()
 
 wk.register({
-  ["<leader>"] = {
-    name = "+prefix",
-    e = { "<cmd>edit $MYVIMRC<cr>", "Edit config" },
-    r = { "<cmd>source $MYVIMRC<cr>", "Reload config" },
-  },
   ["<leader><leader>"] = {
     name = "+prefix",
     e = { "<cmd>edit $MYVIMRC<cr>", "Edit config" },
