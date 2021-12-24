@@ -83,7 +83,7 @@ let mapleader = " "
 
 "bufferline
 lua <<EOF
-require('bufferline').setup {
+require("bufferline").setup {
   options = {
     numbers = "none" | "ordinal" | "buffer_id" | "both" | function({ ordinal, id, lower, raise }): string,
     --- @deprecated, please specify numbers as a function to customize the styling
