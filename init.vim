@@ -74,7 +74,7 @@ nnoremap <SPACE> <Nop>
 let mapleader=' '
 
 "reload vimrc
-nnoremap <silent> <Leader><Leader> :source $MYVIMRC<cr>
+nnoremap <silent> <Leader><Leader>e :source $MYVIMRC<cr>
 
 "******************** plugins ********************
 
