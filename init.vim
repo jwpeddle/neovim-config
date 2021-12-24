@@ -107,7 +107,7 @@ wk.setup()
 wk.register({
   ["<leader>"] = {
     name = "+prefix",
-    e = { "<cmd>FzfFiles<cr>", "Edit config" },
+    e = { "<cmd>FzfFiles<cr>", "Open file" },
   },
   ["<leader><leader>"] = {
     name = "+prefix",
