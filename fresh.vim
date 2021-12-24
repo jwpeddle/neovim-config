@@ -16,5 +16,11 @@ call plug#begin('~/.nvim/plugged')
 call plug#end()
 
 
+"******************** options ********************
+
+"theme
+set termguicolors
+colorscheme dracula
+
 "use system clipboard
 set clipboard^=unnamedplus
