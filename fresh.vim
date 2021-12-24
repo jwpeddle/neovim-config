@@ -10,5 +10,11 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 \| endif
 
 
+" load plugins
+call plug#begin('~/.nvim/plugged')
+  Plug 'dracula/vim', { 'as': 'dracula' }
+call plug#end()
+
+
 "use system clipboard
 set clipboard^=unnamedplus
