@@ -85,7 +85,6 @@ vim.g.bufferline = {
   animation = false,
   closable = false,
   icons = false,
-  icon_custom_colors = false,
 }
 "treesitter
 lua <<EOF
