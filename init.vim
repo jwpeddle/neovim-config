@@ -80,12 +80,13 @@ let mapleader = " "
 "******************** plugins ********************
 
 "barbar
--- Set barbar's options
+lua <<EOF
 vim.g.bufferline = {
   animation = false,
   closable = false,
   icons = false,
 }
+EOF
 
 "treesitter
 lua <<EOF
