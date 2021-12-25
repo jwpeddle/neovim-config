@@ -111,7 +111,7 @@ wk.register({
     w = { "<Cmd>bwipeout<CR>", "Close buffer" },
     W = { "<Cmd>%bwipeout<CR>", "Close all buffers" },
     q = { "<Cmd>quit<cr>", "Quit" },
-    t = { "<Cmd>FloatermToggle<CR>", "Terminal" },
+    --t = { "<Cmd>FloatermToggle<CR>", "Terminal" },
     t = { "<C-Space>", "Terminal" },
 --nnoremap <silent> <C-Space> :FloatermToggle<CR>
 --tnoremap <silent> <C-Space> <C-\><C-N>:FloatermToggle<CR>
