@@ -128,6 +128,7 @@ wk.register({
     name = "+prefix",
     e = { "<Cmd>edit $MYVIMRC<CR>", "Edit config" },
     r = { "<Cmd>source $MYVIMRC<CR>", "Reload config" },
+    p = { "<Cmd>PackerSync<CR>", "Sync packages" },
     h = { "<Cmd>checkhealth<CR>", "Check health" },
   },
   ["<Left>"] = { "<Cmd>BufferLineCyclePrev<CR>", "Previous buffer" },
