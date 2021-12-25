@@ -132,6 +132,7 @@ wk.register({
   },
   ["<Left>"] = { "<Cmd>BufferLineCyclePrev<CR>", "Previous buffer" },
   ["<Right>"] = { "<Cmd>BufferLineCycleNext<CR>", "Next buffer" },
+  ["<C-Space>"] = { "<Cmd>FloatermToggle<CR>", "Open terminal" },
 })
 
 wk.register({
