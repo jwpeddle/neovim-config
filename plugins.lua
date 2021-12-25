@@ -36,12 +36,12 @@ require("packer").startup(function(use)
   use({
     "neovim/nvim-lspconfig",
     config = function() {
-      require("lspconfig").pyright.setup{
+      require("lspconfig").pyright.setup({
         settings = {
           pyright = {
           }
         }
-      }
+      })
     }
   })
   use({ "nvim-telescope/telescope.nvim", requires = {
