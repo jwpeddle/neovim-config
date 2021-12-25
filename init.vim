@@ -26,6 +26,9 @@ let g:python3_host_prog = '$HOME/.pyenv/versions/neovim3/bin/python'
 "******************** options ********************
 
 lua <<EOF
+local opt = require("vim.opt")
+local cmd = require("vim.opt")
+
 --theme
 vim.opt.termguicolors = true
 vim.cmd("colorscheme dracula")
