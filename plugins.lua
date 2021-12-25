@@ -18,8 +18,8 @@ require("packer").startup(function(use)
           show_buffer_close_icons = false,
           show_close_icon = false,
         }
+      })
     end
-})
   })
   use({ "dracula/vim", as = "dracula" })
   use({ "folke/trouble.nvim", requires = {
