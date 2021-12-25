@@ -130,9 +130,6 @@ wk.register({
 --    c = { "<Cmd>FzfCommands<CR>", "Commands" },
 --    h = { "<Cmd>FzfHistory<CR>", "History" },
       f = { "<Cmd>lua require('telescope.builtin').find_files()<CR>" }
-      <cmd>lua require('telescope.builtin').live_grep()<cr>
-      <cmd>lua require('telescope.builtin').buffers()<cr>
-      <cmd>lua require('telescope.builtin').help_tags()<cr>
   },
   ["<Leader><Leader>"] = {
     name = "+prefix",
