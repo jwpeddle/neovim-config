@@ -47,7 +47,7 @@ vim.opt.swapfile = false
 --indenting
 --enter spaces when tab is pressed:
 vim.opt.expandtab = true
-"use 2 spaces to represent a tab
+--use 2 spaces to represent a tab
 vim.opt.softtabstop = 2
 "number of spaces to use for auto indent
 set shiftwidth=2
