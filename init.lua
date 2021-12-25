@@ -142,7 +142,7 @@ wk.register({
       h = { "<Cmd>lua require('telescope.builtin').help_tags()<CR>", "Help" },
       g = { "<Cmd>lua require('telescope.builtin').live_grep()<CR>", "Search workspace" },
       e = { "<Cmd>lua require('telescope.builtin').file_browser()<CR>", "Explore" },
-      / = { "<Cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>", "Search buffer" },
+      ["/"] = { "<Cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>", "Search buffer" },
   },
   ["<Leader><Leader>"] = {
     name = "+prefix",
