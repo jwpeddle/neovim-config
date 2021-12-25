@@ -15,7 +15,7 @@ require("packer").startup(function(use)
   use({ "folke/which-key.nvim" })
   use({ "junegunn/fzf", dir = "~/.fzf", run = "./install --all" })
   use({ "junegunn/fzf.vim" })
-  use({ "nvim-treesitter/nvim-treesitter", run = ':TSUpdate' })
+  use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
 end)
 
 g.python_host_prog = "$HOME/.pyenv/versions/neovim2/bin/python"
