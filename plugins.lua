@@ -33,6 +33,7 @@ require("packer").startup(function(use)
     config = function()
       require("trouble").setup()
     end
+
   use({
     "folke/which-key.nvim",
     config = function() {
@@ -80,6 +81,7 @@ require("packer").startup(function(use)
       })
     }
   })
+
   use({
     "neovim/nvim-lspconfig",
     config = function() {
@@ -91,6 +93,7 @@ require("packer").startup(function(use)
       })
     }
   })
+
   use({
     "nvim-telescope/telescope.nvim",
     requires = {
@@ -114,6 +117,7 @@ require("packer").startup(function(use)
       }
     }
   })
+
   use({
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
@@ -125,6 +129,7 @@ require("packer").startup(function(use)
       })
     }
   })
+
   use({
     "voldikss/vim-floaterm",
     config = function() {
