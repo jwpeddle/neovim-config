@@ -33,6 +33,7 @@ require("packer").startup(function(use)
     config = function()
       require("trouble").setup()
     end
+  })
 
   use({
     "folke/which-key.nvim",
