@@ -136,5 +136,6 @@ require("packer").startup(function(use)
       g.floaterm_title = ""
     }
   })
+
   use({ "wbthomason/packer.nvim" })
 end)
