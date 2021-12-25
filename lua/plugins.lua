@@ -1,7 +1,7 @@
-cmd = vim.cmd
-fn = vim.fn
-opt = vim.opt
-g = vim.g
+local cmd = vim.cmd
+local fn = vim.fn
+local opt = vim.opt
+local g = vim.g
 
 local install_path = fn.stdpath("data").."/site/pack/packer/start/packer.nvim"
 if fn.empty(fn.glob(install_path)) > 0 then
