@@ -13,7 +13,7 @@ require("packer").startup(function(use)
   use({ "dracula/vim", as = "dracula" })
   use({ "folke/trouble.nvim", requires = {
     "kyazdani42/nvim-web-devicons",
-  })
+  }})
   use({ "folke/which-key.nvim" })
   use({ "neovim/nvim-lspconfig" })
   use({ "nvim-telescope/telescope.nvim", requires = {
