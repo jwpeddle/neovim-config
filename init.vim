@@ -73,8 +73,8 @@ opt.clipboard:prepend("unnamedplus")
 --disable folding
 opt.foldenable = false
 
-"open splits on right side
-set splitright
+--open splits on right side
+opt.splitright = true
 
 "don't continue comments when using o
 autocmd FileType * set formatoptions-=o
