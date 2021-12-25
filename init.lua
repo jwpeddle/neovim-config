@@ -118,17 +118,17 @@ wk.register({
 --tnoremap <silent> <Leader><Esc> <C-\><C-N>
 
   },
-  ["<leader>f"] = {
+  ["<Leader>f"] = {
     name = "+fzf",
-    b = { "<cmd>FzfBuffers<cr>", "Buffers" },
-    c = { "<cmd>FzfCommands<cr>", "Commands" },
-    h = { "<cmd>FzfHistory<cr>", "History" },
+    b = { "<Cmd>FzfBuffers<CR>", "Buffers" },
+    c = { "<Cmd>FzfCommands<CR>", "Commands" },
+    h = { "<Cmd>FzfHistory<CR>", "History" },
   },
-  ["<leader><leader>"] = {
+  ["<Leader><Leader>"] = {
     name = "+prefix",
-    e = { "<cmd>edit $MYVIMRC<cr>", "Edit config" },
-    r = { "<cmd>source $MYVIMRC<cr>", "Reload config" },
-    h = { "<cmd>checkhealth<cr>", "Check health" },
+    e = { "<Cmd>edit $MYVIMRC<CR>", "Edit config" },
+    r = { "<Cmd>source $MYVIMRC<CR>", "Reload config" },
+    h = { "<Cmd>checkhealth<CR>", "Check health" },
   },
   ["<left>"] = { "<cmd>BufferLineCyclePrev<cr>", "Previous buffer" },
   ["<right>"] = { "<cmd>BufferLineCycleNext<cr>", "Next buffer" },
