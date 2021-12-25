@@ -21,10 +21,10 @@ vim.call("plug#begin", "~/.nvim/plugged")
   Plug("nvim-treesitter/nvim-treesitter", ["do"] = vim.fn["TSUpdate"]})
 vim.call("plug#end")
 
-let g:python_host_prog = '$HOME/.pyenv/versions/neovim2/bin/python'
-let g:python3_host_prog = '$HOME/.pyenv/versions/neovim3/bin/python'
+vim.g.python_host_prog = "$HOME/.pyenv/versions/neovim2/bin/python"
+vim.g.python3_host_prog = "$HOME/.pyenv/versions/neovim3/bin/python"
 
-"******************** options ********************
+--******************** options ********************
 
 local opt = require("vim.opt")
 local cmd = require("vim.cmd")
