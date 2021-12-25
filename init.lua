@@ -137,5 +137,5 @@ wk.register({
 wk.register({
   ["<c-space>"] = {"<C-\><C-N><cmd>FloatermToggle<CR>" },
 }, {
-  mode: "t",
+  mode: "v",
 })
