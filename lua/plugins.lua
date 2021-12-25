@@ -38,7 +38,7 @@ require("packer").startup(function(use)
     config = function()
       local wk = require("which-key")
       wk.setup()
-      opt.timeoutlen = 500
+      vim.opt.timeoutlen = 500
 
       wk.register({
         ["<Leader>"] = {
