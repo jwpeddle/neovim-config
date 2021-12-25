@@ -89,6 +89,9 @@ require("bufferline").setup({
   }
 })
 
+--floaterm
+g.floaterm_title = ""
+
 --fzf
 g.fzf_command_prefix = "Fzf"
 
