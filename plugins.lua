@@ -9,7 +9,18 @@ if fn.empty(fn.glob(install_path)) > 0 then
 end
 
 require("packer").startup(function(use)
-  use({ "akinsho/bufferline.nvim" })
+  use({
+    "akinsho/bufferline.nvim",
+    config = function()
+      require("bufferline").setup({
+        options = {
+          show_buffer_icons = false,
+          show_buffer_close_icons = false,
+          show_close_icon = false,
+        }
+      end
+})
+  })
   use({ "dracula/vim", as = "dracula" })
   use({ "folke/trouble.nvim", requires = {
     "kyazdani42/nvim-web-devicons",
@@ -26,13 +37,6 @@ require("packer").startup(function(use)
 end)
 
 --bufferline
-require("bufferline").setup({
-  options = {
-    show_buffer_icons = false,
-    show_buffer_close_icons = false,
-    show_close_icon = false,
-  }
-})
 
 --floaterm
 g.floaterm_title = ""
