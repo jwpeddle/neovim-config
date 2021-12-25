@@ -11,6 +11,9 @@ autocmd VimEnter *
   \| endif
 
 lua <<EOF
+local opt = require("vim.opt")
+local cmd = require("vim.cmd")
+
 --load plugins
 vim.call("plug#begin", "~/.nvim/plugged")
   Plug("akinsho/bufferline.nvim")
@@ -25,9 +28,6 @@ vim.g.python_host_prog = "$HOME/.pyenv/versions/neovim2/bin/python"
 vim.g.python3_host_prog = "$HOME/.pyenv/versions/neovim3/bin/python"
 
 --******************** options ********************
-
-local opt = require("vim.opt")
-local cmd = require("vim.cmd")
 
 --theme
 opt.termguicolors = true
