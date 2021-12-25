@@ -70,8 +70,8 @@ opt.hidden = true
 --use system clipboard
 opt.clipboard:prepend("unnamedplus)
 
-"disable folding
-set nofoldenable
+--disable folding
+opt.foldenable = false
 
 "open splits on right side
 set splitright
