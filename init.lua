@@ -61,4 +61,3 @@ cmd("autocmd FileType * set formatoptions-=o")
 --******************** mappings ********************
 --\ too hard to press
 g.mapleader = " " 
-
