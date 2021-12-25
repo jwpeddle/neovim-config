@@ -124,6 +124,11 @@ require("nvim-treesitter.configs").setup({
   },
 })
 
+--trouble
+require("trouble").setup {
+  icons = false
+}
+
 --which-key
 local wk = require("which-key")
 wk.setup()
