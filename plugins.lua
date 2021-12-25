@@ -22,9 +22,11 @@ require("packer").startup(function(use)
     end
   })
   use({ "dracula/vim", as = "dracula" })
-  use({ "folke/trouble.nvim", requires = {
-    "kyazdani42/nvim-web-devicons",
-  }})
+  use({
+    "folke/trouble.nvim",
+    requires = "kyazdani42/nvim-web-devicons",
+    config = function()
+    end
   use({ "folke/which-key.nvim" })
   use({ "neovim/nvim-lspconfig" })
   use({ "nvim-telescope/telescope.nvim", requires = {
@@ -35,8 +37,6 @@ require("packer").startup(function(use)
   use({ "voldikss/vim-floaterm" })
   use({ "wbthomason/packer.nvim" })
 end)
-
---bufferline
 
 --floaterm
 g.floaterm_title = ""
