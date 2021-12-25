@@ -13,11 +13,11 @@ autocmd VimEnter *
 "load plugins
 vim.call("plug#begin", "~/.nvim/plugged")
   Plug("akinsho/bufferline.nvim")
-  Plug("dracula/vim", { "as": "dracula" }
-  Plug("folke/which-key.nvim"
-  Plug("junegunn/fzf", { "dir": "~/.fzf", "do": "./install --all" }
-  Plug("junegunn/fzf.vim"
-  Plug("nvim-treesitter/nvim-treesitter", {"do": ":TSUpdate"}
+  Plug("dracula/vim", { "as": "dracula" })
+  Plug("folke/which-key.nvim")
+  Plug("junegunn/fzf", {"dir": "~/.fzf", "do": "./install --all" })
+  Plug("junegunn/fzf.vim")
+  Plug("nvim-treesitter/nvim-treesitter", {"do": ":TSUpdate"})
 vim.call("plug#end")
 
 let g:python_host_prog = '$HOME/.pyenv/versions/neovim2/bin/python'
