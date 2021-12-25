@@ -30,11 +30,11 @@ lua <<EOF
 vim.opt.termguicolors = true
 vim.cmd("colorscheme dracula")
 
-"line numbering
-set number
+-- line numbering
+vim.opt.number = true
 
-"don't wrap lines
-set nowrap
+-- don't wrap lines
+vim.opt.nowrap
 
 "make autocomplete only use what I've typed
 set wildmode=longest:full,full
