@@ -126,7 +126,7 @@ require("nvim-treesitter.configs").setup({
 
 --trouble
 require("trouble").setup({
-  icons = false
+  icons = false,
 })
 
 --which-key
