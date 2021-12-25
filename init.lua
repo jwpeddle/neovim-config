@@ -102,7 +102,6 @@ require'lspconfig'.pyright.setup{
   settings = {
     pyright = {
       typeCheckingMode = "off",
-      disableOrganizeImports  = true,
     }
   }
 }
