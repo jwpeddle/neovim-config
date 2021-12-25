@@ -27,7 +27,12 @@ require("packer").startup(function(use)
     requires = "kyazdani42/nvim-web-devicons",
     config = function()
     end
-  use({ "folke/which-key.nvim" })
+  use({
+    "folke/which-key.nvim",
+    config = function() {
+      g.floaterm_title = ""
+    }
+  })
   use({ "neovim/nvim-lspconfig" })
   use({ "nvim-telescope/telescope.nvim", requires = {
     "kyazdani42/nvim-web-devicons",
@@ -39,7 +44,6 @@ require("packer").startup(function(use)
 end)
 
 --floaterm
-g.floaterm_title = ""
 
 --lspconfig
 require'lspconfig'.pyright.setup{
