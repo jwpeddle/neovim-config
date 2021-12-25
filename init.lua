@@ -9,13 +9,13 @@ if fn.empty(fn.glob(install_path)) > 0 then
 end
 
 require("packer").startup(function(use)
-  use({"wbthomason/packer.nvim"})
-  use({"akinsho/bufferline.nvim"})
-  use({"dracula/vim", as = "dracula"})
-  use({"folke/which-key.nvim"})
-  use({"junegunn/fzf", dir = "~/.fzf", run = "./install --all"})
-  use({"junegunn/fzf.vim"})
-  use({"nvim-treesitter/nvim-treesitter", run = ':TSUpdate'})
+  use({ "wbthomason/packer.nvim" })
+  use({ "akinsho/bufferline.nvim" })
+  use({ "dracula/vim", as = "dracula" })
+  use({ "folke/which-key.nvim" })
+  use({ "junegunn/fzf", dir = "~/.fzf", run = "./install --all" })
+  use({ "junegunn/fzf.vim" })
+  use({ "nvim-treesitter/nvim-treesitter", run = ':TSUpdate' })
 end)
 
 g.python_host_prog = "$HOME/.pyenv/versions/neovim2/bin/python"
