@@ -1,65 +1,62 @@
 require("plugins")
 
-cmd = vim.cmd
-fn = vim.fn
-opt = vim.opt
 g = vim.g
 
-g.python_host_prog = "$HOME/.pyenv/versions/neovim2/bin/python"
-g.python3_host_prog = "$HOME/.pyenv/versions/neovim3/bin/python"
+vim.g.python_host_prog = "$HOME/.pyenv/versions/neovim2/bin/python"
+vim.g.python3_host_prog = "$HOME/.pyenv/versions/neovim3/bin/python"
 
 --******************** options ********************
 
 --theme
-opt.termguicolors = true
-cmd("colorscheme dracula")
+vim.opt.termguicolors = true
+vim.cmd("colorscheme dracula")
 
 --line numbering
-opt.number = true
+vim.opt.number = true
 
 --don't wrap lines
-opt.wrap = false
+vim.opt.wrap = false
 
 --make autocomplete only use what I've typed
-opt.wildmode = { "longest:full", "full" }
+vim.opt.wildmode = { "longest:full", "full" }
 
 --disable backups & swap
-opt.backup = false
-opt.writebackup = false
-opt.swapfile = false
+vim.opt.backup = false
+vim.opt.writebackup = false
+vim.opt.swapfile = false
 
 --indenting
 --enter spaces when tab is pressed:
-opt.expandtab = true
+vim.opt.expandtab = true
 --use 2 spaces to represent a tab
-opt.softtabstop = 2
+vim.opt.softtabstop = 2
 --number of spaces to use for auto indent
-opt.shiftwidth = 2
+vim.opt.shiftwidth = 2
 --round shifted text to multiple of shiftwidth
-opt.shiftround = true
+vim.opt.shiftround = true
 
 --case insensitive search (unless caps provided)
-opt.ignorecase = true
-opt.smartcase = true
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
 
 --briefly jump to matching brace on closing
-opt.showmatch = true
+vim.opt.showmatch = true
 
 --autohide buffers
-opt.hidden = true
+vim.opt.hidden = true
 
 --use system clipboard
-opt.clipboard:prepend("unnamedplus")
+vim.opt.clipboard:prepend("unnamedplus")
 
 --disable folding
-opt.foldenable = false
+vim.opt.foldenable = false
 
 --open splits on right side
-opt.splitright = true
+vim.opt.splitright = true
 
 --don't continue comments when using o
-cmd("autocmd FileType * set formatoptions-=o")
+vim.cmd("autocmd FileType * set formatoptions-=o")
 
 --******************** mappings ********************
 --\ too hard to press
-g.mapleader = " " 
+vim.g.mapleader = " " 
