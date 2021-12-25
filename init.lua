@@ -105,7 +105,7 @@ wk.setup()
 opt.timeoutlen = 500
 
 wk.register({
-  ["<leader>"] = {
+  ["<Leader>"] = {
     name = "+prefix",
     o = { "<cmd>FzfFiles<cr>", "Open file" },
     w = { "<cmd>bwipeout<cr>", "Close buffer" },
