@@ -1,9 +1,9 @@
 require("plugins")
 
-local cmd = vim.cmd
-local fn = vim.fn
-local opt = vim.opt
-local g = vim.g
+cmd = vim.cmd
+fn = vim.fn
+opt = vim.opt
+g = vim.g
 
 g.python_host_prog = "$HOME/.pyenv/versions/neovim2/bin/python"
 g.python3_host_prog = "$HOME/.pyenv/versions/neovim3/bin/python"
