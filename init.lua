@@ -1,4 +1,3 @@
-lua <<EOF
 local cmd = vim.cmd
 local fn = vim.fn
 local opt = vim.opt
@@ -122,4 +121,3 @@ wk.register({
   ["<left>"] = { "<cmd>BufferLineCyclePrev<cr>", "Previous buffer" },
   ["<right>"] = {"<cmd>BufferLineCycleNext<cr>", "Next buffer" },
 })
-EOF
