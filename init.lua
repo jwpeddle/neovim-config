@@ -133,3 +133,9 @@ wk.register({
   ["<left>"] = { "<cmd>BufferLineCyclePrev<cr>", "Previous buffer" },
   ["<right>"] = { "<cmd>BufferLineCycleNext<cr>", "Next buffer" },
 })
+
+wk.register({
+},
+{
+  mode: "t",
+})
