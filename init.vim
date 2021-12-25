@@ -34,15 +34,15 @@ vim.cmd("colorscheme dracula")
 vim.opt.number = true
 
 -- don't wrap lines
-vim.opt.nowrap = true
+vim.opt.wrap = false
 
 -- make autocomplete only use what I've typed
 vim.opt.wildmode = {"longest:full", "full"}
 
 -- disable backups & swap
-set nobackup
-set nowritebackup
-set noswapfile
+vim.opt.backup = false
+vim.opt.writebackup = false
+vim.opt.swapfile = false
 
 "indenting
 "enter spaces when tab is pressed:
