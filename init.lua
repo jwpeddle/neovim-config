@@ -133,7 +133,6 @@ wk.register({
 
 wk.register({
   ["<C-Space>"] = { "<Cmd>FloatermToggle<CR>", "Close terminal" },
-  ["<Esc>"] = { "<Cmd>FloatermToggle<CR>", "Close terminal" },
 }, {
   mode = "t",
 })
