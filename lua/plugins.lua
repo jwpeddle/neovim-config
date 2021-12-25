@@ -1,4 +1,3 @@
-opt = vim.opt
 g = vim.g
 
 local install_path = vim.fn.stdpath("data").."/site/pack/packer/start/packer.nvim"
@@ -131,7 +130,7 @@ require("packer").startup(function(use)
   use({
     "voldikss/vim-floaterm",
     config = function()
-      g.floaterm_title = ""
+      vim.g.floaterm_title = ""
     end
   })
 
