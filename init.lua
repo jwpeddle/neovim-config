@@ -118,5 +118,5 @@ wk.register({
     h = { "<cmd>checkhealth<cr>", "Check health" },
   },
   ["<left>"] = { "<cmd>BufferLineCyclePrev<cr>", "Previous buffer" },
-  ["<right>"] = {"<cmd>BufferLineCycleNext<cr>", "Next buffer" },
+  ["<right>"] = { "<cmd>BufferLineCycleNext<cr>", "Next buffer" },
 })
