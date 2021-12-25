@@ -76,18 +76,16 @@ opt.foldenable = false
 --open splits on right side
 opt.splitright = true
 
-"don't continue comments when using o
+--don't continue comments when using o
 autocmd FileType * set formatoptions-=o
-EOF
 
-"******************** mappings ********************
-"\ too hard to press
-let mapleader = " " 
+--******************** mappings ********************
+--\ too hard to press
+vim.g.mapleader = " " 
 
-"******************** plugins ********************
+--******************** plugins ********************
 
-"bufferline
-lua <<EOF
+--bufferline
 require("bufferline").setup({
   options = {
     show_buffer_icons = false,
@@ -95,25 +93,18 @@ require("bufferline").setup({
     show_close_icon = false,
   }
 })
-EOF
 
-
-"fzf
-lua <<EOF
+--fzf
 vim.g.fzf_command_prefix = "Fzf"
-EOF
 
-"treesitter
-lua <<EOF
+--treesitter
 require("nvim-treesitter.configs").setup({
   highlight = {
     enable = true,
   },
 })
-EOF
 
-"which-key
-lua << EOF
+--which-key
 local wk = require("which-key")
 wk.setup()
 
