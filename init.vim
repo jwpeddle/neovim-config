@@ -1,31 +1,13 @@
-"install vim-plug
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-endif
-
-"autoinstall missing plugins
-autocmd VimEnter *
-  \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
-  \|   PlugInstall --sync | q
-  \| endif
-
 lua <<EOF
 local call = vim.call
 local cmd = vim.cmd
 local opt = vim.opt
 local g = vim.g
 
---load plugins
-call("plug#begin", "~/.nvim/plugged")
-  Plug("akinsho/bufferline.nvim")
-  Plug("dracula/vim", {as = "dracula"})
-  Plug("folke/which-key.nvim")
-  Plug("junegunn/fzf", {dir = "~/.fzf", ["do"] = "./install --all"})
-  Plug("junegunn/fzf.vim")
-  Plug("nvim-treesitter/nvim-treesitter", {["do"] = ":TSUpdate"})
-call("plug#end")
-
+local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+if fn.empty(fn.glob(install_path)) > 0 then
+  packer_bootstrap = fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+end
 
 return require('packer').startup(function()
   use({"wbthomason/packer.nvim"})
