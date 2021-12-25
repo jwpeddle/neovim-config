@@ -101,7 +101,6 @@ g.fzf_command_prefix = "Fzf"
 require'lspconfig'.pyright.setup{
   settings = {
     pyright = {
-      typeCheckingMode = "off",
     }
   }
 }
