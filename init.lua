@@ -18,7 +18,7 @@ require('packer').startup(function()
   use({"junegunn/fzf.vim"})
   use({"nvim-treesitter/nvim-treesitter", run = ':TSUpdate'})
   if packer_bootstrap then
-    require('packer').sync()
+    require("packer").sync()
   end
 end)
 
