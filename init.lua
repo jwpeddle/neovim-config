@@ -107,11 +107,11 @@ opt.timeoutlen = 500
 wk.register({
   ["<Leader>"] = {
     name = "+prefix",
-    o = { "<cmd>FzfFiles<cr>", "Open file" },
-    w = { "<cmd>bwipeout<cr>", "Close buffer" },
-    W = { "<cmd>%bwipeout<cr>", "Close all buffers" },
-    q = { "<cmd>quit<cr>", "Quit" },
-    t = { "<cmd>FloatermToggle<cr>", "Terminal" },
+    o = { "<Cmd>FzfFiles<CR>", "Open file" },
+    w = { "<Cmd>bwipeout<CR>", "Close buffer" },
+    W = { "<Cmd>%bwipeout<CR>", "Close all buffers" },
+    q = { "<Cmd>quit<cr>", "Quit" },
+    t = { "<Cmd>FloatermToggle<CR>", "Terminal" },
 --nnoremap <silent> <C-Space> :FloatermToggle<CR>
 --tnoremap <silent> <C-Space> <C-\><C-N>:FloatermToggle<CR>
 --"tnoremap <silent> <C-d> <C-\><C-N>:FloatermToggle<CR>
