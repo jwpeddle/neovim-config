@@ -106,7 +106,7 @@ require('telescope').setup{
     },
     mappings = {
       i = {
-        ["<esc>"] = actions.close,
+        ["<esc>"] = telescope.actions.close,
       },
     },
   },
