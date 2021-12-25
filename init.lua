@@ -99,7 +99,7 @@ g.fzf_command_prefix = "Fzf"
 --telescope
 require('telescope').setup{
   defaults = {
-    prompt_position = "top",
+    layout_config = { prompt_position = "top" },
   },
 }
 
