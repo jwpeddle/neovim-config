@@ -101,6 +101,7 @@ require("nvim-treesitter.configs").setup({
 --which-key
 local wk = require("which-key")
 wk.setup()
+opt.timeoutlen = 500
 
 wk.register({
   ["<leader>"] = {
