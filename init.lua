@@ -111,8 +111,9 @@ wk.register({
     q = { "<cmd>quit<cr>", "Quit" },
   },
   ["<leader>f"] = {
-    name = "+prefix",
-    b = { "<cmd>FzfBuffers<cr>", "Open buffer" },
+    name = "+fzf prefix",
+    b = { "<cmd>FzfBuffers<cr>", "List buffers" },
+    h = { "<cmd>FzfHistory<cr>", "Open buffer" },
   },
   ["<leader><leader>"] = {
     name = "+prefix",
