@@ -16,7 +16,6 @@ require("packer").startup(function(use)
   use({ "junegunn/fzf", dir = "~/.fzf", run = "./install --all" })
   use({ "junegunn/fzf.vim" })
   use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
-  use({ 'phaazon/hop.nvim' })
   use({ "voldikss/vim-floaterm" })
 end)
 
@@ -92,9 +91,6 @@ require("bufferline").setup({
 
 --floaterm
 g.floaterm_title = ""
-
---hop
-require("hop").setup()
 
 --fzf
 g.fzf_command_prefix = "Fzf"
