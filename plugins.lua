@@ -33,7 +33,17 @@ require("packer").startup(function(use)
       g.floaterm_title = ""
     }
   })
-  use({ "neovim/nvim-lspconfig" })
+  use({
+    "neovim/nvim-lspconfig",
+    config = function() {
+      require'lspconfig'.pyright.setup{
+        settings = {
+          pyright = {
+          }
+        }
+      }
+    }
+  })
   use({ "nvim-telescope/telescope.nvim", requires = {
     "kyazdani42/nvim-web-devicons",
     "nvim-lua/plenary.nvim",
@@ -44,12 +54,6 @@ require("packer").startup(function(use)
 end)
 
 --lspconfig
-require'lspconfig'.pyright.setup{
-  settings = {
-    pyright = {
-    }
-  }
-}
 
 --telescope
 require('telescope').setup{
