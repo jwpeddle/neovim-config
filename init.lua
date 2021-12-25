@@ -16,6 +16,8 @@ require("packer").startup(function(use)
   use({ "junegunn/fzf", dir = "~/.fzf", run = "./install --all" })
   use({ "junegunn/fzf.vim" })
   use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
+  use({ "nvim-lua/plenary.nvim })
+  use({ "nvim-telescope/telescope.nvim" })
   use({ "voldikss/vim-floaterm" })
 end)
 
