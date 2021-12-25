@@ -1,4 +1,3 @@
-cmd = vim.cmd
 fn = vim.fn
 opt = vim.opt
 g = vim.g
