@@ -36,8 +36,8 @@ vim.opt.number = true
 -- don't wrap lines
 vim.opt.nowrap = true
 
-"make autocomplete only use what I've typed
-vim.opt.wildmode = "longest:full,full"
+-- make autocomplete only use what I've typed
+vim.opt.wildmode = { "longest:full", "full" }
 
 "disable backups & swap
 set nobackup
