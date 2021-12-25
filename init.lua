@@ -141,7 +141,7 @@ wk.register({
       c = { "<Cmd>lua require('telescope.builtin').commands()<CR>", "Commands" },
       h = { "<Cmd>lua require('telescope.builtin').help_tags()<CR>", "Help" },
       g = { "<Cmd>lua require('telescope.builtin').live_grep()<CR>", "Search" },
-      e = { "<Cmd>lua require('telescope.builtin').file_browser()<CR>", "Workspace browser" },
+      e = { "<Cmd>lua require('telescope.builtin').file_browser()<CR>", "Explore" },
   },
   ["<Leader><Leader>"] = {
     name = "+prefix",
