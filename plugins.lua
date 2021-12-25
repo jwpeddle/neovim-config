@@ -31,7 +31,48 @@ require("packer").startup(function(use)
   use({
     "folke/which-key.nvim",
     config = function() {
-      g.floaterm_title = ""
+
+local wk = require("which-key")
+wk.setup()
+opt.timeoutlen = 500
+
+wk.register({
+  ["<Leader>"] = {
+    name = "+prefix",
+    o = { "<Cmd>lua require('telescope.builtin').find_files()<CR>", "Open file" },
+    w = { "<Cmd>bwipeout<CR>", "Close buffer" },
+    W = { "<Cmd>%bwipeout<CR>", "Close all buffers" },
+    q = { "<Cmd>quit<cr>", "Quit" },
+    t = { "<C-Space>", "Open terminal" },
+
+  },
+  ["<Leader>f"] = {
+    name = "+telescope",
+      f = { "<Cmd>lua require('telescope.builtin').find_files()<CR>", "Files" },
+      b = { "<Cmd>lua require('telescope.builtin').buffers()<CR>", "Buffers" },
+      c = { "<Cmd>lua require('telescope.builtin').commands()<CR>", "Commands" },
+      h = { "<Cmd>lua require('telescope.builtin').help_tags()<CR>", "Help" },
+      g = { "<Cmd>lua require('telescope.builtin').live_grep()<CR>", "Search workspace" },
+      e = { "<Cmd>lua require('telescope.builtin').file_browser()<CR>", "Explore" },
+      ["/"] = { "<Cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>", "Search buffer" },
+  },
+  ["<Leader><Leader>"] = {
+    name = "+prefix",
+    e = { "<Cmd>edit $MYVIMRC<CR>", "Edit config" },
+    r = { "<Cmd>source $MYVIMRC<CR>", "Reload config" },
+    p = { "<Cmd>PackerSync<CR>", "Sync packages" },
+    h = { "<Cmd>checkhealth<CR>", "Check health" },
+  },
+  ["<Left>"] = { "<Cmd>BufferLineCyclePrev<CR>", "Previous buffer" },
+  ["<Right>"] = { "<Cmd>BufferLineCycleNext<CR>", "Next buffer" },
+  ["<C-Space>"] = { "<Cmd>FloatermToggle<CR>", "Open terminal" },
+})
+
+wk.register({
+  ["<C-Space>"] = { "<Cmd>FloatermToggle<CR>", "Close terminal" },
+}, {
+  mode = "t",
+})
     }
   })
   use({
@@ -79,51 +120,15 @@ require("packer").startup(function(use)
       })
     }
   })
-  use({ "voldikss/vim-floaterm" })
+  use({
+    "voldikss/vim-floaterm",
+    config = function() {
+      g.floaterm_title = ""
+    }
+  })
   use({ "wbthomason/packer.nvim" })
 end)
 
 --trouble
 
 --which-key
-local wk = require("which-key")
-wk.setup()
-opt.timeoutlen = 500
-
-wk.register({
-  ["<Leader>"] = {
-    name = "+prefix",
-    o = { "<Cmd>lua require('telescope.builtin').find_files()<CR>", "Open file" },
-    w = { "<Cmd>bwipeout<CR>", "Close buffer" },
-    W = { "<Cmd>%bwipeout<CR>", "Close all buffers" },
-    q = { "<Cmd>quit<cr>", "Quit" },
-    t = { "<C-Space>", "Open terminal" },
-
-  },
-  ["<Leader>f"] = {
-    name = "+telescope",
-      f = { "<Cmd>lua require('telescope.builtin').find_files()<CR>", "Files" },
-      b = { "<Cmd>lua require('telescope.builtin').buffers()<CR>", "Buffers" },
-      c = { "<Cmd>lua require('telescope.builtin').commands()<CR>", "Commands" },
-      h = { "<Cmd>lua require('telescope.builtin').help_tags()<CR>", "Help" },
-      g = { "<Cmd>lua require('telescope.builtin').live_grep()<CR>", "Search workspace" },
-      e = { "<Cmd>lua require('telescope.builtin').file_browser()<CR>", "Explore" },
-      ["/"] = { "<Cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>", "Search buffer" },
-  },
-  ["<Leader><Leader>"] = {
-    name = "+prefix",
-    e = { "<Cmd>edit $MYVIMRC<CR>", "Edit config" },
-    r = { "<Cmd>source $MYVIMRC<CR>", "Reload config" },
-    p = { "<Cmd>PackerSync<CR>", "Sync packages" },
-    h = { "<Cmd>checkhealth<CR>", "Check health" },
-  },
-  ["<Left>"] = { "<Cmd>BufferLineCyclePrev<CR>", "Previous buffer" },
-  ["<Right>"] = { "<Cmd>BufferLineCycleNext<CR>", "Next buffer" },
-  ["<C-Space>"] = { "<Cmd>FloatermToggle<CR>", "Open terminal" },
-})
-
-wk.register({
-  ["<C-Space>"] = { "<Cmd>FloatermToggle<CR>", "Close terminal" },
-}, {
-  mode = "t",
-})
