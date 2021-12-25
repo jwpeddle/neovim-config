@@ -26,6 +26,7 @@ require("packer").startup(function(use)
     "folke/trouble.nvim",
     requires = "kyazdani42/nvim-web-devicons",
     config = function()
+      require("trouble").setup()
     end
   use({
     "folke/which-key.nvim",
@@ -71,23 +72,18 @@ require("packer").startup(function(use)
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
     config = function() {
+      require("nvim-treesitter.configs").setup({
+        highlight = {
+          enable = true,
+        },
+      })
     }
   })
   use({ "voldikss/vim-floaterm" })
   use({ "wbthomason/packer.nvim" })
 end)
 
---treesitter
-require("nvim-treesitter.configs").setup({
-  highlight = {
-    enable = true,
-  },
-})
-
 --trouble
-require("trouble").setup({
-  icons = false,
-})
 
 --which-key
 local wk = require("which-key")
