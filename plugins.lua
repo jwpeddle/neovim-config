@@ -44,32 +44,35 @@ require("packer").startup(function(use)
       })
     }
   })
-  use({ "nvim-telescope/telescope.nvim", requires = {
-    "kyazdani42/nvim-web-devicons",
-    "nvim-lua/plenary.nvim",
-  }})
+  use({
+    "nvim-telescope/telescope.nvim",
+    requires = {
+      "kyazdani42/nvim-web-devicons",
+      "nvim-lua/plenary.nvim",
+    },
+    config = {
+      require('telescope').setup{
+        defaults = {
+          sorting_strategy = "ascending",
+          layout_config = {
+            height = 0.5,
+            prompt_position = "top",
+          },
+          mappings = {
+            i = {
+              ["<esc>"] = require("telescope.actions").close,
+            },
+          },
+        },
+      }
+    }
+  })
   use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
   use({ "voldikss/vim-floaterm" })
   use({ "wbthomason/packer.nvim" })
 end)
 
---lspconfig
-
 --telescope
-require('telescope').setup{
-  defaults = {
-    sorting_strategy = "ascending",
-    layout_config = {
-      height = 0.5,
-      prompt_position = "top",
-    },
-    mappings = {
-      i = {
-        ["<esc>"] = require("telescope.actions").close,
-      },
-    },
-  },
-}
 
 --treesitter
 require("nvim-treesitter.configs").setup({
