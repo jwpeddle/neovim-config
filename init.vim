@@ -11,14 +11,14 @@ autocmd VimEnter *
   \| endif
 
 "load plugins
-call plug#begin('~/.nvim/plugged')
+vim.call("plug#begin", "~/.nvim/plugged")
   Plug 'akinsho/bufferline.nvim'
   Plug 'dracula/vim', { 'as': 'dracula' }
   Plug 'folke/which-key.nvim'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-call plug#end()
+vim.call("plug#end")
 
 let g:python_host_prog = '$HOME/.pyenv/versions/neovim2/bin/python'
 let g:python3_host_prog = '$HOME/.pyenv/versions/neovim3/bin/python'
