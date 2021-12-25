@@ -49,19 +49,19 @@ vim.opt.swapfile = false
 vim.opt.expandtab = true
 --use 2 spaces to represent a tab
 vim.opt.softtabstop = 2
-"number of spaces to use for auto indent
-set shiftwidth=2
-"round shifted text to multiple of shiftwidth
-set shiftround
+--number of spaces to use for auto indent
+vim.opt.shiftwidth = 2
+--round shifted text to multiple of shiftwidth
+vim.opt.shiftround = true
 
-"case insensitive search (unless caps provided)
-set ignorecase
-set smartcase
+--case insensitive search (unless caps provided)
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
 
-"briefly jump to matching brace on closing
-set showmatch
+--briefly jump to matching brace on closing
+vim.opt.showmatch = true
 
-"autohide buffers
+--autohide buffers
 set hidden
 
 "use system clipboard
