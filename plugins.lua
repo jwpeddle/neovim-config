@@ -132,9 +132,9 @@ require("packer").startup(function(use)
 
   use({
     "voldikss/vim-floaterm",
-    config = function() {
+    config = function()
       g.floaterm_title = ""
-    }
+    end
   })
 
   use("wbthomason/packer.nvim")
