@@ -17,13 +17,13 @@ local opt = vim.opt
 local g = vim.g
 
 --load plugins
-vim.call("plug#begin", "~/.nvim/plugged")
+call("plug#begin", "~/.nvim/plugged")
   Plug("akinsho/bufferline.nvim")
   Plug("dracula/vim", {as = "dracula"})
   Plug("folke/which-key.nvim")
   Plug("junegunn/fzf", {dir = "~/.fzf", ["do"] = "./install --all" })
   Plug("junegunn/fzf.vim")
-  Plug("nvim-treesitter/nvim-treesitter", {["do"] = vim.fn["TSUpdate"]})
+  Plug("nvim-treesitter/nvim-treesitter", {["do"] = call("TSUpdate")})
 vim.call("plug#end")
 
 vim.g.python_host_prog = "$HOME/.pyenv/versions/neovim2/bin/python"
