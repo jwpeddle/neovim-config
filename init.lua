@@ -19,7 +19,7 @@ require("packer").startup(function(use)
   use({ "nvim-telescope/telescope.nvim", requires = {
     "kyazdani42/nvim-web-devicons",
     "nvim-lua/plenary.nvim",
-  })
+  }})
   use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
   use({ "voldikss/vim-floaterm" })
   use({ "wbthomason/packer.nvim" })
