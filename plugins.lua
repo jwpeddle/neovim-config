@@ -43,8 +43,6 @@ require("packer").startup(function(use)
   use({ "wbthomason/packer.nvim" })
 end)
 
---floaterm
-
 --lspconfig
 require'lspconfig'.pyright.setup{
   settings = {
