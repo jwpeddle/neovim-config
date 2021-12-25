@@ -11,8 +11,8 @@ autocmd VimEnter *
   \| endif
 
 lua <<EOF
-local opt = require("vim.opt")
-local cmd = require("vim.cmd")
+local opt = vim.opt
+local cmd = vim.cmd
 
 --load plugins
 vim.call("plug#begin", "~/.nvim/plugged")
