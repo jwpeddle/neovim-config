@@ -25,6 +25,7 @@ let g:python3_host_prog = '$HOME/.pyenv/versions/neovim3/bin/python'
 
 "******************** options ********************
 
+lua <<EOF
 "theme
 set termguicolors
 colorscheme dracula
@@ -74,6 +75,7 @@ set splitright
 
 "don't continue comments when using o
 autocmd FileType * set formatoptions-=o
+EOF
 
 "******************** mappings ********************
 "\ too hard to press
