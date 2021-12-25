@@ -97,6 +97,16 @@ g.floaterm_title = ""
 --fzf
 g.fzf_command_prefix = "Fzf"
 
+--lspconfig
+require'lspconfig'.pyright.setup{
+  settings = {
+    pyright = {
+      typeCheckingMode = "off",
+      disableOrganizeImports  = true,
+    }
+  }
+}
+
 --telescope
 require('telescope').setup{
   defaults = {
