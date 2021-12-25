@@ -34,10 +34,10 @@ vim.cmd("colorscheme dracula")
 vim.opt.number = true
 
 -- don't wrap lines
-vim.opt.nowrap
+vim.opt.nowrap = true
 
 "make autocomplete only use what I've typed
-set wildmode=longest:full,full
+vim.opt.wildmode = "longest:full,full"
 
 "disable backups & swap
 set nobackup
