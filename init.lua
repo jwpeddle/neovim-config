@@ -100,8 +100,8 @@ g.fzf_command_prefix = "Fzf"
 require('telescope').setup{
   defaults = {
     layout_config = {
-      height = 0.5
-      prompt_position = "top"
+      height = 0.5,
+      prompt_position = "top",
     },
     sorting_strategy = "ascending",
   },
