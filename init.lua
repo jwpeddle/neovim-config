@@ -12,8 +12,6 @@ require("packer").startup(function(use)
   use({ "akinsho/bufferline.nvim" })
   use({ "dracula/vim", as = "dracula" })
   use({ "folke/which-key.nvim" })
-  use({ "junegunn/fzf", dir = "~/.fzf", run = "./install --all" })
-  use({ "junegunn/fzf.vim" })
   use({ "neovim/nvim-lspconfig" })
   use({ "nvim-telescope/telescope.nvim", requires = {"nvim-lua/plenary.nvim"} })
   use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
@@ -93,9 +91,6 @@ require("bufferline").setup({
 
 --floaterm
 g.floaterm_title = ""
-
---fzf
-g.fzf_command_prefix = "Fzf"
 
 --lspconfig
 require'lspconfig'.pyright.setup{
