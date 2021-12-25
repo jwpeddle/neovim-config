@@ -28,13 +28,13 @@ call("plug#end")
 
 
 return require('packer').startup(function()
-  use("wbthomason/packer.nvim")
-  use("akinsho/bufferline.nvim")
-  use("dracula/vim", {as = "dracula"})
-  use("folke/which-key.nvim")
-  use("junegunn/fzf", {dir = "~/.fzf", ["do"] = "./install --all"})
-  use("junegunn/fzf.vim")
-  use {"nvim-treesitter/nvim-treesitter", run = ':TSUpdate'}
+  use({"wbthomason/packer.nvim"})
+  use({"akinsho/bufferline.nvim"})
+  use({"dracula/vim", {as = "dracula"})
+  use({"folke/which-key.nvim"})
+  use({"junegunn/fzf", dir = "~/.fzf", run = "./install --all"})
+  use({"junegunn/fzf.vim"})
+  use({"nvim-treesitter/nvim-treesitter", run = ':TSUpdate'})
 
   -- Simple plugins can be specified as strings
   use '9mm/vim-closer'
