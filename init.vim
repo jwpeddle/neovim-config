@@ -39,7 +39,7 @@ vim.opt.nowrap = true
 -- make autocomplete only use what I've typed
 vim.opt.wildmode = {"longest:full", "full"}
 
-"disable backups & swap
+-- disable backups & swap
 set nobackup
 set nowritebackup
 set noswapfile
