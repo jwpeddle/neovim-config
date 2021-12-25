@@ -16,6 +16,7 @@ require("packer").startup(function(use)
   use({ "junegunn/fzf", dir = "~/.fzf", run = "./install --all" })
   use({ "junegunn/fzf.vim" })
   use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
+  use({ 'voldikss/vim-floaterm' })
 end)
 
 g.python_host_prog = "$HOME/.pyenv/versions/neovim2/bin/python"
