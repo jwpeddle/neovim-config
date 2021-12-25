@@ -17,6 +17,7 @@ require("packer").startup(function(use)
   use({ "folke/which-key.nvim" })
   use({ "neovim/nvim-lspconfig" })
   use({ "nvim-telescope/telescope.nvim", requires = {
+    "kyazdani42/nvim-web-devicons",
     "nvim-lua/plenary.nvim",
   })
   use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
