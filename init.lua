@@ -122,7 +122,7 @@ opt.timeoutlen = 500
 wk.register({
   ["<Leader>"] = {
     name = "+prefix",
-    o = { "<Cmd>FzfFiles<CR>", "Open file" },
+    o = { "<Cmd>lua require('telescope.builtin').find_files()<CR>", "Open file" },
     w = { "<Cmd>bwipeout<CR>", "Close buffer" },
     W = { "<Cmd>%bwipeout<CR>", "Close all buffers" },
     q = { "<Cmd>quit<cr>", "Quit" },
