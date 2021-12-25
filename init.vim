@@ -30,25 +30,25 @@ lua <<EOF
 vim.opt.termguicolors = true
 vim.cmd("colorscheme dracula")
 
--- line numbering
+--line numbering
 vim.opt.number = true
 
--- don't wrap lines
+--don't wrap lines
 vim.opt.wrap = false
 
--- make autocomplete only use what I've typed
+--make autocomplete only use what I've typed
 vim.opt.wildmode = {"longest:full", "full"}
 
--- disable backups & swap
+--disable backups & swap
 vim.opt.backup = false
 vim.opt.writebackup = false
 vim.opt.swapfile = false
 
-"indenting
-"enter spaces when tab is pressed:
-set expandtab
+--indenting
+--enter spaces when tab is pressed:
+vim.opt.expandtab = true
 "use 2 spaces to represent a tab
-set softtabstop=2
+vim.opt.softtabstop = 2
 "number of spaces to use for auto indent
 set shiftwidth=2
 "round shifted text to multiple of shiftwidth
