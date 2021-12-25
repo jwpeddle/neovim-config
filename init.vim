@@ -68,7 +68,7 @@ opt.showmatch = true
 opt.hidden = true
 
 --use system clipboard
-opt.clipboard:prepend("unnamedplus)
+opt.clipboard:prepend("unnamedplus")
 
 --disable folding
 opt.foldenable = false
