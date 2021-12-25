@@ -30,45 +30,45 @@ local opt = require("vim.opt")
 local cmd = require("vim.cmd")
 
 --theme
-vim.opt.termguicolors = true
-vim.cmd("colorscheme dracula")
+opt.termguicolors = true
+cmd("colorscheme dracula")
 
 --line numbering
-vim.opt.number = true
+opt.number = true
 
 --don't wrap lines
-vim.opt.wrap = false
+opt.wrap = false
 
 --make autocomplete only use what I've typed
-vim.opt.wildmode = {"longest:full", "full"}
+opt.wildmode = {"longest:full", "full"}
 
 --disable backups & swap
-vim.opt.backup = false
-vim.opt.writebackup = false
-vim.opt.swapfile = false
+opt.backup = false
+opt.writebackup = false
+opt.swapfile = false
 
 --indenting
 --enter spaces when tab is pressed:
-vim.opt.expandtab = true
+opt.expandtab = true
 --use 2 spaces to represent a tab
-vim.opt.softtabstop = 2
+opt.softtabstop = 2
 --number of spaces to use for auto indent
-vim.opt.shiftwidth = 2
+opt.shiftwidth = 2
 --round shifted text to multiple of shiftwidth
-vim.opt.shiftround = true
+opt.shiftround = true
 
 --case insensitive search (unless caps provided)
-vim.opt.ignorecase = true
-vim.opt.smartcase = true
+opt.ignorecase = true
+opt.smartcase = true
 
 --briefly jump to matching brace on closing
-vim.opt.showmatch = true
+opt.showmatch = true
 
 --autohide buffers
-set hidden
+opt.hidden = true
 
-"use system clipboard
-set clipboard^=unnamedplus
+--use system clipboard
+opt.clipboard:prepend("unnamedplus)
 
 "disable folding
 set nofoldenable
