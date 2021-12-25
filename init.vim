@@ -34,7 +34,7 @@ return require('packer').startup(function()
   use("folke/which-key.nvim")
   use("junegunn/fzf", {dir = "~/.fzf", ["do"] = "./install --all"})
   use("junegunn/fzf.vim")
-  use("nvim-treesitter/nvim-treesitter", {["do"] = ":TSUpdate"})
+  use {"nvim-treesitter/nvim-treesitter", run = ':TSUpdate'}
 
   -- Simple plugins can be specified as strings
   use '9mm/vim-closer'
