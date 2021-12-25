@@ -37,8 +37,7 @@ require("packer").startup(function(use)
 
   use({
     "folke/which-key.nvim",
-    config = function() {
-
+    config = function()
       local wk = require("which-key")
       wk.setup()
       opt.timeoutlen = 500
@@ -80,7 +79,7 @@ require("packer").startup(function(use)
       }, {
         mode = "t",
       })
-    }
+    end
   })
 
   use({
