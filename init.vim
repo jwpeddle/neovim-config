@@ -24,10 +24,10 @@ call("plug#begin", "~/.nvim/plugged")
   Plug("junegunn/fzf", {dir = "~/.fzf", ["do"] = "./install --all"})
   Plug("junegunn/fzf.vim")
   Plug("nvim-treesitter/nvim-treesitter", {["do"] = ":TSUpdate"})
-vim.call("plug#end")
+call("plug#end")
 
-vim.g.python_host_prog = "$HOME/.pyenv/versions/neovim2/bin/python"
-vim.g.python3_host_prog = "$HOME/.pyenv/versions/neovim3/bin/python"
+g.python_host_prog = "$HOME/.pyenv/versions/neovim2/bin/python"
+g.python3_host_prog = "$HOME/.pyenv/versions/neovim3/bin/python"
 
 --******************** options ********************
 
@@ -79,11 +79,11 @@ opt.foldenable = false
 opt.splitright = true
 
 --don't continue comments when using o
-vim.cmd("autocmd FileType * set formatoptions-=o")
+cmd("autocmd FileType * set formatoptions-=o")
 
 --******************** mappings ********************
 --\ too hard to press
-vim.g.mapleader = " " 
+g.mapleader = " " 
 
 --******************** plugins ********************
 
@@ -97,7 +97,7 @@ require("bufferline").setup({
 })
 
 --fzf
-vim.g.fzf_command_prefix = "Fzf"
+g.fzf_command_prefix = "Fzf"
 
 --treesitter
 require("nvim-treesitter.configs").setup({
