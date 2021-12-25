@@ -111,6 +111,14 @@ wk.register({
     W = { "<cmd>%bwipeout<cr>", "Close all buffers" },
     q = { "<cmd>quit<cr>", "Quit" },
   },
+  ["<leader>f"] = {
+    name = "+prefix",
+    o = { "<cmd>FzfFiles<cr>", "Open file" },
+    b = { "<cmd>FzfBuffers<cr>", "Open buffer" },
+    w = { "<cmd>bwipeout<cr>", "Close buffer" },
+    W = { "<cmd>%bwipeout<cr>", "Close all buffers" },
+    q = { "<cmd>quit<cr>", "Quit" },
+  },
   ["<leader><leader>"] = {
     name = "+prefix",
     e = { "<cmd>edit $MYVIMRC<cr>", "Edit config" },
