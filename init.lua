@@ -99,11 +99,11 @@ g.fzf_command_prefix = "Fzf"
 --telescope
 require('telescope').setup{
   defaults = {
+    sorting_strategy = "ascending",
     layout_config = {
       height = 0.5,
       prompt_position = "top",
     },
-    sorting_strategy = "ascending",
     mappings = {
       i = {
         ["<esc>"] = actions.close,
