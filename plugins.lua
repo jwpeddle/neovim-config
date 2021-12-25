@@ -67,12 +67,15 @@ require("packer").startup(function(use)
       }
     }
   })
-  use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
+  use({
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",
+    config = function() {
+    }
+  })
   use({ "voldikss/vim-floaterm" })
   use({ "wbthomason/packer.nvim" })
 end)
-
---telescope
 
 --treesitter
 require("nvim-treesitter.configs").setup({
