@@ -84,14 +84,14 @@ require("packer").startup(function(use)
 
   use({
     "neovim/nvim-lspconfig",
-    config = function() {
+    config = function()
       require("lspconfig").pyright.setup({
         settings = {
           pyright = {
           }
         }
       })
-    }
+    end
   })
 
   use({
