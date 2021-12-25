@@ -21,7 +21,7 @@ vim.call("plug#begin", "~/.nvim/plugged")
   Plug("folke/which-key.nvim")
   Plug("junegunn/fzf", {dir = "~/.fzf", ["do"] = "./install --all" })
   Plug("junegunn/fzf.vim")
-  Plug("nvim-treesitter/nvim-treesitter", ["do"] = vim.fn["TSUpdate"]})
+  Plug("nvim-treesitter/nvim-treesitter", {["do"] = vim.fn["TSUpdate"]})
 vim.call("plug#end")
 
 vim.g.python_host_prog = "$HOME/.pyenv/versions/neovim2/bin/python"
