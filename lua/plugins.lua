@@ -190,6 +190,8 @@ require("packer").startup(function(use)
       end
 
       local cmp = require("cmp")
+      local luasnip = require("luasnip")
+
       cmp.setup({
         snippet = {
           expand = function(args)
