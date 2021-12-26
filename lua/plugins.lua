@@ -53,11 +53,11 @@ require("packer").startup(function(use)
           t = { "<C-Space>", "Open terminal" },
         },
         --diagnostics
-        ["<Leader>d"] = {
-          name = "+Diagnostics",
+        ["<Leader>c"] = {
+          name = "+Code",
           d = { "<Cmd>TroubleToggle<cr>", "Toggle Trouble" },
           w = { "<Cmd>TroubleToggle workspace_diagnostics<CR>", "Workspace" },
-          d = { "<Cmd>TroubleToggle document_diagnostics<CR>", "Buffer" },
+          b = { "<Cmd>TroubleToggle document_diagnostics<CR>", "Buffer" },
           q = { "<Cmd>TroubleToggle quickfix<CR>", "Quickfix" },
           l = { "<Cmd>TroubleToggle loclist<CR>", "Location list" },
           s = { "<Cmd>TroubleToggle lsp_references<CR>", "Symbols" },
