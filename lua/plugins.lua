@@ -60,7 +60,7 @@ require("packer").startup(function(use)
           b = { "<Cmd>TroubleToggle document_diagnostics<CR>", "Buffer" },
           q = { "<Cmd>TroubleToggle quickfix<CR>", "Quickfix" },
           l = { "<Cmd>TroubleToggle loclist<CR>", "Location list" },
-          s = { "<Cmd>TroubleToggle lsp_references<CR>", "Symbols" },
+          s = { "<Cmd>TroubleToggle lsp_references<CR>", "References" },
 document_diagnostics: document diagnostics from the builtin LSP client
 workspace_diagnostics: workspace diagnostics from the builtin LSP client
 lsp_references: references of the word under the cursor from the builtin LSP client
