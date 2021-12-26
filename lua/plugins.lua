@@ -55,13 +55,13 @@ require("packer").startup(function(use)
         },
         --code
         ["<Leader>c"] = {
-          name = "+Code",
-          <leader>xx <cmd>TroubleToggle<cr>
-          <leader>xw <cmd>TroubleToggle workspace_diagnostics<cr>
-          <leader>xd <cmd>TroubleToggle document_diagnostics<cr>
-          <leader>xq <cmd>TroubleToggle quickfix<cr>
-          <leader>xl <cmd>TroubleToggle loclist<cr>
-          gR <cmd>TroubleToggle lsp_references<cr>
+          name = "+Diagnostics",
+          x = <cmd>TroubleToggle<cr>
+          w = <cmd>TroubleToggle workspace_diagnostics<cr>
+          d = <cmd>TroubleToggle document_diagnostics<cr>
+          q = <cmd>TroubleToggle quickfix<cr>
+          l = <cmd>TroubleToggle loclist<cr>
+          g = <cmd>TroubleToggle lsp_references<cr>
           f = { "<Cmd>lua require('telescope.builtin').find_files()<CR>", "Files" },
           b = { "<Cmd>lua require('telescope.builtin').buffers()<CR>", "Buffers" },
           c = { "<Cmd>lua require('telescope.builtin').commands()<CR>", "Commands" },
