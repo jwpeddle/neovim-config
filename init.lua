@@ -53,7 +53,7 @@ vim.opt.foldenable = false
 vim.opt.splitright = true
 
 --don't continue comments when using o
-vim.cmd("autocmd FileType * setlocal formatoptions-=o")
+vim.cmd("autocmd FileType * set formatoptions-=o")
 
 --******************** mappings ********************
 --\ too hard to press
