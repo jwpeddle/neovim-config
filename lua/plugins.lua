@@ -69,8 +69,6 @@ require("packer").startup(function(use)
           b = { "<Cmd>TroubleToggle document_diagnostics<CR>", "Buffer" },
           q = { "<Cmd>TroubleToggle quickfix<CR>", "Quickfix" },
           l = { "<Cmd>TroubleToggle loclist<CR>", "Location list" },
-          r = { "<Cmd>TroubleToggle lsp_references<CR>", "References" },
-          d = { "<Cmd>TroubleToggle lsp_definitions<CR>", "Definitions" },
         },
         --find
         ["<Leader>f"] = {
