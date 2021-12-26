@@ -45,7 +45,7 @@ require("packer").startup(function(use)
       wk.register({
         --common
         ["<Leader>"] = {
-          name = "+prefix",
+          name = "+Prefix",
           o = { "<Cmd>lua require('telescope.builtin').find_files()<CR>", "Open file" },
           w = { "<Cmd>bwipeout<CR>", "Close buffer" },
           W = { "<Cmd>%bwipeout<CR>", "Close all buffers" },
