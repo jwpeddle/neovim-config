@@ -194,7 +194,7 @@ require("packer").startup(function(use)
           end,
         },
         completion = {
-          completeopt = { "menu", "menuone", "noselect",
+          completeopt = { "menu", "menuone", "noselect" },
         },
         sources = cmp.config.sources({
           { name = 'nvim_lsp' },
