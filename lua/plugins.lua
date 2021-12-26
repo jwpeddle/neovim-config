@@ -62,13 +62,6 @@ require("packer").startup(function(use)
           l = { "<Cmd>TroubleToggle loclist<CR>", "Location list" },
           s = { "<Cmd>TroubleToggle lsp_references<CR>", "References" },
           s = { "<Cmd>TroubleToggle lsp_definitions<CR>", "Definitions" },
-document_diagnostics: document diagnostics from the builtin LSP client
-workspace_diagnostics: workspace diagnostics from the builtin LSP client
-lsp_references: references of the word under the cursor from the builtin LSP client
-lsp_definitions: definitions of the word under the cursor from the builtin LSP client
-lsp_type_definitions: tupe definitions of the word under the cursor from the builtin LSP client
-quickfix: quickfix items
-loclist: items from the window's location list
         },
         --search
         ["<Leader>f"] = {
