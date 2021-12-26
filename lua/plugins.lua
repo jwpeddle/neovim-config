@@ -83,7 +83,7 @@ require("packer").startup(function(use)
         },
         --neovim
         ["<Leader><Leader>"] = {
-          name = "+prefix",
+          name = "+neovim",
           e = { "<Cmd>edit $MYVIMRC<CR>", "Edit config" },
           r = { "<Cmd>source $MYVIMRC<CR>", "Reload config" },
           p = { "<Cmd>PackerSync<CR>", "Sync packages" },
