@@ -5,7 +5,7 @@ end
 
 require("packer").startup(function(use)
   use({
-    --bufferline
+    --bufferline - normal tabs
     "akinsho/bufferline.nvim",
     config = function()
       require("bufferline").setup({
@@ -24,6 +24,7 @@ require("packer").startup(function(use)
     as = "dracula",
   })
 
+  --trouble
   use({
     "folke/trouble.nvim",
     requires = "kyazdani42/nvim-web-devicons",
@@ -32,6 +33,7 @@ require("packer").startup(function(use)
     end
   })
 
+  --which-key
   use({
     "folke/which-key.nvim",
     config = function()
