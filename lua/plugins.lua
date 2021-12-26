@@ -66,17 +66,17 @@ require("packer").startup(function(use)
         --find
         ["<Leader>f"] = {
           name = "+Telescope",
---          f = { "<Cmd>lua require('telescope.builtin').find_files()<CR>", "Files" },
---          b = { "<Cmd>lua require('telescope.builtin').buffers()<CR>", "Buffers" },
---          c = { "<Cmd>lua require('telescope.builtin').commands()<CR>", "Commands" },
---          h = { "<Cmd>lua require('telescope.builtin').help_tags()<CR>", "Help" },
---          g = { "<Cmd>lua require('telescope.builtin').live_grep()<CR>", "Search workspace" },
---          e = { "<Cmd>lua require('telescope.builtin').file_browser()<CR>", "Explore" },
+          f = { "<Cmd>lua require('telescope.builtin').find_files()<CR>", "Files" },
+          b = { "<Cmd>lua require('telescope.builtin').buffers()<CR>", "Buffers" },
+          c = { "<Cmd>lua require('telescope.builtin').commands()<CR>", "Commands" },
+          h = { "<Cmd>lua require('telescope.builtin').help_tags()<CR>", "Help" },
+          g = { "<Cmd>lua require('telescope.builtin').live_grep()<CR>", "Search workspace" },
+          e = { "<Cmd>lua require('telescope.builtin').file_browser()<CR>", "Explore" },
           r = { "<Cmd>lua require('telescope.builtin').lsp_references()<CR>", "References" },
---          s = { "<Cmd>lua require('telescope.builtin').lsp_document_symbols()<CR>", "Document symbols" },
---          S = { "<Cmd>lua require('telescope.builtin').lsp_workspace_symbols()<CR>", "Workspace symbols" },
---          p = { "<Cmd>lua require('telescope.builtin').lsp_dynamic_workspace_symbols()<CR>", "Dynamic symbols" },
---          ["/"] = { "<Cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>", "Search buffer" },
+          s = { "<Cmd>lua require('telescope.builtin').lsp_document_symbols()<CR>", "Document symbols" },
+          S = { "<Cmd>lua require('telescope.builtin').lsp_workspace_symbols()<CR>", "Workspace symbols" },
+          p = { "<Cmd>lua require('telescope.builtin').lsp_dynamic_workspace_symbols()<CR>", "Dynamic symbols" },
+          ["/"] = { "<Cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>", "Search buffer" },
         },
         --neovim
         ["<Leader><Leader>"] = {
