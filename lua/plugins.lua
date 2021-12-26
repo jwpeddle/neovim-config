@@ -193,6 +193,15 @@ require("packer").startup(function(use)
             require('luasnip').lsp_expand(args.body)
           end,
         },
+        completion = {
+          completeopt = { "menu", "menuone", "noselect",
+        },
+        sources = cmp.config.sources({
+          { name = 'nvim_lsp' },
+          { name = 'luasnip' },
+        }, {
+          { name = 'buffer' },
+        })
         mapping = {
           ['<C-b>'] = cmp.mapping(cmp.mapping.scroll_docs(-4), { 'i', 'c' }),
           ['<C-f>'] = cmp.mapping(cmp.mapping.scroll_docs(4), { 'i', 'c' }),
@@ -204,12 +213,6 @@ require("packer").startup(function(use)
           }),
           ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
         },
-        sources = cmp.config.sources({
-          { name = 'nvim_lsp' },
-          { name = 'luasnip' },
-        }, {
-          { name = 'buffer' },
-        })
       })
 
       -- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
