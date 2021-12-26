@@ -88,7 +88,9 @@ require("packer").startup(function(use)
       --terminal mode
       wk.register({
         ["<C-Space>"] = { "<Cmd>FloatermToggle<CR>", "Close terminal" },
-      }, { mode = "t" })
+      }, {
+        mode = "t",
+      })
     end
   })
 
