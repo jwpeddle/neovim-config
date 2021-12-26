@@ -56,7 +56,7 @@ vim.opt.splitright = true
 vim.cmd([[
   augroup formatoptions
     autocmd!
-    autocmd FileType * set formatoptions-=o
+    autocmd FileType * setlocal formatoptions-=o
   augroup end
 ]])
 
