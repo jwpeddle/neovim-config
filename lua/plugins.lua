@@ -38,6 +38,7 @@ require("packer").startup(function(use)
       vim.opt.timeoutlen = 500
 
       wk.register({
+        --neovim
         ["<Leader>"] = {
           name = "+prefix",
           o = { "<Cmd>lua require('telescope.builtin').find_files()<CR>", "Open file" },
@@ -47,6 +48,7 @@ require("packer").startup(function(use)
           t = { "<C-Space>", "Open terminal" },
 
         },
+        --code
         ["<Leader>f"] = {
           name = "+telescope",
           f = { "<Cmd>lua require('telescope.builtin').find_files()<CR>", "Files" },
@@ -57,6 +59,18 @@ require("packer").startup(function(use)
           e = { "<Cmd>lua require('telescope.builtin').file_browser()<CR>", "Explore" },
           ["/"] = { "<Cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>", "Search buffer" },
         },
+        --search
+        ["<Leader>f"] = {
+          name = "+telescope",
+          f = { "<Cmd>lua require('telescope.builtin').find_files()<CR>", "Files" },
+          b = { "<Cmd>lua require('telescope.builtin').buffers()<CR>", "Buffers" },
+          c = { "<Cmd>lua require('telescope.builtin').commands()<CR>", "Commands" },
+          h = { "<Cmd>lua require('telescope.builtin').help_tags()<CR>", "Help" },
+          g = { "<Cmd>lua require('telescope.builtin').live_grep()<CR>", "Search workspace" },
+          e = { "<Cmd>lua require('telescope.builtin').file_browser()<CR>", "Explore" },
+          ["/"] = { "<Cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>", "Search buffer" },
+        },
+        --neovim
         ["<Leader><Leader>"] = {
           name = "+prefix",
           e = { "<Cmd>edit $MYVIMRC<CR>", "Edit config" },
