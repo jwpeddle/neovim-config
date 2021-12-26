@@ -193,8 +193,6 @@ require("packer").startup(function(use)
             require('luasnip').lsp_expand(args.body)
           end,
         },
-        mapping = {
-        },
         sources = cmp.config.sources({
           { name = 'nvim_lsp' },
           { name = 'luasnip' },
