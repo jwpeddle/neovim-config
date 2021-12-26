@@ -55,7 +55,7 @@ require("packer").startup(function(use)
         },
         --code
         ["<Leader>c"] = {
-          name = "+code",
+          name = "+Code",
           <leader>xx <cmd>TroubleToggle<cr>
           <leader>xw <cmd>TroubleToggle workspace_diagnostics<cr>
           <leader>xd <cmd>TroubleToggle document_diagnostics<cr>
@@ -72,7 +72,7 @@ require("packer").startup(function(use)
         },
         --search
         ["<Leader>f"] = {
-          name = "+fuzzy find",
+          name = "+Fuzzy find",
           f = { "<Cmd>lua require('telescope.builtin').find_files()<CR>", "Files" },
           b = { "<Cmd>lua require('telescope.builtin').buffers()<CR>", "Buffers" },
           c = { "<Cmd>lua require('telescope.builtin').commands()<CR>", "Commands" },
@@ -83,7 +83,7 @@ require("packer").startup(function(use)
         },
         --neovim
         ["<Leader><Leader>"] = {
-          name = "+neovim",
+          name = "+Neovim",
           e = { "<Cmd>edit $MYVIMRC<CR>", "Edit config" },
           r = { "<Cmd>source $MYVIMRC<CR>", "Reload config" },
           p = { "<Cmd>PackerSync<CR>", "Sync packages" },
