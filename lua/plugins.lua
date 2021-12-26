@@ -54,7 +54,7 @@ require("packer").startup(function(use)
         },
         --diagnostics
         ["<Leader>l"] = {
-          name = "+Lists",
+          name = "+Trouble",
           c = { "<Cmd>TroubleToggle<cr>", "Toggle Trouble" },
           w = { "<Cmd>TroubleToggle workspace_diagnostics<CR>", "Workspace" },
           b = { "<Cmd>TroubleToggle document_diagnostics<CR>", "Buffer" },
@@ -65,7 +65,7 @@ require("packer").startup(function(use)
         },
         --search
         ["<Leader>f"] = {
-          name = "+Fuzzy find",
+          name = "+Telescope",
           f = { "<Cmd>lua require('telescope.builtin').find_files()<CR>", "Files" },
           b = { "<Cmd>lua require('telescope.builtin').buffers()<CR>", "Buffers" },
           c = { "<Cmd>lua require('telescope.builtin').commands()<CR>", "Commands" },
