@@ -5,7 +5,7 @@ end
 
 require("packer").startup(function(use)
   use({
-    --bufferline
+    --bufferline - tabs
     "akinsho/bufferline.nvim",
     config = function()
       require("bufferline").setup({
@@ -18,13 +18,13 @@ require("packer").startup(function(use)
     end
   })
 
-  --dracula
+  --dracula - theme
   use({
     "dracula/vim",
     as = "dracula",
   })
 
-  --trouble
+  --trouble - diagnostics
   use({
     "folke/trouble.nvim",
     requires = "kyazdani42/nvim-web-devicons",
@@ -33,7 +33,7 @@ require("packer").startup(function(use)
     end
   })
 
-  --which-key
+  --which-key - shortcut suggestions
   use({
     "folke/which-key.nvim",
     config = function()
@@ -98,6 +98,7 @@ require("packer").startup(function(use)
     end
   })
 
+  --nvim-lspconfig - lsp
   use({
     "neovim/nvim-lspconfig",
     config = function()
@@ -110,6 +111,7 @@ require("packer").startup(function(use)
     end
   })
 
+  --nvim-telescope - fuzzy finding
   use({
     "nvim-telescope/telescope.nvim",
     requires = {
@@ -134,6 +136,7 @@ require("packer").startup(function(use)
     }
   })
 
+  --treesitter - AST highlighting
   use({
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
