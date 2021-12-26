@@ -157,5 +157,6 @@ require("packer").startup(function(use)
     end
   })
 
+  --packer - plugin management
   use("wbthomason/packer.nvim")
 end)
