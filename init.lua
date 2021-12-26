@@ -56,7 +56,6 @@ vim.opt.splitright = true
 vim.cmd([[
   augroup formatoptions
     autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerCompile
     autocmd FileType * set formatoptions-=o
   augroup end
 ]])
