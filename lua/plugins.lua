@@ -63,7 +63,7 @@ require("packer").startup(function(use)
           r = { "<Cmd>TroubleToggle lsp_references<CR>", "References" },
           d = { "<Cmd>TroubleToggle lsp_definitions<CR>", "Definitions" },
         },
-        --search
+        --find
         ["<Leader>f"] = {
           name = "+Telescope",
           f = { "<Cmd>lua require('telescope.builtin').find_files()<CR>", "Files" },
