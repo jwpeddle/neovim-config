@@ -197,6 +197,7 @@ require("packer").startup(function(use)
           end,
         },
         completion = {
+          autocomplete = false,
           completeopt = "menu,menuone,preview,noinsert",
         },
         sources = cmp.config.sources({
