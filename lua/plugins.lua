@@ -171,6 +171,11 @@ require("packer").startup(function(use)
     end
   })
 
+  --nvim-cmp
+  use({
+    "hrsh7th/nvim-cmp",
+  )}
+
   --packer - plugin management
   use("wbthomason/packer.nvim")
 end)
