@@ -54,21 +54,14 @@ require("packer").startup(function(use)
 
         },
         --code
-        ["<Leader>c"] = {
+        ["<Leader>d"] = {
           name = "+Diagnostics",
-          x = <cmd>TroubleToggle<cr>
-          w = <cmd>TroubleToggle workspace_diagnostics<cr>
-          d = <cmd>TroubleToggle document_diagnostics<cr>
-          q = <cmd>TroubleToggle quickfix<cr>
-          l = <cmd>TroubleToggle loclist<cr>
-          g = <cmd>TroubleToggle lsp_references<cr>
-          f = { "<Cmd>lua require('telescope.builtin').find_files()<CR>", "Files" },
-          b = { "<Cmd>lua require('telescope.builtin').buffers()<CR>", "Buffers" },
-          c = { "<Cmd>lua require('telescope.builtin').commands()<CR>", "Commands" },
-          h = { "<Cmd>lua require('telescope.builtin').help_tags()<CR>", "Help" },
-          g = { "<Cmd>lua require('telescope.builtin').live_grep()<CR>", "Search workspace" },
-          e = { "<Cmd>lua require('telescope.builtin').file_browser()<CR>", "Explore" },
-          ["/"] = { "<Cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>", "Search buffer" },
+          x = { "<Cmd>TroubleToggle<cr>", "Trouble" },
+          w = { "<Cmd>TroubleToggle workspace_diagnostics<CR>", "Workspace" },
+          d = { "<Cmd>TroubleToggle document_diagnostics<CR>" },
+          q = { "<Cmd>TroubleToggle quickfix<CR>" },
+          l = { "<Cmd>TroubleToggle loclist<CR>" },
+          g = { "<Cmd>TroubleToggle lsp_references<CR>" },
         },
         --search
         ["<Leader>f"] = {
