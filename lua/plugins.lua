@@ -149,6 +149,7 @@ require("packer").startup(function(use)
     end
   })
 
+  --floaterm - floating terminal
   use({
     "voldikss/vim-floaterm",
     config = function()
