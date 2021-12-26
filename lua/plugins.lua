@@ -130,7 +130,7 @@ require("packer").startup(function(use)
       "kyazdani42/nvim-web-devicons",
       "nvim-lua/plenary.nvim",
     },
-    config = {
+    config = function()
       require("telescope").setup({
         defaults = {
           sorting_strategy = "ascending",
@@ -149,7 +149,7 @@ require("packer").startup(function(use)
           },
         },
       })
-    }
+    end
   })
 
   --treesitter - AST highlighting
