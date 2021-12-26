@@ -132,6 +132,7 @@ require("packer").startup(function(use)
     },
     config = {
       require("telescope").setup{
+        local trouble = require("trouble.providers.telescope")
         defaults = {
           sorting_strategy = "ascending",
           layout_config = {
