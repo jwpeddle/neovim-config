@@ -51,17 +51,23 @@ require("packer").startup(function(use)
           W = { "<Cmd>%bwipeout<CR>", "Close all buffers" },
           q = { "<Cmd>quit<cr>", "Quit" },
           t = { "<C-Space>", "Open terminal" },
-
         },
         --code
         ["<Leader>d"] = {
           name = "+Diagnostics",
-          x = { "<Cmd>TroubleToggle<cr>", "All" },
+          d = { "<Cmd>TroubleToggle<cr>", "All" },
           w = { "<Cmd>TroubleToggle workspace_diagnostics<CR>", "Workspace" },
           d = { "<Cmd>TroubleToggle document_diagnostics<CR>", "Buffer" },
           q = { "<Cmd>TroubleToggle quickfix<CR>", "Quickfix" },
           l = { "<Cmd>TroubleToggle loclist<CR>", "Location list" },
           s = { "<Cmd>TroubleToggle lsp_references<CR>", "Symbols" },
+document_diagnostics: document diagnostics from the builtin LSP client
+workspace_diagnostics: workspace diagnostics from the builtin LSP client
+lsp_references: references of the word under the cursor from the builtin LSP client
+lsp_definitions: definitions of the word under the cursor from the builtin LSP client
+lsp_type_definitions: tupe definitions of the word under the cursor from the builtin LSP client
+quickfix: quickfix items
+loclist: items from the window's location list
         },
         --search
         ["<Leader>f"] = {
