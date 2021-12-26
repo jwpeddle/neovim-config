@@ -63,7 +63,7 @@ require("packer").startup(function(use)
         },
         --lists
         ["<Leader>l"] = {
-          name = "+Trouble",
+          name = "+Diagnostics",
           c = { "<Cmd>TroubleToggle<cr>", "Toggle Trouble" },
           w = { "<Cmd>TroubleToggle workspace_diagnostics<CR>", "Workspace" },
           b = { "<Cmd>TroubleToggle document_diagnostics<CR>", "Buffer" },
