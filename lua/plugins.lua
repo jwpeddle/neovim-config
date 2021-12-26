@@ -184,7 +184,7 @@ require("packer").startup(function(use)
       "saadparwaiz1/cmp_luasnip",
     },
     config = function()
-      vim.opt.completeopt = { "menu", "menuone", "noinsert" }
+      --vim.opt.completeopt = { "menu", "menuone", "noinsert" }
 
       local cmp = require("cmp")
       cmp.setup({
@@ -194,7 +194,7 @@ require("packer").startup(function(use)
           end,
         },
         completion = {
-          completeopt = "menu,menuone,noinsert",
+          completeopt = "menu,menuone,preview,noinsert",
         },
         sources = cmp.config.sources({
           { name = 'nvim_lsp' },
