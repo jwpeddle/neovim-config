@@ -130,8 +130,8 @@ require("packer").startup(function(use)
       "kyazdani42/nvim-web-devicons",
       "nvim-lua/plenary.nvim",
     },
-    config = function()
-      require("telescope").setup({
+    config = {
+      require("telescope").setup{
         defaults = {
           sorting_strategy = "ascending",
           layout_config = {
@@ -139,10 +139,13 @@ require("packer").startup(function(use)
             prompt_position = "top",
           },
           mappings = {
-              i = { ["<c-t>"] = trouble.open_with_trouble },
-              n = { ["<c-t>"] = trouble.open_with_trouble },
+            i = {
               ["<esc>"] = require("telescope.actions").close,
+              ["<c-t>"] = trouble.open_with_trouble,
             },
+            n = {
+              ["<c-t>"] = trouble.open_with_trouble,
+            }
           },
         },
       }
