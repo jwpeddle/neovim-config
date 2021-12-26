@@ -37,6 +37,15 @@ vim.opt.shiftround = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
+--
+vim.cmd([[
+augroup incsearch-highlight
+  autocmd!
+  autocmd CmdlineEnter /,\? :set hlsearch
+  autocmd CmdlineLeave /,\? :set nohlsearch
+augroup END
+]])
+
 --briefly jump to matching brace on closing
 vim.opt.showmatch = true
 
