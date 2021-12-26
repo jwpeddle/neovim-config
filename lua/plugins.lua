@@ -185,7 +185,7 @@ require("packer").startup(function(use)
     },
     config = function()
       vim.opt.completeopt
-      local cmp = require'cmp'
+      local cmp = require("cmp")
 
       cmp.setup({
         snippet = {
