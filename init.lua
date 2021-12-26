@@ -37,7 +37,7 @@ vim.opt.shiftround = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
---
+--highlight search only when typing
 vim.cmd([[
 augroup incsearch-highlight
   autocmd!
