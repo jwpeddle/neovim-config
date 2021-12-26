@@ -140,6 +140,8 @@ require("packer").startup(function(use)
           },
           mappings = {
             i = {
+              i = { ["<c-t>"] = trouble.open_with_trouble },
+              n = { ["<c-t>"] = trouble.open_with_trouble },
               ["<esc>"] = require("telescope.actions").close,
             },
           },
