@@ -76,7 +76,6 @@ require("packer").startup(function(use)
         ["<Leader>f"] = {
           name = "+Telescope",
           f = { "<Cmd>lua require('telescope.builtin').find_files()<CR>", "Files" },
-          ? = { "<Cmd>lua require('telescope.builtin').builtins()<CR>", "Pickers" },
           b = { "<Cmd>lua require('telescope.builtin').buffers()<CR>", "Buffers" },
           c = { "<Cmd>lua require('telescope.builtin').commands()<CR>", "Commands" },
           h = { "<Cmd>lua require('telescope.builtin').help_tags()<CR>", "Help" },
@@ -86,6 +85,7 @@ require("packer").startup(function(use)
           s = { "<Cmd>lua require('telescope.builtin').lsp_document_symbols()<CR>", "Document symbols" },
           S = { "<Cmd>lua require('telescope.builtin').lsp_dynamic_workspace_symbols()<CR>", "Workspace symbols" },
           ["/"] = { "<Cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>", "Search buffer" },
+          ["?"] = { "<Cmd>lua require('telescope.builtin').builtins()<CR>", "Pickers" },
         },
         --neovim
         ["<Leader><Leader>"] = {
