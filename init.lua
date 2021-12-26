@@ -53,7 +53,13 @@ vim.opt.foldenable = false
 vim.opt.splitright = true
 
 --don't continue comments when using o
-vim.cmd("autocmd FileType * set formatoptions-=o")
+vim.cmd([[
+  augroup formatoptions
+    autocmd!
+    autocmd BufWritePost plugins.lua source <afile> | PackerCompile
+    autocmd FileType * set formatoptions-=o
+  augroup end
+]])
 
 --******************** mappings ********************
 --\ too hard to press
