@@ -72,6 +72,7 @@ require("packer").startup(function(use)
           h = { "<Cmd>lua require('telescope.builtin').help_tags()<CR>", "Help" },
           g = { "<Cmd>lua require('telescope.builtin').live_grep()<CR>", "Search workspace" },
           e = { "<Cmd>lua require('telescope.builtin').file_browser()<CR>", "Explore" },
+          r = { "<Cmd>lua require('telescope.builtin').lsp_references()<CR>", "LSP References" },
           ["/"] = { "<Cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>", "Search buffer" },
         },
         --neovim
