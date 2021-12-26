@@ -78,6 +78,7 @@ require("packer").startup(function(use)
           p = { "<Cmd>PackerSync<CR>", "Sync packages" },
           h = { "<Cmd>checkhealth<CR>", "Check health" },
         },
+        --unleadered
         ["<Left>"] = { "<Cmd>BufferLineCyclePrev<CR>", "Previous buffer" },
         ["<Right>"] = { "<Cmd>BufferLineCycleNext<CR>", "Next buffer" },
         ["<C-Space>"] = { "<Cmd>FloatermToggle<CR>", "Open terminal" },
