@@ -52,7 +52,7 @@ require("packer").startup(function(use)
           q = { "<Cmd>quit<cr>", "Quit" },
           t = { "<C-Space>", "Open terminal" },
         },
-        --code
+        --diagnostics
         ["<Leader>d"] = {
           name = "+Trouble",
           d = { "<Cmd>TroubleToggle<cr>", "Toggle Trouble" },
