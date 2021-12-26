@@ -198,21 +198,24 @@ require("packer").startup(function(use)
             require('luasnip').lsp_expand(args.body)
           end,
         },
+
         completion = {
           autocomplete = false,
           completeopt = "menu,menuone,preview,noinsert",
         },
+
         sources = cmp.config.sources({
           { name = 'nvim_lsp' },
           { name = 'luasnip' },
         }, {
           { name = 'buffer' },
         }),
+
         mapping = {
           --['<Tab>'] = cmp.mapping.confirm({ select = true }),
           ["<Tab>"] = cmp.mapping(function(fallback)
             if cmp.visible() then
-              cmp.select_next_item()
+              cmp.confirm()
             elseif luasnip.expand_or_jumpable() then
               luasnip.expand_or_jump()
             elseif has_words_before() then
@@ -231,8 +234,8 @@ require("packer").startup(function(use)
               fallback()
             end
           end, { "i", "s" }),
-            },
-          })
+        },
+      })
 
       cmp.setup.cmdline('/', {
         sources = {
