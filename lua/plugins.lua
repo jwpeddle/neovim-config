@@ -184,7 +184,7 @@ require("packer").startup(function(use)
       "saadparwaiz1/cmp_luasnip",
     },
     config = function()
-      vim.opt.completeopt
+      vim.opt.completeopt = { "menu", "menuone", "noselect" }
       local cmp = require("cmp")
 
       cmp.setup({
