@@ -73,7 +73,7 @@ require("packer").startup(function(use)
           g = { "<Cmd>lua require('telescope.builtin').live_grep()<CR>", "Search workspace" },
           e = { "<Cmd>lua require('telescope.builtin').file_browser()<CR>", "Explore" },
           r = { "<Cmd>lua require('telescope.builtin').lsp_references()<CR>", "References" },
-          s = { "<Cmd>lua require('telescope.builtin').lsp_document_symbols()<CR>", "References" },
+          s = { "<Cmd>lua require('telescope.builtin').lsp_document_symbols()<CR>", "Document symbols" },
           ["/"] = { "<Cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>", "Search buffer" },
         },
         --neovim
