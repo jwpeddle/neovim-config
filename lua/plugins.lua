@@ -206,7 +206,7 @@ require("packer").startup(function(use)
           ['<C-b>'] = cmp.mapping(cmp.mapping.scroll_docs(-4), { 'i', 'c' }),
           ['<C-f>'] = cmp.mapping(cmp.mapping.scroll_docs(4), { 'i', 'c' }),
           ['<C-Space>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
-          ['<Tab>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+          ['<Tab>'] = cmp.mapping.confirm({ select = true }),
         },
       })
 
