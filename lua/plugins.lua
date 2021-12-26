@@ -54,8 +54,8 @@ require("packer").startup(function(use)
         },
         --code
         ["<Leader>d"] = {
-          name = "+Diagnostics",
-          d = { "<Cmd>TroubleToggle<cr>", "All" },
+          name = "+Trouble",
+          d = { "<Cmd>TroubleToggle<cr>", "Toggle Trouble" },
           w = { "<Cmd>TroubleToggle workspace_diagnostics<CR>", "Workspace" },
           d = { "<Cmd>TroubleToggle document_diagnostics<CR>", "Buffer" },
           q = { "<Cmd>TroubleToggle quickfix<CR>", "Quickfix" },
