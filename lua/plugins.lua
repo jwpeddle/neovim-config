@@ -37,6 +37,7 @@ require("packer").startup(function(use)
       wk.setup()
       vim.opt.timeoutlen = 500
 
+      --normal mode
       wk.register({
         --common
         ["<Leader>"] = {
