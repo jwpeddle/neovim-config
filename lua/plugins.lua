@@ -18,6 +18,7 @@ require("packer").startup(function(use)
     end
   })
 
+  --dracula
   use({
     "dracula/vim",
     as = "dracula",
