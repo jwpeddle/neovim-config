@@ -38,7 +38,7 @@ require("packer").startup(function(use)
       vim.opt.timeoutlen = 500
 
       wk.register({
-        --neovim
+        --common
         ["<Leader>"] = {
           name = "+prefix",
           o = { "<Cmd>lua require('telescope.builtin').find_files()<CR>", "Open file" },
