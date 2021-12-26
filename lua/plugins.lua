@@ -85,7 +85,7 @@ require("packer").startup(function(use)
           s = { "<Cmd>lua require('telescope.builtin').lsp_document_symbols()<CR>", "Document symbols" },
           S = { "<Cmd>lua require('telescope.builtin').lsp_dynamic_workspace_symbols()<CR>", "Workspace symbols" },
           ["/"] = { "<Cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>", "Search buffer" },
-          ["?"] = { "<Cmd>lua require('telescope.builtin').builtins()<CR>", "Pickers" },
+          ["?"] = { "<Cmd>lua require('telescope.builtin').builtin()<CR>", "Pickers" },
         },
         --neovim
         ["<Leader><Leader>"] = {
