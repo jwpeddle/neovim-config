@@ -174,6 +174,13 @@ require("packer").startup(function(use)
   --nvim-cmp
   use({
     "hrsh7th/nvim-cmp",
+    requires = {
+      "neovim/nvim-lspconfig",
+      "hrsh7th/cmp-nvim-lsp",
+      "hrsh7th/cmp-buffer",
+      "hrsh7th/cmp-path",
+      "hrsh7th/cmp-cmdline",
+    }
   })
 
   --packer - plugin management
