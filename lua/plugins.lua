@@ -232,7 +232,7 @@ require("packer").startup(function(use)
   })
 
   --luasnip
-  use(
+  use({
     "L3MON4D3/LuaSnip",
     config = function()
       local function prequire(...)
@@ -287,7 +287,7 @@ require("packer").startup(function(use)
       vim.api.nvim_set_keymap("i", "<C-E>", "<Plug>luasnip-next-choice", {})
       vim.api.nvim_set_keymap("s", "<C-E>", "<Plug>luasnip-next-choice", {})
     end
-  )
+  })
 
   --packer - plugin management
   use("wbthomason/packer.nvim")
