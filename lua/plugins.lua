@@ -255,7 +255,24 @@ require("packer").startup(function(use)
   use("wellle/targets.vim")
   
   --nvim-treesitter-textobjects
-  use("nvim-treesitter/nvim-treesitter-textobjects")
+  use({
+    "nvim-treesitter/nvim-treesitter-textobjects",
+    config = function()
+      require("nvim-treesitter.configs").setup({
+        textobjects = {
+          swap = {
+            enable = true,
+            swap_next = {
+              ["<leader>a"] = "@parameter.inner",
+            },
+            swap_previous = {
+              ["<leader>A"] = "@parameter.inner",
+            },
+          },
+        },
+      })
+    end
+  })
 
   --packer - plugin management
   use("wbthomason/packer.nvim")
