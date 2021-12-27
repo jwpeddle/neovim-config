@@ -252,7 +252,7 @@ require("packer").startup(function(use)
   use("machakann/vim-sandwich")
 
   --targets
-  user("wellle/targets.vim")
+  use("wellle/targets.vim")
 
   --packer - plugin management
   use("wbthomason/packer.nvim")
