@@ -59,8 +59,9 @@ vim.opt.clipboard:prepend("unnamedplus")
 --disable folding
 vim.opt.foldenable = false
 
---open splits on right side
+--open splits on right/bottom
 vim.opt.splitright = true
+vim.opt.splitbelow = true
 
 --don't continue comments when using o
 vim.cmd([[
