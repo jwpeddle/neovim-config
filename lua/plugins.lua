@@ -253,6 +253,8 @@ require("packer").startup(function(use)
 
   --targets
   use("wellle/targets.vim")
+  
+  use("nvim-treesitter/nvim-treesitter-textobjects")
 
   --packer - plugin management
   use("wbthomason/packer.nvim")
