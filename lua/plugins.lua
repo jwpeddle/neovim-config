@@ -248,12 +248,13 @@ require("packer").startup(function(use)
     end
   })
 
-  --sandwich
+  --vim-sandwich
   use("machakann/vim-sandwich")
 
   --targets
   use("wellle/targets.vim")
   
+  --nvim-treesitter-textobjects
   use("nvim-treesitter/nvim-treesitter-textobjects")
 
   --packer - plugin management
