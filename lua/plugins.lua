@@ -195,7 +195,7 @@ require("packer").startup(function(use)
       cmp.setup({
         snippet = {
           expand = function(args)
-            require('luasnip').lsp_expand(args.body)
+            require("luasnip").lsp_expand(args.body)
           end,
         },
 
@@ -205,10 +205,10 @@ require("packer").startup(function(use)
         },
 
         sources = cmp.config.sources({
-          { name = 'nvim_lsp' },
-          { name = 'luasnip' },
+          { name = "nvim_lsp" },
+          { name = "luasnip" },
         }, {
-          { name = 'buffer' },
+          { name = "buffer" },
         }),
 
         mapping = {
@@ -226,23 +226,23 @@ require("packer").startup(function(use)
         },
       })
 
-      cmp.setup.cmdline('/', {
+      cmp.setup.cmdline("/", {
         sources = {
-          { name = 'buffer' }
+          { name = "buffer" }
         }
       })
 
-      cmp.setup.cmdline(':', {
+      cmp.setup.cmdline(":", {
         sources = cmp.config.sources({
-          { name = 'path' }
+          { name = "path" }
         }, {
-          { name = 'cmdline' }
+          { name = "cmdline" }
         })
       })
 
       -- Setup lspconfig.
-      local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
-      require('lspconfig')['pyright'].setup {
+      local capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities())
+      require("lspconfig")["pyright"].setup {
         capabilities = capabilities
       }
     end
