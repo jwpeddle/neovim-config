@@ -249,9 +249,7 @@ require("packer").startup(function(use)
   })
 
   --sandwich
-  use({
-    "machakann/vim-sandwich"
-  })
+  use("machakann/vim-sandwich")
 
   --packer - plugin management
   use("wbthomason/packer.nvim")
