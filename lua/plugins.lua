@@ -263,10 +263,10 @@ require("packer").startup(function(use)
           swap = {
             enable = true,
             swap_next = {
-              ["<leader>a"] = "@parameter.inner",
+              ["<leader>a"] = "@function.outer",
             },
             swap_previous = {
-              ["<leader>A"] = "@parameter.inner",
+              ["<leader>A"] = "@function.inner",
             },
           },
         },
