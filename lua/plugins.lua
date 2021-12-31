@@ -137,7 +137,7 @@ require("packer").startup(function(use)
               typeCheckingMode = "off",
             },
           },
-        }
+        },
       })
     end
   })
