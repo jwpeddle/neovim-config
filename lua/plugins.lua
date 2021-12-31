@@ -274,6 +274,14 @@ require("packer").startup(function(use)
     end
   })
 
+  --comment.nvim
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+  }
+
   --packer - plugin management
   use("wbthomason/packer.nvim")
 end)
