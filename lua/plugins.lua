@@ -258,19 +258,7 @@ require("packer").startup(function(use)
   use({
     "nvim-treesitter/nvim-treesitter-textobjects",
     config = function()
-      require("nvim-treesitter.configs").setup({
-        textobjects = {
-          swap = {
-            enable = true,
-            swap_next = {
-              ["<leader>a"] = "@function.outer",
-            },
-            swap_previous = {
-              ["<leader>A"] = "@function.inner",
-            },
-          },
-        },
-      })
+      require("nvim-treesitter.configs").setup()
     end
   })
 
