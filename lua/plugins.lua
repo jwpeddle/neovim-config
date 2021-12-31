@@ -276,7 +276,7 @@ require("packer").startup(function(use)
 
   --comment.nvim
   use {
-    'numToStr/Comment.nvim',
+    "numToStr/Comment.nvim",
     config = function()
         require('Comment').setup()
     end
