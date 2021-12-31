@@ -248,13 +248,13 @@ require("packer").startup(function(use)
     end
   })
 
-  --vim-sandwich
+  --sandwich
   use("machakann/vim-sandwich")
 
   --targets
   use("wellle/targets.vim")
   
-  --nvim-treesitter-textobjects
+  --treesitter-textobjects
   use({
     "nvim-treesitter/nvim-treesitter-textobjects",
     config = function()
@@ -262,7 +262,7 @@ require("packer").startup(function(use)
     end
   })
 
-  --comment.nvim
+  --comment
   use {
     "numToStr/Comment.nvim",
     config = function()
