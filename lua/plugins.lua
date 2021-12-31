@@ -136,7 +136,7 @@ require("packer").startup(function(use)
             analysis = {
               typeCheckingMode = "off",
             },
-          }
+          },
         }
       })
     end
