@@ -33,6 +33,19 @@ require("packer").startup(function(use)
     as = "dracula",
   })
 
+  --lspconfig - lsp
+  use({
+    "neovim/nvim-lspconfig",
+    config = function()
+      require("lspconfig").pyright.setup({
+        settings = {
+          pyright = {
+          }
+        }
+      })
+    end
+  })
+
   --trouble - diagnostics
   use({
     "folke/trouble.nvim",
@@ -104,19 +117,6 @@ require("packer").startup(function(use)
         ["<C-Space>"] = { "<Cmd>FloatermToggle<CR>", "Close terminal" },
       }, {
         mode = "t",
-      })
-    end
-  })
-
-  --nvim-lspconfig - lsp
-  use({
-    "neovim/nvim-lspconfig",
-    config = function()
-      require("lspconfig").pyright.setup({
-        settings = {
-          pyright = {
-          }
-        }
       })
     end
   })
