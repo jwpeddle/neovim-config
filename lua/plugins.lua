@@ -132,7 +132,10 @@ require("packer").startup(function(use)
     config = function()
       require("lspconfig").pyright.setup({
         settings = {
-          pyright = {
+          python = {
+            analysis = {
+              typeCheckingMode = "off",
+            }
           }
         }
       })
