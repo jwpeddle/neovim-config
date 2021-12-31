@@ -224,9 +224,9 @@ require("packer").startup(function(use)
           t = { "<C-Space>", "Open terminal" },
         },
         --lists
-        ["<Leader>l"] = {
+        ["<Leader>d"] = {
           name = "+Diagnostics",
-          c = { "<Cmd>TroubleToggle<cr>", "Toggle Trouble" },
+          d = { "<Cmd>TroubleToggle<cr>", "Toggle Trouble" },
           w = { "<Cmd>TroubleToggle workspace_diagnostics<CR>", "Workspace" },
           b = { "<Cmd>TroubleToggle document_diagnostics<CR>", "Buffer" },
           q = { "<Cmd>TroubleToggle quickfix<CR>", "Quickfix" },
