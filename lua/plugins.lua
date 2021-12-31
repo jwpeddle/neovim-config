@@ -33,6 +33,14 @@ require("packer").startup(function(use)
     as = "dracula",
   })
 
+  --floaterm - floating terminal
+  use({
+    "voldikss/vim-floaterm",
+    config = function()
+      vim.g.floaterm_title = ""
+    end
+  })
+
   --lspconfig - lsp
   use({
     "neovim/nvim-lspconfig",
@@ -42,6 +50,48 @@ require("packer").startup(function(use)
           pyright = {
           }
         }
+      })
+    end
+  })
+
+  --telescope - fuzzy finding
+  use({
+    "nvim-telescope/telescope.nvim",
+    requires = {
+      "kyazdani42/nvim-web-devicons",
+      "nvim-lua/plenary.nvim",
+    },
+    config = function()
+      require("telescope").setup({
+        defaults = {
+          sorting_strategy = "ascending",
+          layout_config = {
+            height = 0.5,
+            prompt_position = "top",
+          },
+          mappings = {
+            i = {
+              ["<esc>"] = require("telescope.actions").close,
+              ["<c-t>"] = require("trouble.providers.telescope").open_with_trouble,
+            },
+            n = {
+              ["<c-t>"] = require("trouble.providers.telescope").open_with_trouble,
+            }
+          },
+        },
+      })
+    end
+  })
+
+  --treesitter - AST highlighting
+  use({
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",
+    config = function()
+      require("nvim-treesitter.configs").setup({
+        highlight = {
+          enable = true,
+        },
       })
     end
   })
@@ -118,56 +168,6 @@ require("packer").startup(function(use)
       }, {
         mode = "t",
       })
-    end
-  })
-
-  --telescope - fuzzy finding
-  use({
-    "nvim-telescope/telescope.nvim",
-    requires = {
-      "kyazdani42/nvim-web-devicons",
-      "nvim-lua/plenary.nvim",
-    },
-    config = function()
-      require("telescope").setup({
-        defaults = {
-          sorting_strategy = "ascending",
-          layout_config = {
-            height = 0.5,
-            prompt_position = "top",
-          },
-          mappings = {
-            i = {
-              ["<esc>"] = require("telescope.actions").close,
-              ["<c-t>"] = require("trouble.providers.telescope").open_with_trouble,
-            },
-            n = {
-              ["<c-t>"] = require("trouble.providers.telescope").open_with_trouble,
-            }
-          },
-        },
-      })
-    end
-  })
-
-  --treesitter - AST highlighting
-  use({
-    "nvim-treesitter/nvim-treesitter",
-    run = ":TSUpdate",
-    config = function()
-      require("nvim-treesitter.configs").setup({
-        highlight = {
-          enable = true,
-        },
-      })
-    end
-  })
-
-  --floaterm - floating terminal
-  use({
-    "voldikss/vim-floaterm",
-    config = function()
-      vim.g.floaterm_title = ""
     end
   })
 
