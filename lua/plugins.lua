@@ -154,6 +154,7 @@ require("packer").startup(function(use)
     requires = {
       "kyazdani42/nvim-web-devicons",
       "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope-file-browser.nvim",
     },
     config = function()
       require("telescope").setup({
@@ -174,6 +175,7 @@ require("packer").startup(function(use)
           },
         },
       })
+      require("telescope").load_extension("file_browser")
     end
   })
 
