@@ -245,7 +245,7 @@ require("packer").startup(function(use)
           c = { "<Cmd>lua require('telescope.builtin').commands()<CR>", "Commands" },
           h = { "<Cmd>lua require('telescope.builtin').help_tags()<CR>", "Help" },
           g = { "<Cmd>lua require('telescope.builtin').live_grep()<CR>", "Search workspace" },
-          e = { "<Cmd>lua require('telescope.builtin').file_browser()<CR>", "Explore" },
+          e = { "<Cmd>lua require('telescope').extensions.file_browser.file_browser()<CR>", "Explore" },
           r = { "<Cmd>lua require('telescope.builtin').lsp_references()<CR>", "References" },
           s = { "<Cmd>lua require('telescope.builtin').lsp_document_symbols()<CR>", "Document symbols" },
           S = { "<Cmd>lua require('telescope.builtin').lsp_dynamic_workspace_symbols()<CR>", "Workspace symbols" },
