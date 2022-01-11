@@ -135,6 +135,8 @@ require("packer").startup(function(use)
           python = {
             analysis = {
               typeCheckingMode = "off",
+              reportGeneralTypeIssues = false,
+              reportOptionalMemberAccess = false,
             },
           },
         },
