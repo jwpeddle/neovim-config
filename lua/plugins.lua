@@ -98,9 +98,9 @@ require("packer").startup(function(use)
 
       -- Setup lspconfig.
       local capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities())
-      require("lspconfig")["pyright"].setup {
-        capabilities = capabilities,
-      }
+      -- require("lspconfig")["pyright"].setup {
+      --   capabilities = capabilities,
+      -- }
     end
   })
 
@@ -130,15 +130,15 @@ require("packer").startup(function(use)
   use({
     "neovim/nvim-lspconfig",
     config = function()
-      require("lspconfig").pyright.setup({
-        settings = {
-          python = {
-            analysis = {
-              typeCheckingMode = "off",
-            },
-          },
-        },
-      })
+      -- require("lspconfig").pyright.setup({
+      --   settings = {
+      --     python = {
+      --       analysis = {
+      --         typeCheckingMode = "off",
+      --       },
+      --     },
+      --   },
+      -- })
     end
   })
 
