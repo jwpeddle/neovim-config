@@ -234,6 +234,7 @@ require("packer").startup(function(use)
         ["<Leader>"] = {
           name = "+Prefix",
           o = { "<Cmd>lua require('telescope.builtin').find_files()<CR>", "Open file" },
+          n = { "<Cmd>NvimTreeToggle<CR>", "Explore" },
           w = { "<Cmd>bwipeout<CR>", "Close buffer" },
           W = { "<Cmd>%bwipeout<CR>", "Close all buffers" },
           q = { "<Cmd>quit<cr>", "Quit" },
