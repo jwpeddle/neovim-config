@@ -142,6 +142,14 @@ require("packer").startup(function(use)
     end
   })
 
+  --nvim-tree
+  use({
+    "kyazdani42/nvim-tree.lua",
+    requires = {
+      "kyazdani42/nvim-web-devicons",
+    }
+  })
+
   --sandwich
   use("machakann/vim-sandwich")
 
