@@ -130,15 +130,15 @@ require("packer").startup(function(use)
   use({
     "neovim/nvim-lspconfig",
     config = function()
-      -- require("lspconfig").pyright.setup({
-      --   settings = {
-      --     python = {
-      --       analysis = {
-      --         typeCheckingMode = "off",
-      --       },
-      --     },
-      --   },
-      -- })
+      require("lspconfig").pyright.setup({
+        settings = {
+          python = {
+            analysis = {
+              typeCheckingMode = "off",
+            },
+          },
+        },
+      })
     end
   })
 
