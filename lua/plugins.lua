@@ -139,7 +139,7 @@ require("packer").startup(function(use)
               pylint = {
                 enabled = true,
                 args = {
-                  "--load-plugins=pylint_django",
+                  "--load-plugins pylint_django",
                 }
               },
               pycodestyle = { enabled = false },
