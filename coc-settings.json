@@ -10,7 +10,6 @@
         "pylsp.builtin.installExtrasArgs": [
           "flake8"
         ]
-        }
       }
     }
   }
