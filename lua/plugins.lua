@@ -104,13 +104,16 @@ require("packer").startup(function(use)
   --   end
   -- })
 
+  --coc
+  use {'neoclide/coc.nvim', branch = 'release'}
+
   --comment
-  use {
+  use({
     "numToStr/Comment.nvim",
     config = function()
         require('Comment').setup()
     end
-  }
+  })
 
   --dracula - theme
   use({
