@@ -138,8 +138,8 @@ require("packer").startup(function(use)
               pyflakes = { enabled = false },
               pylint = {
                 enabled = true,
-                args [
-                  "--load-plugins=pylint_django"
+                args = [
+                  "--load-plugins=pylint_django",
                 ]
               },
               pycodestyle = { enabled = false },
