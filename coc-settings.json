@@ -9,7 +9,7 @@
         "pyls": {
           "builtin.installExtrasArgs": [
             "flake8"
-          ],
+          ]
         }
       }
     }
