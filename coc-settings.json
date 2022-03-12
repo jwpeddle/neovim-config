@@ -1,4 +1,5 @@
-"languageserver": {
+{
+  "languageserver": {
   "python": {
     "command": "python",
     "args": [
