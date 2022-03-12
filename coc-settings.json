@@ -2,13 +2,6 @@
   "languageserver": {
     "python": {
       "command": "python",
-      "args": [
-        "-mpylsp",
-        "-vv",
-        "--log-file",
-        "/tmp/lsp_python.log"
-      ],
-      "trace.server": "verbose",
       "filetypes": [
         "python"
       ],
