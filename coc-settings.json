@@ -2,11 +2,6 @@
   "languageserver": {
     "python": {
       "command": "python",
-      "args": [
-        "-mpyls",
-        "-vv"
-      ],
-      "trace.server": "verbose",
       "filetypes": [
         "python"
       ],
