@@ -4,7 +4,7 @@
       "command": "python",
       "args": [
         "-mpyls",
-        "-vv",
+        "-vv"
       ],
       "trace.server": "verbose",
       "filetypes": [
