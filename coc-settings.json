@@ -8,8 +8,8 @@
       "settings": {
         "pylsp.enable": true,
         "pylsp.builtin.installExtrasArgs": [
-            "flake8"
-          ]
+          "flake8"
+        ]
         }
       }
     }
