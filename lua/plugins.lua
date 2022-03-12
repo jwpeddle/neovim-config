@@ -132,9 +132,11 @@ require("packer").startup(function(use)
     config = function()
       require("lspconfig").pylsp.setup({
         settings = {
-          plugins = {
-            pyflakes = { enabled = false },
-            pycodestyle = { enabled = false },
+          pylsp = {
+            plugins = {
+              pyflakes = { enabled = false },
+              pycodestyle = { enabled = false },
+            }
           }
         }
       })
