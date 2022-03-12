@@ -10,9 +10,6 @@
           "builtin.installExtrasArgs": [
             "flake8"
           ],
-          "plugins": {
-            "pycodestyle.enabled": false
-          }
         }
       }
     }
