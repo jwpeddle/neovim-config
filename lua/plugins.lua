@@ -105,7 +105,10 @@ require("packer").startup(function(use)
   -- })
 
   --coc
-  use {'neoclide/coc.nvim', branch = 'release'}
+  use {
+    "neoclide/coc.nvim",
+    branch = "release",
+  }
 
   --comment
   use({
