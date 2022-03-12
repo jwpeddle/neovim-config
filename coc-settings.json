@@ -6,9 +6,16 @@
         "python"
       ],
       "settings": {
-        "pylsp": {
-          "enable": true,
-        }
+        "pylsp.enable": true,
+        "pylsp.builtin.installExtrasArgs": [
+            "flake8",
+            "mccabe",
+            "pycodestyle",
+            "pydocstyle",
+            "pyflakes",
+            "pylint",
+            "rope"
+          ],
       }
     }
   }
