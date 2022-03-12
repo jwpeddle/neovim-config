@@ -130,8 +130,7 @@ require("packer").startup(function(use)
   use({
    "neovim/nvim-lspconfig",
    config = function()
-     require("lspconfig").pylsp.setup({
-     })
+     require("lspconfig").pylsp.setup()
    end
   })
 
