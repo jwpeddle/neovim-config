@@ -131,8 +131,10 @@ require("packer").startup(function(use)
    "neovim/nvim-lspconfig",
    config = function()
      require("lspconfig").pylsp.setup({
-       plugins.pyflakes.enabled = false,
-       plugins.pycodestyle.enabled = false,
+       plugins = {
+        pyflakes = { enabled = false },
+        pycodestyle = { enabled = false },
+       }
      })
    end
   })
