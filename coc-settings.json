@@ -5,8 +5,6 @@
       "args": [
         "-mpyls",
         "-vv",
-        "--log-file",
-        "/tmp/lsp_python.log"
       ],
       "trace.server": "verbose",
       "filetypes": [
