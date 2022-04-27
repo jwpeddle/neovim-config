@@ -125,6 +125,24 @@ require("packer").startup(function(use)
     end
   })
 
+  --lspconfig - lsp
+  use({
+    "neovim/nvim-lspconfig",
+    config = function()
+      require("lspconfig").pylsp.setup({
+        settings = {
+          pylsp = {
+            plugins = {
+              pylint = { enabled = false },
+              flake8 = { enabled = false },
+              pyflakes = { enabled = false },
+              pycodestyle = { enabled = false },
+            }
+          }
+        }
+      })
+    end
+  })
 
   --nvim-tree
   use({
