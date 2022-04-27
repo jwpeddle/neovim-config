@@ -130,6 +130,12 @@ require("packer").startup(function(use)
     "neovim/nvim-lspconfig",
     config = function()
       require("lspconfig").pylsp.setup({
+        root_dir = function(fname)
+          local root_files = {
+            "pyproject.toml",
+          }
+          return util.root_pattern(unpack(root_files))(fname) or util.find_git_ancestor(fname)
+        end,
         settings = {
           pylsp = {
             plugins = {
