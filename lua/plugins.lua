@@ -132,7 +132,6 @@ require("packer").startup(function(use)
       require("lspconfig").pylsp.setup({
         settings = {
           pylsp = {
-            --configurationSources = { "flake8" },
             plugins = {
               flake8 = { enabled = false },
               pyflakes = { enabled = false },
