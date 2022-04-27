@@ -28,81 +28,80 @@ require("packer").startup(function(use)
   })
 
   --cmp
-  -- use({
-  --   "hrsh7th/nvim-cmp",
-  --   requires = {
-  --     "neovim/nvim-lspconfig",
-  --     "hrsh7th/cmp-nvim-lsp",
-  --     "hrsh7th/cmp-buffer",
-  --     "hrsh7th/cmp-path",
-  --     "hrsh7th/cmp-cmdline",
-  --     "L3MON4D3/LuaSnip",
-  --     "saadparwaiz1/cmp_luasnip",
-  --   },
-  --   config = function()
-  --     local has_words_before = function()
-  --       local line, col = unpack(vim.api.nvim_win_get_cursor(0))
-  --       return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
-  --     end
-  --
-  --     local cmp = require("cmp")
-  --     local luasnip = require("luasnip")
-  --
-  --     cmp.setup({
-  --       snippet = {
-  --         expand = function(args)
-  --           require("luasnip").lsp_expand(args.body)
-  --         end,
-  --       },
-  --
-  --       completion = {
-  --         autocomplete = false,
-  --         completeopt = "menu,menuone,preview,noinsert",
-  --       },
-  --
-  --       sources = cmp.config.sources({
-  --         { name = "nvim_lsp" },
-  --         { name = "luasnip" },
-  --       }, {
-  --         { name = "buffer" },
-  --       }),
-  --
-  --       mapping = {
-  --         ["<Tab>"] = cmp.mapping(function(fallback)
-  --           if cmp.visible() then
-  --             cmp.confirm()
-  --           elseif luasnip.expand_or_jumpable() then
-  --             luasnip.expand_or_jump()
-  --           elseif has_words_before() then
-  --             cmp.complete()
-  --           else
-  --             fallback()
-  --           end
-  --         end, { "i", "s" }),
-  --       },
-  --     })
-  --
-  --     cmp.setup.cmdline("/", {
-  --       sources = {
-  --         { name = "buffer" }
-  --       }
-  --     })
-  --
-  --     cmp.setup.cmdline(":", {
-  --       sources = cmp.config.sources({
-  --         { name = "path" }
-  --       }, {
-  --         { name = "cmdline" }
-  --       })
-  --     })
-  --
-  --     Setup lspconfig.
-  --     local capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities())
-  --     require("lspconfig")["pyright"].setup {
-  --       capabilities = capabilities,
-  --     }
-  --   end
-  -- })
+  use({
+    "hrsh7th/nvim-cmp",
+    requires = {
+      "neovim/nvim-lspconfig",
+      "hrsh7th/cmp-nvim-lsp",
+      "hrsh7th/cmp-buffer",
+      "hrsh7th/cmp-path",
+      "hrsh7th/cmp-cmdline",
+      "L3MON4D3/LuaSnip",
+      "saadparwaiz1/cmp_luasnip",
+    },
+    config = function()
+      local has_words_before = function()
+        local line, col = unpack(vim.api.nvim_win_get_cursor(0))
+        return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
+      end
+
+      local cmp = require("cmp")
+      local luasnip = require("luasnip")
+
+      cmp.setup({
+        snippet = {
+          expand = function(args)
+            require("luasnip").lsp_expand(args.body)
+          end,
+        },
+
+        completion = {
+          autocomplete = false,
+          completeopt = "menu,menuone,preview,noinsert",
+        },
+
+        sources = cmp.config.sources({
+          { name = "nvim_lsp" },
+          { name = "luasnip" },
+        }, {
+          { name = "buffer" },
+        }),
+
+        mapping = {
+          ["<Tab>"] = cmp.mapping(function(fallback)
+            if cmp.visible() then
+              cmp.confirm()
+            elseif luasnip.expand_or_jumpable() then
+              luasnip.expand_or_jump()
+            elseif has_words_before() then
+              cmp.complete()
+            else
+              fallback()
+            end
+          end, { "i", "s" }),
+        },
+      })
+
+      cmp.setup.cmdline("/", {
+        sources = {
+          { name = "buffer" }
+        }
+      })
+
+      cmp.setup.cmdline(":", {
+        sources = cmp.config.sources({
+          { name = "path" }
+        }, {
+          { name = "cmdline" }
+        })
+      })
+
+      local capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities())
+      require("lspconfig")["pylsp"].setup {
+        capabilities = capabilities,
+      }
+    end
+  })
 
   --comment
   use({
