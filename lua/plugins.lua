@@ -135,7 +135,7 @@ require("packer").startup(function(use)
             plugins = {
               flake8 = {
                 enabled = true,
-                ignore = ["E501"]
+                ignore = {"E501"}
               },
               pyflakes = { enabled = false },
               pycodestyle = { enabled = false },
