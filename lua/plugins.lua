@@ -125,14 +125,6 @@ require("packer").startup(function(use)
     end
   })
 
-  --lspconfig - lsp
-  use({
-    "neovim/nvim-lspconfig",
-    config = function()
-      require("lspconfig").pylsp.setup({
-      })
-    end
-  })
 
   --nvim-tree
   use({
