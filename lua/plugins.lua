@@ -95,6 +95,7 @@ require("packer").startup(function(use)
           { name = "cmdline" }
         })
       })
+
     end
   })
 
@@ -124,7 +125,13 @@ require("packer").startup(function(use)
   use({
     "neovim/nvim-lspconfig",
     config = function()
+      local capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities())
+
+      require("lspconfig")["pylsp"].setup {
+      }
+
       require("lspconfig").pylsp.setup({
+        capabilities = capabilities,
         settings = {
           pylsp = {
             plugins = {
