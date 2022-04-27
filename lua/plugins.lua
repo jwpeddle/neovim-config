@@ -133,7 +133,10 @@ require("packer").startup(function(use)
         settings = {
           pylsp = {
             plugins = {
-              flake8 = { enabled = true },
+              flake8 = {
+                enabled = true
+                config = "./.flake8"
+              },
               pyflakes = { enabled = false },
               pycodestyle = { enabled = false },
             }
