@@ -131,7 +131,7 @@ require("packer").startup(function(use)
         capabilities = capabilities,
         settings = {
           pylsp = {
-            configurationSources = { "flake8", "mypy" }
+            configurationSources = { "flake8", "mypy" },
             plugins = {
               flake8 = { enabled = true },
               mypy = { enabled = true },
