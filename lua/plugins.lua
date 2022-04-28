@@ -134,7 +134,7 @@ require("packer").startup(function(use)
             configurationSources = { "flake8", "mypy" },
             plugins = {
               flake8 = { enabled = true },
-              mypy = { enabled = true },
+              mypy = { enabled = false },
               pyflakes = { enabled = false },
               pycodestyle = { enabled = false },
             }
