@@ -82,6 +82,11 @@ require("packer").startup(function(use)
               cmp.select_prev_item()
             end
           end, { "i", "s" }),
+          ["<CR>"] = cmp.mapping(function()
+            if cmp.visible() then
+              cmp.confirm()
+            end
+          end, { "i", "s" }),
         },
       })
 
