@@ -70,7 +70,7 @@ require("packer").startup(function(use)
         mapping = {
           ["<Tab>"] = cmp.mapping(function(fallback)
             if cmp.visible() then
-              cmp.confirm()
+              cmp.select_next_item()
             elseif has_words_before() then
               cmp.complete()
             else
