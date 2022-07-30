@@ -154,6 +154,7 @@ require("packer").startup(function(use)
               pylsp_mypy = { enabled = true },
               rope_completion = { enabled = false },
               rope_rename = { enabled = false },
+              yapf = { enabled = false },
             }
           }
         }
