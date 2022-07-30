@@ -151,7 +151,7 @@ require("packer").startup(function(use)
               pycodestyle = { enabled = false },
               pyflakes = { enabled = false },
               pylint = { enabled = false },
-              pylsp_mypy = { enabled = true },
+              pylsp_mypy = { enabled = true, dmypy = true },
               rope_completion = { enabled = false },
               rope_rename = { enabled = false },
               yapf = { enabled = false },
