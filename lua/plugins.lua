@@ -147,10 +147,14 @@ require("packer").startup(function(use)
             plugins = {
               autopep8 = { enabled = false },
               flake8 = { enabled = true },
-              pylsp_mypy = { enabled = true },
-              pyflakes = { enabled = false },
               pydocstyle = { enabled = false },
               pycodestyle = { enabled = false },
+              pyflakes = { enabled = false },
+              pylint = { enabled = false },
+              pylsp_mypy = { enabled = true },
+              rope_completion = { enabled = false },
+              rope_rename = { enabled = false },
+              yapf = { enabled = false },
             }
           }
         }
