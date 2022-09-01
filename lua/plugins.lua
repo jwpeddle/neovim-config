@@ -119,6 +119,12 @@ require("packer").startup(function(use)
     end
   })
 
+  --copilot
+  use({
+    "github/copilot.vim",
+    branch = "release"
+  })
+
   --dracula - theme
   use({
     "dracula/vim",
