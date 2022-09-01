@@ -122,7 +122,7 @@ require("packer").startup(function(use)
   --copilot
   use({
     "github/copilot.vim",
-    branch = "release"
+    branch = "release",
     config = function()
       vim.g.copilot_no_tab_map = true
     end
