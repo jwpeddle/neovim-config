@@ -123,6 +123,9 @@ require("packer").startup(function(use)
   use({
     "github/copilot.vim",
     branch = "release"
+    config = function()
+      vim.g.copilot_no_tab_map = ""
+    end
   })
 
   --dracula - theme
