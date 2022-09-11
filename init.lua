@@ -47,6 +47,9 @@ augroup incsearch-highlight
 augroup END
 ]])
 
+--highlight column 120
+vim.opt.colorcolumn = 120
+
 --briefly jump to matching brace on closing
 vim.opt.showmatch = true
 
