@@ -121,13 +121,7 @@ require("packer").startup(function(use)
 
   --copilot
   use({
-    "github/copilot.vim",
-    branch = "release",
-    config = function()
-      vim.g.copilot_no_tab_map = true
-      vim.g.copilot_assumed_mapped = true
-      vim.g.copilot_tab_fallback = ""
-    end
+    "zibirenbaum/copilot.vim",
   })
 
   --dracula - theme
