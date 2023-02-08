@@ -135,6 +135,7 @@ require("packer").startup(function(use)
       })
     end
   }
+
   --dracula - theme
   use({
     "dracula/vim",
