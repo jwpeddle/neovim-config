@@ -38,6 +38,24 @@ require("packer").startup(function(use)
       "hrsh7th/cmp-cmdline",
       "L3MON4D3/LuaSnip",
       "saadparwaiz1/cmp_luasnip",
+      {
+        "zbirenbaum/copilot.lua",
+        cmd = "Copilot",
+        event = "InsertEnter",
+        config = function()
+        require("copilot").setup()
+        end,
+      },
+      {
+        "zbirenbaum/copilot-cmp",
+        after = { "copilot.lua" },
+        config = function ()
+          require("copilot_cmp").setup({
+            suggestion = { enabled = false },
+            panel = { enabled = false },
+          })
+        end
+      }
     },
     config = function()
       local has_words_before = function()
