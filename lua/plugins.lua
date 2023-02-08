@@ -121,7 +121,7 @@ require("packer").startup(function(use)
 
   --copilot
   use({
-    "zbirenbaum/copilot.lua"
+    "zbirenbaum/copilot.lua",
     cmd = "Copilot",
     event = "InsertEnter",
     config = function()
