@@ -129,7 +129,7 @@ require("packer").startup(function(use)
     end,
   })
 
-  --copilot-compuse {
+  --copilot-comp {
   use {
     "zbirenbaum/copilot-cmp",
     after = { "copilot.lua" },
