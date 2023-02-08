@@ -40,7 +40,6 @@ require("packer").startup(function(use)
       "saadparwaiz1/cmp_luasnip",
       {
         "zbirenbaum/copilot.lua",
-        cmd = "Copilot",
         event = "InsertEnter",
         config = function()
           require("copilot").setup()
