@@ -125,11 +125,7 @@ require("packer").startup(function(use)
     cmd = "Copilot",
     event = "InsertEnter",
     config = function()
-     require("copilot").setup({
-       suggestion = {
-         auto_trigger = true
-       }
-     })
+     require("copilot").setup()
     end,
   })
 
