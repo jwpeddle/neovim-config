@@ -121,9 +121,20 @@ require("packer").startup(function(use)
 
   --copilot
   use({
-    "zbirenbaum/copilot.lua",
+    "zbirenbaum/copilot.lua"
   })
 
+  --copilot-compuse {
+  use {
+    "zbirenbaum/copilot-cmp",
+    after = { "copilot.lua" },
+    config = function ()
+      require("copilot_cmp").setup(
+        suggestion = { enabled = false },
+        panel = { enabled = false },
+      )
+    end
+  }
   --dracula - theme
   use({
     "dracula/vim",
