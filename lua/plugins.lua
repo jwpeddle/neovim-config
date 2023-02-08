@@ -119,28 +119,6 @@ require("packer").startup(function(use)
     end
   })
 
-  --copilot
-  use({
-    "zbirenbaum/copilot.lua",
-    cmd = "Copilot",
-    event = "InsertEnter",
-    config = function()
-     require("copilot").setup()
-    end,
-  })
-
-  --copilot-comp {
-  use {
-    "zbirenbaum/copilot-cmp",
-    after = { "copilot.lua" },
-    config = function ()
-      require("copilot_cmp").setup({
-        suggestion = { enabled = false },
-        panel = { enabled = false },
-      })
-    end
-  }
-
   --dracula - theme
   use({
     "dracula/vim",
