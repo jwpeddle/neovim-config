@@ -46,6 +46,7 @@ require("packer").startup(function(use)
             suggestion = { enabled = false },
             panel = { enabled = false },
           }
+        end
       },
       {
         "zbirenbaum/copilot-cmp",
