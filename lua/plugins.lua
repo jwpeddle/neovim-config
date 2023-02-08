@@ -41,15 +41,17 @@ require("packer").startup(function(use)
       {
         "zbirenbaum/copilot.lua",
         event = "InsertEnter",
+        config = function ()
+          require("copilot").setup({
+            suggestion = { enabled = false },
+            panel = { enabled = false },
+          }
       },
       {
         "zbirenbaum/copilot-cmp",
         after = { "copilot.lua" },
         config = function ()
-          require("copilot").setup({
-            suggestion = { enabled = false },
-            panel = { enabled = false },
-          })
+          require("copilot_cmp").setup({})
         end
       }
     },
