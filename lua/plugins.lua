@@ -43,7 +43,7 @@ require("packer").startup(function(use)
         cmd = "Copilot",
         event = "InsertEnter",
         config = function()
-        require("copilot").setup()
+          require("copilot").setup()
         end,
       },
       {
