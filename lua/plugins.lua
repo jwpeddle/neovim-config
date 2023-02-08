@@ -121,7 +121,7 @@ require("packer").startup(function(use)
 
   --copilot
   use({
-    "zibirenbaum/copilot.vim",
+    "zibirenbaum/copilot.lua",
   })
 
   --dracula - theme
