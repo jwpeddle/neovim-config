@@ -79,6 +79,7 @@ require("packer").startup(function(use)
 
         sources = cmp.config.sources({
           { name = "copilot" },
+          { name = "luasnip" },
           { name = "nvim_lsp" },
         }, {
           { name = "buffer" },
