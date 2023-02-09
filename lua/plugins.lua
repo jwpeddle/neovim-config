@@ -109,7 +109,7 @@ require("packer").startup(function(use)
               fallback()
             end
           end, { "i", "s" }),
-          ["<Leader><Tab>"] = cmp.mapping(function(fallback)
+          ["<Tab><Tab>"] = cmp.mapping(function(fallback)
             if cmp.visible() then
               cmp.select_next_item()
             elseif has_words_before() then
