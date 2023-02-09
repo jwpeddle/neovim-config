@@ -284,13 +284,6 @@ require("packer").startup(function(use)
           W = { "<Cmd>%bwipeout<CR>", "Close all buffers" },
           q = { "<Cmd>quit<cr>", "Quit" },
           t = { "<C-Space>", "Open terminal" },
-          ["<Tab>"] = require("cmp").complete({
-            config = {
-              sources = {
-                { name = "copilot" }
-              }
-            }
-          })
         },
         --lists
         ["<Leader>d"] = {
