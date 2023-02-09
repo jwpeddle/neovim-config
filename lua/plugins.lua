@@ -285,7 +285,6 @@ require("packer").startup(function(use)
           q = { "<Cmd>quit<cr>", "Quit" },
           t = { "<C-Space>", "Open terminal" },
           ["<Tab>"] = "<Cmd> lua require('cmp').complete({config={sources={{name="copilot"}}}
-          })
         },
         --lists
         ["<Leader>d"] = {
