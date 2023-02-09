@@ -80,6 +80,7 @@ require("packer").startup(function(use)
         sources = cmp.config.sources({
           { name = "nvim_lsp" },
           { name = "luasnip" },
+        }, {
           { name = "buffer" },
         }),
 
@@ -98,6 +99,11 @@ require("packer").startup(function(use)
               cmp.select_prev_item()
             elseif has_words_before() then
               cmp.complete({
+                config = {
+                  sources = {
+                    { name = "copilot" }
+                  }
+                }
               })
             else
               fallback()
