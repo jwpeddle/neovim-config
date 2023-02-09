@@ -109,13 +109,6 @@ require("packer").startup(function(use)
               fallback()
             end
           end, { "i", "s" }),
-          ["<C-Tab>"] = cmp.mapping.complete({
-            config = {
-              sources = {
-                { name = "copilot" }
-              }
-            }
-          })
         }
       })
 
