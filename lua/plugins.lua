@@ -100,7 +100,6 @@ require("packer").startup(function(use)
               cmp.select_prev_item()
             elseif has_words_before() then
               cmp.complete({
-                config =
               })
             else
               fallback()
