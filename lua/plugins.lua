@@ -90,7 +90,13 @@ require("packer").startup(function(use)
             if cmp.visible() then
               cmp.select_next_item()
             elseif has_words_before() then
-              cmp.complete()
+              cmp.complete({
+                config = {
+                  sources = {
+                    { name = "nvim_lsp" },
+                  }
+                }
+              })
             else
               fallback()
             end
