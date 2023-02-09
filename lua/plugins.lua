@@ -109,7 +109,15 @@ require("packer").startup(function(use)
               fallback()
             end
           end, { "i", "s" }),
-          ["<C-Tab>"] = cmp.mapping.complete(),
+          ["<C-Tab>"] = cmp.mapping(function(fallback)
+            if cmp.visible() then
+              cmp.select_next_item()
+            elseif has_words_before() then
+              cmp.complete()
+            else
+              fallback()
+            end
+          end, { "i", "s" }),
         }
       })
 
