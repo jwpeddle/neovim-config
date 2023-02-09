@@ -290,7 +290,7 @@ require("packer").startup(function(use)
                 { name = "copilot" }
               }
             }
-          }),
+          })
         },
         --lists
         ["<Leader>d"] = {
