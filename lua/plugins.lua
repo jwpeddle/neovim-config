@@ -339,6 +339,12 @@ require("packer").startup(function(use)
           ["/"] = { "<Cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>", "Search buffer" },
           ["?"] = { "<Cmd>lua require('telescope.builtin').builtin()<CR>", "Pickers" },
         },
+        --lists
+        ["<Leader>a"] = {
+          name = "+AI",
+          a = { "<Cmd>ChatGPT<cr>", "Prompt" },
+          e = { "<Cmd>lua require('chatgpt').edit_with_instructions()<CR>", "Edit" },
+        },
         --neovim
         ["<Leader><Leader>"] = {
           name = "+Neovim",
