@@ -13,8 +13,8 @@ vim.cmd([[
 ]])
 
 require("packer").startup(function(use)
+  --bufferline - tabs
   use({
-    --bufferline - tabs
     "akinsho/bufferline.nvim",
     config = function()
       require("bufferline").setup({
@@ -25,6 +25,20 @@ require("packer").startup(function(use)
         }
       })
     end
+  })
+
+  use({
+    "jackMort/ChatGPT.nvim",
+      config = function()
+        require("chatgpt").setup({
+          api_key_cmd = ~/openai,
+        })
+      end,
+      requires = {
+        "MunifTanjim/nui.nvim",
+        "nvim-lua/plenary.nvim",
+        "nvim-telescope/telescope.nvim"
+      }
   })
 
   --cmp
