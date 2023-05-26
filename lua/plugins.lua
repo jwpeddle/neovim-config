@@ -359,6 +359,13 @@ require("packer").startup(function(use)
         ["<C-Space>"] = { "<Cmd>FloatermToggle<CR>", "Open terminal" },
       })
 
+      --visual mode
+      wk.register({
+        ["<Leader>ae"] = { "<Cmd>lua require('chatgpt').edit_with_instructions()<CR>", "Edit" },
+      }, {
+        mode = "v",
+      })
+
       --terminal mode
       wk.register({
         ["<C-Space>"] = { "<Cmd>FloatermToggle<CR>", "Close terminal" },
