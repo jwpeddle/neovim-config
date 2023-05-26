@@ -311,7 +311,7 @@ require("packer").startup(function(use)
           name = "+AI",
           p = { "<Cmd>ChatGPT<cr>", "Prompt" },
           a = { "<Cmd>lua require('chatgpt').edit_with_instructions()<CR>", "Edit", mode = {"n", "v"}},
-          e = { "<Cmd>lua require('chatgpt').complete_code()<CR>", "Complete", mode = {"n", "v"}},
+          c = { "<Cmd>lua require('chatgpt').complete_code()<CR>", "Complete", mode = {"n", "v"}},
         },
         --neovim
         ["<Leader><Leader>"] = {
