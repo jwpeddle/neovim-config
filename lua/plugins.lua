@@ -52,23 +52,6 @@ require("packer").startup(function(use)
       "hrsh7th/cmp-cmdline",
       "L3MON4D3/LuaSnip",
       "saadparwaiz1/cmp_luasnip",
-      {
-        "zbirenbaum/copilot.lua",
-        event = "InsertEnter",
-        config = function ()
-          require("copilot").setup({
-            suggestion = { enabled = false },
-            panel = { enabled = false },
-          })
-        end
-      },
-      {
-        "zbirenbaum/copilot-cmp",
-        after = { "copilot.lua" },
-        config = function ()
-          require("copilot_cmp").setup({})
-        end
-      }
     },
     config = function()
       local has_words_before = function()
@@ -92,7 +75,6 @@ require("packer").startup(function(use)
         },
 
         sources = cmp.config.sources({
-          { name = "copilot" },
           { name = "nvim_lsp" },
           { name = "luasnip" },
         }, {
@@ -108,21 +90,6 @@ require("packer").startup(function(use)
                 config = {
                   sources = {
                     { name = "nvim_lsp" },
-                  }
-                }
-              })
-            else
-              fallback()
-            end
-          end, { "i", "s" }),
-          ["<S-Tab>"] = cmp.mapping(function(fallback)
-            if cmp.visible() then
-              cmp.select_prev_item()
-            elseif has_words_before() then
-              cmp.complete({
-                config = {
-                  sources = {
-                    { name = "copilot" }
                   }
                 }
               })
