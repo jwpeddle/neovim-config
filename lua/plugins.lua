@@ -312,7 +312,6 @@ require("packer").startup(function(use)
           w = { "<Cmd>bwipeout<CR>", "Close buffer" },
           W = { "<Cmd>%bwipeout<CR>", "Close all buffers" },
           q = { "<Cmd>quit<cr>", "Quit" },
-          t = { "<C-Space>", "Open terminal" },
           t = { "<Cmd>FloatermToggle<CR>", "Open terminal" },
         },
         --lists
