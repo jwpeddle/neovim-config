@@ -343,7 +343,7 @@ require("packer").startup(function(use)
         ["<Leader>a"] = {
           name = "+AI",
           a = { "<Cmd>ChatGPT<cr>", "Prompt" },
-          e = { "<Cmd>lua require('chatgpt').edit_with_instructions()<CR>", "Edit" },
+          e = { "<Cmd>lua require('chatgpt').edit_with_instructions()<CR>", "Edit", mode = {"n", "v"}},
         },
         --neovim
         ["<Leader><Leader>"] = {
@@ -357,13 +357,6 @@ require("packer").startup(function(use)
         ["<Left>"] = { "<Cmd>BufferLineCyclePrev<CR>", "Previous buffer" },
         ["<Right>"] = { "<Cmd>BufferLineCycleNext<CR>", "Next buffer" },
         ["<C-Space>"] = { "<Cmd>FloatermToggle<CR>", "Open terminal" },
-      })
-
-      --visual mode
-      wk.register({
-        ["<Leader>ae"] = { "<Cmd>lua require('chatgpt').edit_with_instructions()<CR>", "Edit" },
-      }, {
-        mode = "v",
       })
 
       --terminal mode
