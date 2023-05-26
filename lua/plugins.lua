@@ -195,6 +195,7 @@ require("packer").startup(function(use)
   })
 
   --nvim-tree
+  --file explorer panel
   use({
     "kyazdani42/nvim-tree.lua",
     requires = {
