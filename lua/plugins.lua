@@ -205,6 +205,13 @@ require("packer").startup(function(use)
     end
   })
 
+  --reloader
+  --resets neovim
+  use({
+    "milkias17/reloader.nvim",
+    requires = { "nvim-lua/plenary.nvim" }
+  })
+
   --sandwich
   use("machakann/vim-sandwich")
 
