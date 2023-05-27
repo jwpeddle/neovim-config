@@ -207,6 +207,8 @@ require("packer").startup(function(use)
       "kyazdani42/nvim-web-devicons",
       "nvim-lua/plenary.nvim",
       "nvim-telescope/telescope-file-browser.nvim",
+      "kkharji/sqlite.lua",
+      "gbprod/yanky.lua",
     },
     config = function()
       require("telescope").setup({
@@ -227,7 +229,12 @@ require("packer").startup(function(use)
           },
         },
       })
+
       require("telescope").load_extension("file_browser")
+
+      require("yanky").setup()
+      require("telescope").load_extension("yank_history")
+
     end
   })
 
@@ -336,17 +343,6 @@ require("packer").startup(function(use)
       })
     end
   })
-
-  --yanky
-  --yank ring
-  use({
-    "gbprod/yanky.nvim",
-    requires = { "kkharji/sqlite.lua" },
-    config = function()
-      require("yanky").setup()
-    end
-  })
-  require("telescope").load_extension("yank_history")
 
   --packer - plugin management
   use("wbthomason/packer.nvim")
