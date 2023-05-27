@@ -134,6 +134,7 @@ require("packer").startup(function(use)
   })
 
   --dirbuf
+  --edit directories
   use("elihunter173/dirbuf.nvim")
 
   --dracula - theme
