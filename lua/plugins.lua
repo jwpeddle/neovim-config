@@ -350,6 +350,11 @@ require("packer").startup(function(use)
           ["/"] = { "<Cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>", "Search buffer" },
           ["?"] = { "<Cmd>lua require('telescope.builtin').builtin()<CR>", "Pickers" },
         },
+        --git
+        ["<Leader>g"] = {
+          name = "+Git",
+          b = { "<Cmd>Git blame<cr>", "Blame" },
+        },
         --ai
         ["<Leader>a"] = {
           name = "+AI",
