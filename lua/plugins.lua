@@ -13,7 +13,7 @@ vim.cmd([[
 ]])
 
 require("packer").startup(function(use)
-  --aerial
+  --aerial - symbol tree nav
   use({
     "stevearc/aerial.nvim",
     config = function()
@@ -25,7 +25,7 @@ require("packer").startup(function(use)
       }) end
   })
 
-  --bufferline - tabs
+  --bufferline - map buffers to visual tabs
   use({
     "akinsho/bufferline.nvim",
     config = function()
@@ -39,7 +39,7 @@ require("packer").startup(function(use)
     end
   })
 
-  --chatgpt
+  --chatgpt - ai
   use({
     "jackMort/ChatGPT.nvim",
       config = function()
@@ -54,7 +54,7 @@ require("packer").startup(function(use)
       }
   })
 
-  --cmp
+  --cmp - completion
   use({
     "hrsh7th/nvim-cmp",
     requires = {
@@ -137,7 +137,7 @@ require("packer").startup(function(use)
     end
   })
 
-  --comment
+  --comment - comment toggling
   use({
     "numToStr/Comment.nvim",
     config = function()
@@ -159,8 +159,7 @@ require("packer").startup(function(use)
     end
   })
 
-  --fugitive
-  --git integration
+  --fugitive - git integration
   use("tpope/vim-fugitive")
   use("tpope/vim-rhubarb")
 
@@ -194,8 +193,7 @@ require("packer").startup(function(use)
     end
   })
 
-  --nvim-tree
-  --file explorer panel
+  --nvim-tree - file explorer panel
   use({
     "kyazdani42/nvim-tree.lua",
     requires = {
@@ -223,13 +221,6 @@ require("packer").startup(function(use)
         },
       })
     end
-  })
-
-  --reloader
-  --resets neovim
-  use({
-    "milkias17/reloader.nvim",
-    requires = { "nvim-lua/plenary.nvim" }
   })
 
   --sandwich
