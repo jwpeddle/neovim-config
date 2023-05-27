@@ -280,7 +280,7 @@ require("packer").startup(function(use)
           W = { "<Cmd>%bwipeout<CR>", "Close all buffers" },
           q = { "<Cmd>quit<cr>", "Quit" },
           t = { "<Cmd>FloatermToggle<CR>", "Open terminal" },
-          y = { "<Cmd>lua require("telescope").extensions.yank_history.yank_history()<CR>", "Yank history" },
+          y = { "<Cmd>lua require('telescope').extensions.yank_history.yank_history()<CR>", "Yank history" },
         },
         --lists
         ["<Leader>d"] = {
