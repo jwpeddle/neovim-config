@@ -21,6 +21,7 @@ require("packer").startup(function(use)
         layout = {
           default_direction = "prefer_left",
         }
+        autojump = false,
       }) end
   })
 
