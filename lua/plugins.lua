@@ -199,6 +199,16 @@ require("packer").startup(function(use)
     end
   })
 
+  --oil
+  --directory editing
+  use({
+    "stevearc/oil.nvim",
+    config = function()
+      require('oil').setup({
+      })
+    end
+  })
+
   --reloader
   --resets neovim
   use({
