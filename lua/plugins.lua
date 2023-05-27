@@ -198,7 +198,7 @@ require("packer").startup(function(use)
           ["<Esc>"] = "actions.close",
         },
         float = {
-          padding = 6,
+          padding = 5,
           win_options = {
             winblend = 0,
           },
