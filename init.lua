@@ -61,9 +61,10 @@ vim.opt.clipboard:prepend("unnamedplus")
 
 --folding
 vim.opt.foldenable = true
-vim.opt.foldmethod = "expr"
-vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+--vim.opt.foldmethod = "expr"
+--vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 vim.opt.foldnestmax = 1
+vim.opt.foldmethod = "syntax"
 
 --open splits on right/bottom
 vim.opt.splitright = true
