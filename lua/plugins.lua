@@ -27,6 +27,7 @@ require("packer").startup(function(use)
     end
   })
 
+  --chatgpt
   use({
     "jackMort/ChatGPT.nvim",
       config = function()
