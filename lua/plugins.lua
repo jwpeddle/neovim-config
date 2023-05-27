@@ -16,7 +16,12 @@ require("packer").startup(function(use)
   --aerial
   use({
     "stevearc/aerial.nvim",
-    config = function() require("aerial").setup() end
+    config = function()
+      require("aerial").setup({
+        layout = {
+          default_direction = "prefer_right",
+        }
+      }) end
   })
 
   --bufferline - tabs
