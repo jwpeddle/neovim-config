@@ -336,6 +336,7 @@ require("packer").startup(function(use)
           w = { "<Cmd>bwipeout<CR>", "Close buffer" },
           W = { "<Cmd>%bwipeout<CR>", "Close all buffers" },
           q = { "<Cmd>quit<cr>", "Quit" },
+          s = { "<Cmd>AerialToggle<CR>", "Symbols" },
           t = { "<Cmd>FloatermToggle<CR>", "Open terminal" },
           y = { "<Cmd>lua require('telescope').extensions.yank_history.yank_history()<CR>", "Yank history" },
           u = { "<Cmd>lua require('telescope').extensions.undo.undo()<CR>", "Undos" },
