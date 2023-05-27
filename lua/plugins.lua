@@ -322,6 +322,7 @@ require("packer").startup(function(use)
           t = { "<Cmd>FloatermToggle<CR>", "Open terminal" },
           y = { "<Cmd>lua require('telescope').extensions.yank_history.yank_history()<CR>", "Yank history" },
           u = { "<Cmd>lua require('telescope').extensions.undo.undo()<CR>", "Undos" },
+          - = { "<Cmd>lua require('oil').open_float()<CR>", "Undos" },
         },
         --lists
         ["<Leader>d"] = {
