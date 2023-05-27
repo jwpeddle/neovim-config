@@ -201,7 +201,7 @@ require("packer").startup(function(use)
           padding = 2,
           max_width = 0,
           max_height = 0,
-          border = "rounded",
+          border = "none",
           win_options = {
             winblend = 0,
           },
