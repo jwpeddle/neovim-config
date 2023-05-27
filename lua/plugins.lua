@@ -150,6 +150,7 @@ require("packer").startup(function(use)
   --fugitive
   --git integration
   use("tpope/vim-fugitive")
+  use("tpope/vim-rhubarb")
 
   --lspconfig - lsp
   use({
