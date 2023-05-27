@@ -15,7 +15,7 @@ vim.cmd([[
 vim.cmd([[
   function! OpenConfig()
     let s:config_dir = fnamemodify(expand('$MYVIMRC'), ':h')
-    execute 'cd ' . s:config_dir
+    execute 'cd $NVIM_HOME'
     execute 'edit $MYVIMRC'
   endfunction
 ]])
