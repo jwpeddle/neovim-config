@@ -22,6 +22,9 @@ require("packer").startup(function(use)
           default_direction = "prefer_left",
         },
         autojump = true,
+        manage_folds = true,
+        link_folds_to_tree = true,
+        link_tree_to_folds = true,
       }) end
   })
 
