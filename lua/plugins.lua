@@ -208,7 +208,7 @@ require("packer").startup(function(use)
       "nvim-lua/plenary.nvim",
       "nvim-telescope/telescope-file-browser.nvim",
       "kkharji/sqlite.lua",
-      "gbprod/yanky.lua",
+      "gbprod/yanky.nvim",
       "debugloop/telescope-undo.nvim",
     },
     config = function()
