@@ -60,7 +60,7 @@ vim.opt.hidden = true
 vim.opt.clipboard:prepend("unnamedplus")
 
 --disable folding
-vim.opt.foldenable = false
+vim.opt.foldenable = true
 
 --open splits on right/bottom
 vim.opt.splitright = true
