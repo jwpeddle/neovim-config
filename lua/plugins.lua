@@ -325,7 +325,7 @@ require("packer").startup(function(use)
           u = { "<Cmd>lua require('telescope').extensions.undo.undo()<CR>", "Undos" },
           ["-"] = { "<Cmd>lua require('oil').open_float()<CR>", "Undos" },
         },
-        --lists
+        --diagnostics
         ["<Leader>d"] = {
           name = "+Diagnostics",
           d = { "<Cmd>TroubleToggle<cr>", "Toggle Trouble" },
@@ -350,7 +350,7 @@ require("packer").startup(function(use)
           ["/"] = { "<Cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>", "Search buffer" },
           ["?"] = { "<Cmd>lua require('telescope.builtin').builtin()<CR>", "Pickers" },
         },
-        --lists
+        --ai
         ["<Leader>a"] = {
           name = "+AI",
           p = { "<Cmd>ChatGPT<cr>", "Prompt" },
