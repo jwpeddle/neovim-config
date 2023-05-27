@@ -19,7 +19,7 @@ require("packer").startup(function(use)
     config = function()
       require("aerial").setup({
         layout = {
-          default_direction = "prefer_right",
+          default_direction = "prefer_left",
         }
       }) end
   })
