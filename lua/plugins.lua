@@ -14,9 +14,10 @@ vim.cmd([[
 
 require("packer").startup(function(use)
   --aerial
-  require('aerial').setup({
+  use({
+    "stevearc/aerial.nvim",
+    config = function() require("aerial").setup() end
   })
-  -- You probably also want to set a keymap to toggle aerial
 
   --bufferline - tabs
   use({
