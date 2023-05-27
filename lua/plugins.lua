@@ -12,13 +12,6 @@ vim.cmd([[
   augroup end
 ]])
 
-vim.cmd([[
-  function! OpenConfig()
-    execute 'cd $NVIM_HOME'
-    execute 'edit $MYVIMRC'
-  endfunction
-]])
-
 require("packer").startup(function(use)
   --bufferline - tabs
   use({
@@ -275,6 +268,13 @@ require("packer").startup(function(use)
       local wk = require("which-key")
       wk.setup()
       vim.opt.timeoutlen = 500
+
+      local function open_config()
+        local config_dir = vim.fn.expand('$NVIM_HOME')
+        local config_path = vim.fn.expand('$MYVIMRC')
+        vim.cmd('cd ' .. config_dir)
+        vim.cmd('edit ' .. config_path)
+      end
 
       --normal mode
       wk.register({
