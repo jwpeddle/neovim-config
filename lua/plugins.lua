@@ -317,6 +317,7 @@ require("packer").startup(function(use)
         ["<Leader><Leader>"] = {
           name = "+Neovim",
           --e = { "<Cmd>edit $MYVIMRC<CR>", "Edit config" },
+          --e = { "<Cmd>execute 'cd ' .. expand('$MYVIMRC:h')<CR><Cmd>edit $MYVIMRC<CR>", "Edit config" },
           e = { "<Cmd>execute 'cd ' .. expand('$MYVIMRC:h')<CR><Cmd>edit $MYVIMRC<CR>", "Edit config" },
           r = { "<Cmd>Reload<CR>", "Reload config" },
           p = { "<Cmd>PackerSync<CR>", "Sync packages" },
