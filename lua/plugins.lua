@@ -132,6 +132,9 @@ require("packer").startup(function(use)
     end
   })
 
+  --dirbuf
+  use("elihunter173/dirbuf.nvim")
+
   --dracula - theme
   use({
     "dracula/vim",
