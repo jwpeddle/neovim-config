@@ -197,8 +197,15 @@ require("packer").startup(function(use)
         keymaps = {
           ["<Esc>"] = "actions.close",
         },
-
-
+        float = {
+          padding = 2,
+          max_width = 0.6,
+          max_height = 0.6,
+          border = "rounded",
+          win_options = {
+            winblend = 10,
+          },
+        },
       })
     end
   })
