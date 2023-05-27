@@ -348,6 +348,7 @@ require("packer").startup(function(use)
       },
     },
   })
+  require("telescope").load_extension("yank_history")
 
   --packer - plugin management
   use("wbthomason/packer.nvim")
