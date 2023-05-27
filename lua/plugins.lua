@@ -342,6 +342,9 @@ require("packer").startup(function(use)
   use({
     "gbprod/yanky.nvim",
     requires = { "kkharji/sqlite.lua" }
+    config = function()
+      require("yanky").setup()
+    end
   })
   require("telescope").load_extension("yank_history")
 
