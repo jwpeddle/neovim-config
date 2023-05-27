@@ -371,8 +371,8 @@ require("packer").startup(function(use)
         --git
         ["<Leader>g"] = {
           name = "+Git",
-          b = { "<Cmd>Git blame<cr>", "Blame" },
-          o = { "<Cmd>Gbrowse<cr>", "Github" },
+          b = { "<Cmd>Git blame<CR>", "Blame" },
+          o = { "<Cmd>Gbrowse<CR>", "Github" },
         },
         --ai
         ["<Leader>a"] = {
