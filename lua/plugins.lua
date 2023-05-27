@@ -204,8 +204,7 @@ require("packer").startup(function(use)
     end
   })
 
-  --oil
-  --directory editing
+  --oil - directory editing
   use({
     "stevearc/oil.nvim",
     config = function()
@@ -223,10 +222,10 @@ require("packer").startup(function(use)
     end
   })
 
-  --sandwich
+  --sandwich - edit wrapper symbols
   use("machakann/vim-sandwich")
 
-  --targets
+  --targets - text objects
   use("wellle/targets.vim")
   
   --telescope - fuzzy finding
