@@ -269,13 +269,6 @@ require("packer").startup(function(use)
       wk.setup()
       vim.opt.timeoutlen = 500
 
-      function _G.open_config()
-        local config_dir = vim.fn.expand('$NVIM_HOME')
-        local config_path = vim.fn.expand('$MYVIMRC')
-        vim.cmd('cd ' .. config_dir)
-        vim.cmd('edit ' .. config_path)
-      end
-
       --normal mode
       wk.register({
         --common
