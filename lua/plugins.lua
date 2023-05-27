@@ -12,6 +12,14 @@ vim.cmd([[
   augroup end
 ]])
 
+vim.cmd([[
+  function! OpenConfig()
+    let s:config_dir = fnamemodify(expand('$MYVIMRC'), ':h')
+    execute 'cd ' . s:config_dir
+    execute 'edit $MYVIMRC'
+  endfunction
+]])
+
 require("packer").startup(function(use)
   --bufferline - tabs
   use({
@@ -319,7 +327,8 @@ require("packer").startup(function(use)
           --e = { "<Cmd>edit $MYVIMRC<CR>", "Edit config" },
           --e = { "<Cmd>execute 'cd ' .. expand('$MYVIMRC:h')<CR><Cmd>edit $MYVIMRC<CR>", "Edit config" },
           --e = { "<Cmd>execute 'cd ' .. expand('$MYVIMRC:h')<CR><Cmd>edit $MYVIMRC<CR>", "Edit config" },
-          e = { "<Cmd>execute 'cd ' .. fnamemodify(expand('$MYVIMRC'), ':h')<CR><Cmd>edit $MYVIMRC<CR>", "Edit config" },
+          --e = { "<Cmd>execute 'cd ' .. fnamemodify(expand('$MYVIMRC'), ':h')<CR><Cmd>edit $MYVIMRC<CR>", "Edit config" },
+          e = { "<Cmd>call OpenConfig()<CR>", "Edit config" },
           r = { "<Cmd>Reload<CR>", "Reload config" },
           p = { "<Cmd>PackerSync<CR>", "Sync packages" },
           h = { "<Cmd>checkhealth<CR>", "Check health" },
