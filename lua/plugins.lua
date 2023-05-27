@@ -199,8 +199,8 @@ require("packer").startup(function(use)
         },
         float = {
           padding = 2,
-          max_width = 0.6,
-          max_height = 0.6,
+          max_width = 0,
+          max_height = 0,
           border = "rounded",
           win_options = {
             winblend = 10,
