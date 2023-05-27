@@ -147,6 +147,10 @@ require("packer").startup(function(use)
     end
   })
 
+  --fugitive
+  --git integration
+  use("tpope/vim-fugitive")
+
   --lspconfig - lsp
   use({
     "neovim/nvim-lspconfig",
