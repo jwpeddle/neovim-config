@@ -20,8 +20,8 @@ require("packer").startup(function(use)
       require("aerial").setup({
         layout = {
           default_direction = "prefer_left",
-        }
-        autojump = false,
+        },
+        autojump = true,
       }) end
   })
 
