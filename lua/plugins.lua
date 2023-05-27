@@ -338,15 +338,9 @@ require("packer").startup(function(use)
 
   --yanky
   --yank ring
-  require("yanky").setup({
-    picker = {
-      select = {
-        action = nil,
-      },
-      telescope = {
-        mappings = nil,
-      },
-    },
+  use({
+    "gbprod/yanky.nvim",
+    requires = { "kkharji/sqlite.lua" }
   })
   require("telescope").load_extension("yank_history")
 
