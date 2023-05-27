@@ -133,17 +133,6 @@ require("packer").startup(function(use)
     end
   })
 
-  --dirbuf
-  --edit directories
-  use({
-    "elihunter173/dirbuf.nvim",
-    config = function()
-      require("dirbuf").setup({
-        write_cmd = "DirbufSync -confirm",
-      })
-    end
-  })
-
   --dracula - theme
   use({
     "dracula/vim",
@@ -205,6 +194,11 @@ require("packer").startup(function(use)
     "stevearc/oil.nvim",
     config = function()
       require('oil').setup({
+        keymaps = {
+          ["<Esc>"] = "actions.close",
+        },
+
+
       })
     end
   })
