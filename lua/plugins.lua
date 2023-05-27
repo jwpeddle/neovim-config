@@ -135,7 +135,14 @@ require("packer").startup(function(use)
 
   --dirbuf
   --edit directories
-  use("elihunter173/dirbuf.nvim")
+  use(
+    "elihunter173/dirbuf.nvim"
+    config = function()
+      setup({
+        write_cmd = "DirbufSync -confirm",
+      })
+    end
+  )
 
   --dracula - theme
   use({
