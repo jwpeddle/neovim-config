@@ -336,6 +336,19 @@ require("packer").startup(function(use)
     end
   })
 
+  --yanky
+  --yank ring
+  require("yanky").setup({
+    picker = {
+      select = {
+        action = nil, -- nil to use default put action
+      },
+      telescope = {
+        mappings = nil, -- nil to use default mappings
+      },
+    },
+  })
+
   --packer - plugin management
   use("wbthomason/packer.nvim")
 end)
