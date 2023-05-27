@@ -138,7 +138,7 @@ require("packer").startup(function(use)
   use(
     "elihunter173/dirbuf.nvim"
     config = function()
-      setup({
+      require("dirbuf").setup({
         write_cmd = "DirbufSync -confirm",
       })
     end
