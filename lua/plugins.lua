@@ -13,6 +13,11 @@ vim.cmd([[
 ]])
 
 require("packer").startup(function(use)
+  --aerial
+  require('aerial').setup({
+  })
+  -- You probably also want to set a keymap to toggle aerial
+
   --bufferline - tabs
   use({
     "akinsho/bufferline.nvim",
