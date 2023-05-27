@@ -209,6 +209,7 @@ require("packer").startup(function(use)
       "nvim-telescope/telescope-file-browser.nvim",
       "kkharji/sqlite.lua",
       "gbprod/yanky.lua",
+      "debugloop/telescope-undo.nvim",
     },
     config = function()
       require("telescope").setup({
@@ -234,6 +235,7 @@ require("packer").startup(function(use)
 
       require("yanky").setup()
       require("telescope").load_extension("yank_history")
+      require("telescope").load_extension("undo")
 
     end
   })
