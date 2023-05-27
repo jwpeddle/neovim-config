@@ -341,7 +341,7 @@ require("packer").startup(function(use)
   --yank ring
   use({
     "gbprod/yanky.nvim",
-    requires = { "kkharji/sqlite.lua" }
+    requires = { "kkharji/sqlite.lua" },
     config = function()
       require("yanky").setup()
     end
