@@ -341,10 +341,10 @@ require("packer").startup(function(use)
   require("yanky").setup({
     picker = {
       select = {
-        action = nil, -- nil to use default put action
+        action = nil,
       },
       telescope = {
-        mappings = nil, -- nil to use default mappings
+        mappings = nil,
       },
     },
   })
