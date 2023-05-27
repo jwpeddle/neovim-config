@@ -236,6 +236,7 @@ require("packer").startup(function(use)
             layout_config = {
               preview_height = 0.8,
             },
+          },
         },
       })
 
