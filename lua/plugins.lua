@@ -180,7 +180,7 @@ require("packer").startup(function(use)
             configurationSources = { "flake8" },
             plugins = {
               autopep8 = { enabled = false },
-              flake8 = { enabled = true },
+              flake8 = { enabled = false },
               pydocstyle = { enabled = false },
               pycodestyle = { enabled = false },
               pyflakes = { enabled = false },
@@ -189,6 +189,7 @@ require("packer").startup(function(use)
               rope_completion = { enabled = false },
               rope_rename = { enabled = false },
               yapf = { enabled = false },
+              ruff = { enabled = true, },
             }
           }
         }
