@@ -18,11 +18,11 @@ require("packer").startup(function(use)
     "stevearc/aerial.nvim",
     config = function()
       require("aerial").setup({
+        autojump = true,
+        close_automatic_events = { "unfocus", "switch_buffer", "unsupported" },
         layout = {
           default_direction = "prefer_left",
         },
-        autojump = true,
-        close_automatic_events = { "unfocus", "switch_buffer", "unsupported" },
         on_attach = function(bufnr)
           require("aerial.actions").tree_close_all.callback()
         end
