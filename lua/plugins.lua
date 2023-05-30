@@ -22,6 +22,9 @@ require("packer").startup(function(use)
           default_direction = "prefer_left",
         },
         autojump = true,
+        on_attach = function(bufnr)
+          actions.tree_close_all()
+        end
       }) end
   })
 
