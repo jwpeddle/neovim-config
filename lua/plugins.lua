@@ -23,7 +23,7 @@ require("packer").startup(function(use)
         },
         autojump = true,
         on_attach = function(bufnr)
-          require("aerial").actions.tree_close_all()
+          require("aerial.actions").tree_close_all()
         end
       }) end
   })
