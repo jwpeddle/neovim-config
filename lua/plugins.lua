@@ -19,7 +19,7 @@ require("packer").startup(function(use)
     config = function()
       require("aerial").setup({
         autojump = true,
-        close_automatic_events = { "unfocus", "switch_buffer", "unsupported" },
+        close_on_select = true,
         layout = {
           default_direction = "prefer_left",
         },
