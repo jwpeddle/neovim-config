@@ -384,7 +384,7 @@ require("packer").startup(function(use)
         ["<Right>"] = { "<Cmd>BufferLineCycleNext<CR>", "Next buffer" },
         ["<C-Space>"] = { "<Cmd>FloatermToggle<CR>", "Open terminal" },
         ["<C-n>"] = { "<Cmd>lua require('yanky').cycle(1)<CR>", "Next yank" },
-        ["<C-p>"] = { "<Plug>(YankyPutAfter)", "Previous yank" },
+        ["<C-p>"] = { "<Plug>(YankyCycleForward)", "Previous yank" },
         -- ["p"] = { "<Cmd>lua require('yanky').cycle(1)<CR>", "Next yank" },
       })
 
