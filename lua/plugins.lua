@@ -326,6 +326,7 @@ require("packer").startup(function(use)
           name = "+Prefix",
           o = { "<Cmd>lua require('telescope.builtin').find_files()<CR>", "Open file" },
           n = { "<Cmd>NvimTreeToggle<CR>", "Explore" },
+          b = { "<Cmd>lua require('telescope.builtin').buffers()<CR>", "Buffers" },
           w = { "<Cmd>bwipeout<CR>", "Close buffer" },
           W = { "<Cmd>%bwipeout<CR>", "Close all buffers" },
           q = { "<Cmd>quit<cr>", "Quit" },
@@ -349,7 +350,6 @@ require("packer").startup(function(use)
         ["<Leader>f"] = {
           name = "+Telescope",
           f = { "<Cmd>lua require('telescope.builtin').find_files()<CR>", "Files" },
-          b = { "<Cmd>lua require('telescope.builtin').buffers()<CR>", "Buffers" },
           d = { "<Cmd>lua require('telescope.builtin').lsp_definitions()<CR>", "Definition" },
           h = { "<Cmd>lua require('telescope.builtin').help_tags()<CR>", "Help" },
           g = { "<Cmd>lua require('telescope.builtin').live_grep()<CR>", "Search workspace" },
