@@ -349,7 +349,6 @@ require("packer").startup(function(use)
         --find
         ["<Leader>f"] = {
           name = "+Telescope",
-          f = { "<Cmd>lua require('telescope.builtin').find_files()<CR>", "Files" },
           d = { "<Cmd>lua require('telescope.builtin').lsp_definitions()<CR>", "Definition" },
           h = { "<Cmd>lua require('telescope.builtin').help_tags()<CR>", "Help" },
           g = { "<Cmd>lua require('telescope.builtin').live_grep()<CR>", "Search workspace" },
