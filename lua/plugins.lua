@@ -328,7 +328,7 @@ require("packer").startup(function(use)
           n = { "<Cmd>NvimTreeToggle<CR>", "Explore" },
           b = { "<Cmd>lua require('telescope.builtin').buffers()<CR>", "Buffers" },
           w = { "<Cmd>bwipeout<CR>", "Close buffer" },
-R         W = { "<Cmd>%bwipeout<CR>", "Close all buffers" },
+          W = { "<Cmd>%bwipeout<CR>", "Close all buffers" },
           q = { "<Cmd>quit<cr>", "Quit" },
           s = { "<Cmd>AerialToggle<CR>", "Map" },
           y = { "<Cmd>lua require('telescope').extensions.yank_history.yank_history()<CR>", "Yank history" },
