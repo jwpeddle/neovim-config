@@ -20,7 +20,7 @@ require("packer").startup(function(use)
       require("aerial").setup({
         autojump = true,
         close_on_select = true,
-        post_jump_cmd = "normal! z<CR>",
+        post_jump_cmd = "normal! zt",
         layout = {
           default_direction = "prefer_left",
         },
