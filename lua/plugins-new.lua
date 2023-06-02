@@ -11,6 +11,27 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+local plugins = {
+  "stevearc/aerial.nvim",
+  "jackMort/ChatGPT.nvim",
+  "hrsh7th/nvim-cmp",
+  "numToStr/Comment.nvim",
+  "dracula/vim",
+  "voldikss/vim-floaterm",
+  "tpope/vim-fugitive"
+  "tpope/vim-rhubarb"
+  "neovim/nvim-lspconfig",
+  "kyazdani42/nvim-tree.lua",
+  "stevearc/oil.nvim",
+  "machakann/vim-sandwich"
+  "wellle/targets.vim"
+  "nvim-telescope/telescope.nvim",
+  "nvim-treesitter/nvim-treesitter",
+  "nvim-treesitter/nvim-treesitter-textobjects",
+  "folke/trouble.nvim",
+  "folke/which-key.nvim",
+}
+
 require("packer").startup(function(use)
   --aerial - symbol tree nav
   use({
@@ -398,7 +419,7 @@ require("packer").startup(function(use)
       })
     end
   })
-
-  --packer - plugin management
-  use("wbthomason/packer.nvim")
 end)
+
+require("lazy").setup(plugins)
+
