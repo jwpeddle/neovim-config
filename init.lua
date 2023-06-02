@@ -97,7 +97,6 @@ require("lazy").setup(
   "plugins",
   {
     ui = {
-      },
     },
   }
 )
