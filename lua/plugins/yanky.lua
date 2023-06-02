@@ -1,3 +1,6 @@
 return {
-  "gbprod/yanky.nvim"
+  {
+    "gbprod/yanky.nvim",
+    opts = {}
+  }
 }
