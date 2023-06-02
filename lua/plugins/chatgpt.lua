@@ -4,7 +4,7 @@ return {
     opts = {
       api_key_cmd = "~/openai",
     }
-    dependencies = {
+    dependancies = {
       "MunifTanjim/nui.nvim",
       "nvim-lua/plenary.nvim",
       "nvim-telescope/telescope.nvim"
