@@ -5,7 +5,7 @@ vim.g.python3_host_prog = "$HOME/.pyenv/versions/neovim3/bin/python"
 
 --theme
 vim.opt.termguicolors = true
-vim.cmd("colorscheme dracula")
+--vim.cmd("colorscheme dracula")
 
 --line numbering
 vim.opt.number = true
