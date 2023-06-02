@@ -9,7 +9,6 @@ return {
             plugins = {
               autopep8 = { enabled = false },
               flake8 = { enabled = false },
-              pydocstyle = { enabled = false },
               pycodestyle = { enabled = false },
               pyflakes = { enabled = false },
               pylint = { enabled = false },
