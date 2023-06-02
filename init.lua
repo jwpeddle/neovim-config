@@ -158,7 +158,6 @@ wk.register({
   ["<Leader><Leader>"] = {
     name = "+Neovim",
     e = { "<Cmd>execute 'cd $NVIM_HOME'<CR><Cmd>edit $MYVIMRC<CR>", "Edit config" },
-    r = { "<Cmd>Reload<CR>", "Reload config" },
     p = { "<Cmd>Mason<CR>", "Plugins" },
     h = { "<Cmd>checkhealth<CR>", "Check health" },
   },
