@@ -93,18 +93,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup(
-  "plugins",
-  {
-    ui = {
-      custom_keys = {
-        ["<localleader>d"] = function(plugin)
-          vim.print(plugin)
-        end,
-      },
-    },
-  }
-)
+require("lazy").setup("plugins")
 
 --******************** which-key ********************
 
