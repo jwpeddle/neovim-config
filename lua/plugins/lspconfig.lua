@@ -4,7 +4,7 @@ return {
     opts = {
       settings = {
         pylsp = {
-          configurationSources = { "flake8" },
+          configurationSources = {},
           plugins = {
             autopep8 = { enabled = false },
             flake8 = { enabled = false },
