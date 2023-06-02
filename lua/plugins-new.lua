@@ -12,24 +12,25 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
-  "stevearc/aerial.nvim",
-  "jackMort/ChatGPT.nvim",
-  "hrsh7th/nvim-cmp",
-  "numToStr/Comment.nvim",
+  "akinsho/bufferline.nvim",
   "dracula/vim",
-  "voldikss/vim-floaterm",
-  "tpope/vim-fugitive"
-  "tpope/vim-rhubarb"
-  "neovim/nvim-lspconfig",
+  "folke/trouble.nvim",
+  "folke/which-key.nvim",
+  "hrsh7th/nvim-cmp",
+  "jackMort/ChatGPT.nvim",
   "kyazdani42/nvim-tree.lua",
-  "stevearc/oil.nvim",
   "machakann/vim-sandwich"
-  "wellle/targets.vim"
+  "neovim/nvim-lspconfig",
+  "numToStr/Comment.nvim",
   "nvim-telescope/telescope.nvim",
   "nvim-treesitter/nvim-treesitter",
   "nvim-treesitter/nvim-treesitter-textobjects",
-  "folke/trouble.nvim",
-  "folke/which-key.nvim",
+  "stevearc/aerial.nvim",
+  "stevearc/oil.nvim",
+  "tpope/vim-fugitive"
+  "tpope/vim-rhubarb"
+  "voldikss/vim-floaterm",
+  "wellle/targets.vim"
 }
 
 require("packer").startup(function(use)
