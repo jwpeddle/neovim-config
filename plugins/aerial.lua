@@ -1,4 +1,5 @@
 return {
+  {
   "stevearc/aerial.nvim",
   opts = {
     autojump = true,
@@ -11,4 +12,5 @@ return {
       require("aerial.actions").tree_close_all.callback()
     end
   }
+}
 }
