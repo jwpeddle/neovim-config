@@ -99,7 +99,7 @@ require("lazy").setup(
     ui = {
       custom_keys = {
         ["<localleader>d"] = function(plugin)
-          vim.pretty_print(plugin)
+          vim.print(plugin)
         end,
       },
     },
