@@ -1,4 +1,5 @@
 return {
+  {
     "akinsho/bufferline.nvim",
     opts = {
       options = {
@@ -7,4 +8,5 @@ return {
         show_close_icon = false,
       }
     }
+  }
 }
