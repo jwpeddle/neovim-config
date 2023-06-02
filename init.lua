@@ -95,12 +95,11 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins")
 
---******************** mappings ********************
+--******************** which-key ********************
 
 --\ too hard to press
 vim.g.mapleader = " " 
 
---which-key
 local wk = require("which-key")
 wk.setup()
 vim.opt.timeoutlen = 500
@@ -181,5 +180,3 @@ wk.register({
 }, {
   mode = "t",
 })
-    end
-  })
