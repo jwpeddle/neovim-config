@@ -2,7 +2,9 @@ vim.g.python_host_prog = "$HOME/.pyenv/versions/neovim2/bin/python"
 vim.g.python3_host_prog = "$HOME/.pyenv/versions/neovim3/bin/python"
 
 
---******************** bootstrap plugins ********************
+--******************** plugins ********************
+
+--bootstrap lazy
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -16,6 +18,10 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+--set leader to space [must happen before lazy setup]
+vim.g.mapleader = " " 
+
+--load everything in lua/plugins
 require("lazy").setup("plugins")
 
 
@@ -98,9 +104,6 @@ vim.g.mapleader = " "
 
 
 --******************** which-key ********************
-
---\ too hard to press
-vim.g.mapleader = " " 
 
 local wk = require("which-key")
 wk.setup()
