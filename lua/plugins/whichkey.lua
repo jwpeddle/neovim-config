@@ -71,8 +71,8 @@ return {
           h = { "<Cmd>checkhealth<CR>", "Check health" },
         },
         --unleadered
-        ["<Left>"] = { "<Cmd>BufferLineCyclePrev<CR>", "Previous buffer" },
-        ["<Right>"] = { "<Cmd>BufferLineCycleNext<CR>", "Next buffer" },
+        -- ["<Left>"] = { "<Cmd>BufferLineCyclePrev<CR>", "Previous buffer" },
+        -- ["<Right>"] = { "<Cmd>BufferLineCycleNext<CR>", "Next buffer" },
         ["<C-Space>"] = { "<Cmd>FloatermToggle<CR>", "Open terminal" },
         ["<C-n>"] = { "<Plug>(YankyCycleForward)", "Next yank" },
         ["<C-p>"] = { "<Plug>(YankyCycleBackward)", "Previous yank" },
