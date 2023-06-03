@@ -29,6 +29,7 @@ return {
         },
         --diagnostics
         ["<Leader>d"] = {
+
           name = "+Diagnostics",
           d = { "<Cmd>TroubleToggle<cr>", "Toggle Trouble" },
           w = { "<Cmd>TroubleToggle workspace_diagnostics<CR>", "Workspace" },
