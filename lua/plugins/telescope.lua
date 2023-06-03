@@ -2,12 +2,13 @@ return {
   {
     "nvim-telescope/telescope.nvim",
     dependencies = {
+      "debugloop/telescope-undo.nvim",
+      "folke/trouble.nvim",
+      "gbprod/yanky.nvim",
+      "kkharji/sqlite.lua",
       "kyazdani42/nvim-web-devicons",
       "nvim-lua/plenary.nvim",
       "nvim-telescope/telescope-file-browser.nvim",
-      "kkharji/sqlite.lua",
-      "gbprod/yanky.nvim",
-      "debugloop/telescope-undo.nvim",
     },
     opts = {
       defaults = {
