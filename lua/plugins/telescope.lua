@@ -36,12 +36,10 @@ return {
       },
     },
     config = function(_, opts)
-
       require("telescope").load_extension("file_browser")
       require("yanky").setup()
       require("telescope").load_extension("yank_history")
       require("telescope").load_extension("undo")
-
     end
   }
 }
