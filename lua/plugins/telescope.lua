@@ -42,6 +42,6 @@ return {
       telescope.load_extension("file_browser")
       telescope.load_extension("yank_history")
       telescope.load_extension("undo")
-    end
+    end,
   }
 }
