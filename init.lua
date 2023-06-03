@@ -19,10 +19,8 @@ vim.g.mapleader = " "
 
 --load everything in lua/plugins
 require("lazy").setup("plugins", {
-  ui = {
-    checker = {
-      notify = false,
-    }
+  change_detection = {
+    notify = false,
   }
 })
 
