@@ -10,10 +10,8 @@ return {
       "L3MON4D3/LuaSnip",
       "saadparwaiz1/cmp_luasnip",
     },
-    opts = {
-    },
     config = function(_, opts)
-      local cmp = require'cmp'
+      local cmp = require("cmp")
 
       cmp.setup({
         snippet = {
