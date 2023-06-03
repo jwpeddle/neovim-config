@@ -94,3 +94,6 @@ vim.cmd([[
     autocmd BufEnter * setlocal formatoptions-=o
   augroup end
 ]])
+
+vim.keymap.set({"n", "v", "i"}, "<Left>", "<cmd>:bprevious<cr>")
+vim.keymap.set({"n", "v", "i"}, "<Right>", "<cmd>:bnext<cr>")
