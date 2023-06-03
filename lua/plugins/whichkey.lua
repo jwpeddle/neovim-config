@@ -15,6 +15,7 @@ return {
         --common
         ["<Leader>"] = {
           name = "+Prefix",
+
           o = { "<Cmd>lua require('telescope.builtin').find_files()<CR>", "Open file" },
           n = { "<Cmd>NvimTreeToggle<CR>", "Explore" },
           b = { "<Cmd>lua require('telescope.builtin').buffers()<CR>", "Buffers" },
