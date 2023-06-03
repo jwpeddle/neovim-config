@@ -19,8 +19,10 @@ vim.g.mapleader = " "
 
 --load everything in lua/plugins
 require("lazy").setup("plugins", {
-  checker = {
-    notify = false,
+  ui = {
+    checker = {
+      notify = false,
+    }
   }
 })
 
