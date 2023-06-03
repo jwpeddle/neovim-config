@@ -37,9 +37,11 @@ return {
       },
     },
     config = function(_, opts)
-      require("telescope").load_extension("file_browser")
-      require("telescope").load_extension("yank_history")
-      require("telescope").load_extension("undo")
+      local telescope = require("telescope")
+      telescope.setup(opts)
+      telescope.load_extension("file_browser")
+      telescope.load_extension("yank_history")
+      telescope.load_extension("undo")
     end
   }
 }
