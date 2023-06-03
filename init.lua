@@ -18,7 +18,11 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " " 
 
 --load everything in lua/plugins
-require("lazy").setup("plugins")
+require("lazy").setup("plugins", {
+  checker = {
+    notify = false,
+  }
+})
 
 
 --******************** options ********************
