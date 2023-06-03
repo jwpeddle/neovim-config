@@ -159,7 +159,7 @@ wk.register({
     name = "+Neovim",
     e = { "<Cmd>execute 'cd $NVIM_HOME'<CR><Cmd>edit $MYVIMRC<CR>", "Edit config" },
     t = { "<Cmd>Mason<CR>", "Tools" },
-    p = { "<Cmd>Lazy<CR>", "Tools" },
+    p = { "<Cmd>Lazy<CR>", "Plugins" },
     h = { "<Cmd>checkhealth<CR>", "Check health" },
   },
   --unleadered
