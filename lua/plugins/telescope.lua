@@ -9,28 +9,29 @@ return {
       "gbprod/yanky.nvim",
       "debugloop/telescope-undo.nvim",
     },
-    opts = 
-    defaults = {
-      sorting_strategy = "ascending",
-      layout_config = {
-        height = 0.5,
-        prompt_position = "top",
-      },
-      mappings = {
-        i = {
-          ["<esc>"] = require("telescope.actions").close,
-          ["<c-t>"] = require("trouble.providers.telescope").open_with_trouble,
-        },
-        n = {
-          ["<c-t>"] = require("trouble.providers.telescope").open_with_trouble,
-        }
-      },
-    },
-    extensions = {
-      undo = {
-        side_by_side = true,
+    opts = {
+      defaults = {
+        sorting_strategy = "ascending",
         layout_config = {
-          preview_height = 0.8,
+          height = 0.5,
+          prompt_position = "top",
+        },
+        mappings = {
+          i = {
+            ["<esc>"] = require("telescope.actions").close,
+            ["<c-t>"] = require("trouble.providers.telescope").open_with_trouble,
+          },
+          n = {
+            ["<c-t>"] = require("trouble.providers.telescope").open_with_trouble,
+          }
+        },
+      },
+      extensions = {
+        undo = {
+          side_by_side = true,
+          layout_config = {
+            preview_height = 0.8,
+          },
         },
       },
     },
