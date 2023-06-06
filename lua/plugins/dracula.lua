@@ -1,3 +1,4 @@
+--colorscheme
 return {
   "dracula/vim"
 }
