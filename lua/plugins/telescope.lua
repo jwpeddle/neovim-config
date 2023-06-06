@@ -1,3 +1,4 @@
+--fuzzy find anything
 return {
   {
     "nvim-telescope/telescope.nvim",
