@@ -1,3 +1,4 @@
+--ai
 return {
   {
     "jackMort/ChatGPT.nvim",
