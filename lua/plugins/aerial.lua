@@ -1,3 +1,4 @@
+--symbol navigation pane
 return {
   {
     "stevearc/aerial.nvim",
