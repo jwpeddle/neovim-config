@@ -1,3 +1,4 @@
+--lsp
 return {
   {
     "neovim/nvim-lspconfig",
