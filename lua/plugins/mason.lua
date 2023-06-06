@@ -1,3 +1,4 @@
+--package manager (lsp, linters, etc)
 return {
   {
     "williamboman/mason.nvim",
