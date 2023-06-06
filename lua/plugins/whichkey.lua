@@ -1,3 +1,4 @@
+--visual shortcut completion
 return {
   {
     "folke/which-key.nvim",
