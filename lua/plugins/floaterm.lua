@@ -1,3 +1,4 @@
+--floating terminal
 return {
   {
     "voldikss/vim-floaterm",
