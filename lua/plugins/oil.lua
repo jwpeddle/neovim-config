@@ -1,3 +1,4 @@
+--edit directories as text
 return {
   {
     "stevearc/oil.nvim",
