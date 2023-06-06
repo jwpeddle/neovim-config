@@ -1,3 +1,4 @@
+--git
 return {
   {
     "tpope/vim-fugitive",
