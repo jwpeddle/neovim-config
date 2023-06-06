@@ -1,3 +1,4 @@
+--show buffers as tabs
 return {
   {
     "akinsho/bufferline.nvim",
