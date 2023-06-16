@@ -9,7 +9,7 @@ return {
     },
     event = "VeryLazy"
     opts = {
-      api_key_cmd = "~/openai",
+      api_key_cmd = "op read op://Personal/OpenAI/apikey",
     },
   }
 }
