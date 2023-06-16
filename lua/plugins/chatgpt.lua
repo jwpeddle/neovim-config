@@ -7,7 +7,7 @@ return {
       "nvim-lua/plenary.nvim",
       "nvim-telescope/telescope.nvim"
     },
-    event = "VeryLazy"
+    event = "VeryLazy",
     opts = {
       api_key_cmd = "op read op://Personal/OpenAI/apikey",
     },
