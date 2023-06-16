@@ -9,7 +9,7 @@ return {
     },
     event = "VeryLazy",
     opts = {
-      api_key_cmd = "op read op://Personal/OpenAI/apikey",
+      api_key_cmd = "op read op://Personal/OpenAI/apikey --no-newline",
     },
   }
 }
