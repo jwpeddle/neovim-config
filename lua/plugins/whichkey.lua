@@ -68,8 +68,8 @@ return {
           name = "+Neovim",
           e = { "<Cmd>execute 'cd $NVIM_HOME'<CR><Cmd>edit $MYVIMRC<CR>", "Edit config" },
           l = { "<Cmd>edit learnings.txt<CR>", "Learnings" },
-          t = { "<Cmd>Mason<CR>", "Tools" },
-          p = { "<Cmd>Lazy<CR>", "Plugins" },
+          t = { "<Cmd>Mason<CR>", "Mason" },
+          p = { "<Cmd>Lazy<CR>", "Lazy" },
           h = { "<Cmd>checkhealth<CR>", "Check health" },
         },
         --unleadered
