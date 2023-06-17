@@ -67,8 +67,9 @@ return {
         ["<Leader><Leader>"] = {
           name = "+Neovim",
           e = { "<Cmd>execute 'cd $NVIM_HOME'<CR><Cmd>edit $MYVIMRC<CR>", "Edit config" },
+          e = { "<Cmd><Cmd>edit $NVIM_HOME/scratch.txt<CR>", "Scratch" },
           l = { "<Cmd>edit learnings.txt<CR>", "Learnings" },
-          t = { "<Cmd>Mason<CR>", "Mason" },
+          m = { "<Cmd>Mason<CR>", "Mason" },
           p = { "<Cmd>Lazy<CR>", "Lazy" },
           h = { "<Cmd>checkhealth<CR>", "Check health" },
         },
