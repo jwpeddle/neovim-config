@@ -26,7 +26,6 @@ return {
           y = { "<Cmd>lua require('telescope').extensions.yank_history.yank_history()<CR>", "Yank history" },
           u = { "<Cmd>lua require('telescope').extensions.undo.undo()<CR>", "Undos" },
           ["-"] = { "<Cmd>lua require('oil').open_float()<CR>", "Edit files" },
-          ["<Tab>"] = { "<C-w>w", "Switch window" },
         },
         --diagnostics
         ["<Leader>d"] = {
