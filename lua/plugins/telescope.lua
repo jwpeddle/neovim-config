@@ -4,7 +4,7 @@ return {
     "nvim-telescope/telescope.nvim",
     dependencies = {
       "debugloop/telescope-undo.nvim",
-      -- "folke/trouble.nvim",
+      "folke/trouble.nvim",
       "gbprod/yanky.nvim",
       "kkharji/sqlite.lua",
       "kyazdani42/nvim-web-devicons",
