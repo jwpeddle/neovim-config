@@ -23,6 +23,7 @@ return {
           W = { "<Cmd>%bwipeout<CR>", "Close all buffers" },
           q = { "<Cmd>quit<cr>", "Quit" },
           s = { "<Cmd>AerialToggle<CR>", "Aerial symbols" },
+          s = { "<Cmd>Block<CR>", "Highlight blocks" },
           y = { "<Cmd>lua require('telescope').extensions.yank_history.yank_history()<CR>", "Yank history" },
           u = { "<Cmd>lua require('telescope').extensions.undo.undo()<CR>", "Undos" },
           ["-"] = { "<Cmd>lua require('oil').open_float()<CR>", "Edit files" },
