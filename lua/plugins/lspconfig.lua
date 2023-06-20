@@ -17,7 +17,7 @@ return {
               rope_completion = { enabled = false },
               rope_rename = { enabled = false },
               yapf = { enabled = false },
-              ruff = { enabled = false, },
+              ruff = { enabled = true, },
             }
           }
         }
