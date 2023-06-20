@@ -18,12 +18,11 @@ return {
           name = "+Prefix",
           o = { "<Cmd>lua require('telescope.builtin').find_files()<CR>", "Open file" },
           n = { "<Cmd>NvimTreeToggle<CR>", "Explore" },
-          b = { "<Cmd>lua require('telescope.builtin').buffers()<CR>", "Buffers" },
           w = { "<Cmd>bwipeout<CR>", "Close buffer" },
           W = { "<Cmd>%bwipeout<CR>", "Close all buffers" },
           q = { "<Cmd>quit<cr>", "Quit" },
           s = { "<Cmd>AerialToggle<CR>", "Aerial symbols" },
-          s = { "<Cmd>Block<CR>", "Highlight blocks" },
+          b = { "<Cmd>Block<CR>", "Highlight blocks" },
           y = { "<Cmd>lua require('telescope').extensions.yank_history.yank_history()<CR>", "Yank history" },
           u = { "<Cmd>lua require('telescope').extensions.undo.undo()<CR>", "Undos" },
           ["-"] = { "<Cmd>lua require('oil').open_float()<CR>", "Edit files" },
@@ -40,6 +39,7 @@ return {
         --find
         ["<Leader>f"] = {
           name = "+Telescope",
+          b = { "<Cmd>lua require('telescope.builtin').buffers()<CR>", "Buffers" },
           d = { "<Cmd>lua require('telescope.builtin').lsp_definitions()<CR>", "Definition" },
           h = { "<Cmd>lua require('telescope.builtin').help_tags()<CR>", "Help" },
           g = { "<Cmd>lua require('telescope.builtin').live_grep()<CR>", "Search workspace" },
