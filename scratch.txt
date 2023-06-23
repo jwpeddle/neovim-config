@@ -1,5 +1,27 @@
-# Scroll without moving cursor
-ctrl-e, ctrl-y
-
-# Move cursor line to top/middle/bottom
-zt, zz, zb
+# class Video(models.Model):
+#     event = models.OneToOneField("api.Event", related_name="+", on_delete=models.CASCADE)
+#     youtube_id = models.CharField(max_length=50)
+#     title = models.CharField(max_length=250, blank=True, default="")
+#     published_at = models.DateTimeField(null=True, blank=True)
+#     privacy_status = models.CharField(max_length=50, blank=True, default="")
+#     channel = models.ForeignKey("youtube.Channel", blank=True, null=True, on_delete=models.SET_NULL)
+#     view_count = models.IntegerField(blank=True, null=True)
+#     like_count = models.IntegerField(blank=True, null=True)
+#     dislike_count = models.IntegerField(blank=True, null=True)
+#     favourite_count = models.IntegerField(blank=True, null=True)
+#     comment_count = models.IntegerField(blank=True, null=True)
+#     created_at = models.DateTimeField(auto_now_add=True)
+#     updated_at = models.DateTimeField(auto_now=True)
+#     #average_view_duration = models.DecimalField(max_digits=19, decimal_places=10, null=True)
+#     #subscribers_gained = models.IntegerField(null=True)
+#     #subscribers_lost = models.IntegerField(null=True)
+#     #views_from_subscribers = models.IntegerField(null=True)
+#     #watch_time_minutes = models.DecimalField(max_digits=19, decimal_places=10, null=True)
+#
+#
+# class Channel(models.Model):
+#     youtube_id = models.CharField(max_length=50, null=True, blank=True)
+#     title = models.CharField(max_length=250, null=True, blank=True)
+#     custom_url = models.CharField(max_length=50, null=True, blank=True)
+#     created_at = models.DateTimeField(auto_now_add=True)
+#     updated_at = models.DateTimeField(auto_now=True)
