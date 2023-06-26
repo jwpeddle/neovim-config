@@ -1,5 +1,0 @@
-# Scroll without moving cursor
-ctrl-e, ctrl-y
-
-# Move cursor line to top/middle/bottom
-zt, zz, zb
