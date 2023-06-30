@@ -8,7 +8,7 @@ return {
     },
     opts = {
       abbreviations = { builtin = true},
-      lsp = { on_attach = "on_attach"},
+      --lsp = { on_attach = on_attach},
       mappings = true,
     }
   }
