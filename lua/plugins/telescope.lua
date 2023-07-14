@@ -4,6 +4,7 @@ return {
     "nvim-telescope/telescope.nvim",
     dependencies = {
       "debugloop/telescope-undo.nvim",
+      "folke/trouble.nvim",
       "gbprod/yanky.nvim",
       "kkharji/sqlite.lua",
       "kyazdani42/nvim-web-devicons",
@@ -19,7 +20,6 @@ return {
         },
         mappings = {
           i = {
-            ["<C-h>"] = "which_key"
           },
           n = {
           }
@@ -40,6 +40,22 @@ return {
       telescope.load_extension("file_browser")
       telescope.load_extension("yank_history")
       telescope.load_extension("undo")
+
+      local actions = require("telescope.actions")
+      local trouble = require("trouble.providers.telescope")
+
+      telescope.setup {
+        defaults = {
+          mappings = {
+            i = {
+              ["<c-t>"] = trouble.open_with_trouble,
+              ["<C-h>"] = "which_key",
+            },
+            n = { ["<c-t>"] = trouble.open_with_trouble },
+          },
+        },
+      }
+    end,
     end,
   }
 }
