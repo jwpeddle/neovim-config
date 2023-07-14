@@ -19,6 +19,7 @@ return {
         },
         mappings = {
           i = {
+            ["<C-h>"] = "which_key"
           },
           n = {
           }
