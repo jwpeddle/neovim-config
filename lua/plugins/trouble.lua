@@ -7,6 +7,7 @@ return {
       auto_close = true,
     },
     config = function(_, opts)
+      require("trouble").setup(opts)
       local actions = require("telescope.actions")
       local trouble = require("trouble.providers.telescope")
 
