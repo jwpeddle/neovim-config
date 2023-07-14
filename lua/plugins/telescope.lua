@@ -18,12 +18,6 @@ return {
           height = 0.5,
           prompt_position = "top",
         },
-        mappings = {
-          i = {
-          },
-          n = {
-          }
-        },
       },
       extensions = {
         undo = {
