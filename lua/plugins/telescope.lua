@@ -4,7 +4,6 @@ return {
     "nvim-telescope/telescope.nvim",
     dependencies = {
       "debugloop/telescope-undo.nvim",
-      "folke/trouble.nvim",
       "gbprod/yanky.nvim",
       "kkharji/sqlite.lua",
       "kyazdani42/nvim-web-devicons",
@@ -21,10 +20,8 @@ return {
         mappings = {
           i = {
             ["<esc>"] = require("telescope.actions").close,
-            ["<c-t>"] = require("trouble.providers.telescope").open_with_trouble,
           },
           n = {
-            ["<c-t>"] = require("trouble.providers.telescope").open_with_trouble,
           }
         },
       },
