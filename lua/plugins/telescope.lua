@@ -45,7 +45,7 @@ return {
               ["<c-t>"] = trouble.open(),
               ["<C-h>"] = "which_key",
             },
-            n = { ["<c-t>"] = trouble.open_with_trouble },
+            n = { ["<c-t>"] = trouble.open() },
           },
         },
       }
