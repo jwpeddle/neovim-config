@@ -36,13 +36,13 @@ return {
       telescope.load_extension("undo")
 
       local actions = require("telescope.actions")
-      local trouble = require("trouble.providers.telescope")
+      local trouble = require("trouble.sources.telescope")
 
       telescope.setup {
         defaults = {
           mappings = {
             i = {
-              ["<c-t>"] = trouble.open_with_trouble,
+              ["<c-t>"] = trouble.open(),
               ["<C-h>"] = "which_key",
             },
             n = { ["<c-t>"] = trouble.open_with_trouble },
